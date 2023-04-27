@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Instalación</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/solid.css">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pasos.css">
+    <link rel="shortcut icon" href="./assets/img/ETB.svg">
+
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+    </script>
+    <div class="container-genre container-pasos">
+        <div class="con-info-audios">
+            <div class="con-img-au">
+                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+            </div>
+            <div class="info-audios">
+                <p>Nota: Hacer touch sobre estos iconos para más información</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="volver-header"><img src="./assets/img/angle-left.svg" alt="volver-left"></div>
+            <div class="text-header">ETBQA_Tecnico1
+                <span><script>document.write(`${month}/${day}/${year}`)</script></span>
+            </div>
+            <div class="text-header-ac">Activar ruta de trabajo</div>
+            <img src="./assets/img/search.svg" alt="search">
+            <img src="./assets/img/comment-alt.svg" alt="msg">
+        </div>
+        <div class="container-struct">
+            <div class="breadcump">
+                <a href="./dashboard.html" class="item-bread">Home</a>
+                <a href="./dashboard.html" class="item-bread">Ordenes Agendadas</a>
+                <a href="./orden.html" class="item-bread">Detalle Orden</a>
+                <a href="./pasos.html" class="item-bread" style="color: rgba(55, 0, 255, 0.623);">Instalación</a>
+            </div>
+            <h4 id="id-orden">MDM-PQR-37926711</h4>
+            <div class="con-main-pasos">
+                <div class="con-pasos sw-main sw-theme-arrows" id="smartwizard">
+                    <ul class="nav nav-tabs step-anchor">
+                        <li class="nav-item active" id="pasoli-1"><a class="nav-link">Paso 1<br><small>Configurar Accesos</small></a></li>
+                        <li class="nav-item" id="pasoli-2"><a class="nav-link">Paso 2<br><small>Validar Equipos</small></a></li>
+                        <li class="nav-item" id="pasoli-3"><a class="nav-link">Paso 3<br><small>Activar Acceso</small></a></li>
+                        <li class="nav-item" id="pasoli-4"><a class="nav-link">Paso 4<br><small>Activar Servicio</small></a></li>
+                        <li class="nav-item" id="pasoli-5"><a class="nav-link">Paso 5<br><small>Soporte N1</small></a></li>
+                        <li class="nav-item" id="pasoli-6"><a class="nav-link">Paso 6<br><small>Completar Orden</small></a></li>
+                        <li class="nav-item" id="pasoli-7"><a class="nav-link">Paso 7<br><small>Boleta Digital</small></a></li>
+                        <li class="nav-item" id="pasoli-8"><a class="nav-link">Paso 8<br><small>Resumen</small></a></li>
+                        <li class="nav-item nav-item-alert"><a class="nav-link">
+                            <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="img-list-paso-a" onclick="alertAudio('au-list-paso-a', 'img-list-paso-a',0,1)" style="margin-left: 20px;">
+                            <audio id="au-list-paso-a" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/pasoapaso.m4a">
+                            </audio>
+                        </a></li>   
+                    </ul>
+                </div>
+                <div class="con-general-pasos">
+                    <div class="paso-uno" id="paso-uno">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>ACCESO DE RED</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>NAP: N4CO33_B8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="actions-pasos-g">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <audio id="au-info-dia" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
+                                <button onclick="modalUbi()"><i class="fa-solid fa-location-dot"></i></button>
+                                <button><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                                <button><i class="fa-regular fa-floppy-disk"></i></button>
+                                <button><i class="fa-solid fa-arrows-rotate"></i></button>
+                            </div>
+                            <div class="con-un-btn-retor">
+                                <button id="btn-paso-dos" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paso-dos" id="paso-dos">
+                        <div class="contenido-paso">
+                            <div class="serv-paso-dos">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <label for="">ONT 1</label>
+                                <select name="" id="ont-instalada" disabled>
+                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
+                                </select>
+                                <select name="" id="motivo-re-ont" class="child-serv-s">
+                                    <option value="" selected disabled></option>
+                                    <option value="">RE01 - Fallo: Aparente falla eléctrica</option>
+                                    <option value="">RE02-Fallo: Aparente mala manipulación</option>
+                                    <option value="">RE02-Fallo: Aparente mala manipulación</option>
+                                    <option value="">RE03-Fallo: Revisión</option>
+                                    <option value="">RE04-Fallo: Degradación</option>
+                                    <option value="">RE08-Fallo: Daño por Cliente</option>
+                                    <option value="">RE07 -Fallo: Daño puerto Ethernet (Datos)</option>
+                                    <option value="">RE08 -Fallo: Daño puerto Ethernet (TV)</option>
+                                    <option value="">RE09-Fallo: Reposición por perdida del cliente</option>
+                                    <option value="">RE11 -Fallo: Daño no toma configuración</option>
+                                    <option value="">RE12-Fallo: Daño por conexión inalámbrica</option>
+                                    <option value="">RE13-Fallo: Daño por temperatura lector óptico</option>
+                                    <option value="">RE14-Fallo: Daño por temperatura</option>
+                                    <option value="">RE15-Fallo: Modernización</option>
+                                </select>
+                                <select name="" id="ont-cambiar" class="child-serv-s">
+                                    <option value="" disabled selected>Seleccione un opción...</option>
+                                    <option value="ZTEGC8FEAFD1-Remanufacturado">ZTEGC8FEAFD1-Remanufacturado</option>
+                                    <option value="ALCLB2938591-Remanufacturado">ALCLB2938591-Remanufacturado</option>
+                                    <option value="ALCLB3B42228 - Remanufacturado">ALCLB3B42228 - Remanufacturado</option>
+                                    <option value="ALCLB2F39810 - Remanufacturado">ALCLB2F39810 - Remanufacturado</option>
+                                    <option value="ALCLB2F39A01 - Remanufacturado">ALCLB2F39A01 - Remanufacturado</option>
+                                </select>
+                                <div class="con-funtions-serv-dos child-serv-s">
+                                    <button id="save-ont"><i class="fa-regular fa-floppy-disk" style="margin-right: 0px;"></i></button>
+                                    <button><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
+                                </div>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                
+                                
+                                <label for="" style="display: none;">AP 1</label>
+                                <select name="" id="ont-instalada" disabled style="display: none;">
+                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
+                                </select>
+                                <select name="" id="motivo-re-ont" class="child-serv-s" style="display: none;">
+                                    <option value="">Motivo 1</option>
+                                    <option value="">Motivo 2</option>
+                                    <option value="">Motivo 3</option>
+                                </select>
+                                <select name="" id="ont-cambiar" class="child-serv-s" style="display: none;">
+                                    <option value="" disabled selected>Seleccione un opción...</option>
+                                    <option value="ZTEGC8FEAFD1-Remanufacturado">ZTEGC8FEAFD1-Remanufacturado</option>
+                                    <option value="ALCLB2938591-Remanufacturado">ALCLB2938591-Remanufacturado</option>
+                                    <option value="ALCLB3B42228 - Remanufacturado">ALCLB3B42228 - Remanufacturado</option>
+                                    <option value="ALCLB2F39810 - Remanufacturado">ALCLB2F39810 - Remanufacturado</option>
+                                    <option value="ALCLB2F39A01 - Remanufacturado">ALCLB2F39A01 - Remanufacturado</option>
+                                </select>
+                                
+                                <div class="con-funtions-serv-dos child-serv-s" style="display: none;">
+                                    <button><i class="fa-regular fa-floppy-disk" style="margin-right: 0px;"></i></button>
+                                    <button><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
+                                </div>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="display: none;">
+                            </div>
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Serial</th>
+                                        <th>Mac</th>
+                                        <th>Tipo Predio</th>
+                                        <th>Piso</th>
+                                        <th>Espacio del Predio</th>
+                                        <th>Estado</th>
+                                        <th>Opción</th>
+                                        <th>Serial Reemplazado</th>
+                                        <th>Mac</th>
+                                    </tr>
+                                    <tbody>
+                                        <!-- <tr>
+                                            <td></td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-uno" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-paso-tres" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Semaforo</th>
+                                        <th>TipoCliente: Natural</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-co"></div></td>
+                                            <td>PQR nivel 1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-error"></div></td>
+                                            <td>PQR nivel 2</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-co"></div></td>
+                                            <td>Agendamiento PQR Actual</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Aprovisionamiento -->
+                    <div class="paso-dos-aprov paso-no-actived" id="paso-dos-aprov">
+                        <div class="contenido-paso">
+                            <div class="serv-paso-dos" id="serv-paso-dos-aprov">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <label for="">ONT 1</label>
+                                <select name="" id="ont-instalada-aprov" disabled>
+                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
+                                </select>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Serial</th>
+                                        <th>Mac</th>
+                                        <th>Tipo Predio</th>
+                                        <th>Piso</th>
+                                        <th>Espacio del Predio</th>
+                                        <th>Estado</th>
+                                        <th>Opción</th>
+                                        <th>Serial Reemplazado</th>
+                                        <th>Mac</th>
+                                    </tr>
+                                    <tbody>
+                                        <!-- <tr>
+                                            <td></td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="con-un-btn-retor">
+                                <!-- <button id="btn-paso-volver-uno" class="btn-avanzar"> << ANTERIOR</button> -->
+                                <button id="btn-paso-tres-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paso-tres-aprov paso-no-actived" id="paso-tres-aprov">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>ACCESO DE RED</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>PONID: 1-1-2-1</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN : 22</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>objectName: BOCOZTC30001:1-1-2-1-6</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>OLTID: 10.240.77.4</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>elementBrand: ZTE</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>UbicacionRed : CHICO</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>OLT SHELF: BOCOZTC30001</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>NAP: N4C034_L6</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>NAP_Puerto : 1</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                        <p>ONT/DSL</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>Serial Equipo: <span id="serial-paso-3-ont"></span></p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>MacEquipo: D4B709C2881C</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>INTERNET</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN: 3918</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                        <p>PLAN 100M/50M (MAS PRODUCTO)</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>VelocidadBajada : 200M</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>VelocidadSubida: 100M</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>LINEA TELEFONICA</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>IMPU: tel:+5718005864</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN: 2441</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-dos" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-cuatro-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paso-cuatro-aprov paso-no-actived" id="paso-cuatro-aprov">
+                        <div class="contenido-paso">
+                            
+                            <div class="con-table">
+                                <table class="table-general" style="min-width: auto;">
+                                    <tr>
+                                        <th>Servicio</th>
+                                        <th style="width: 40%;"></th>
+                                        <th>Estado</th>
+                                    </tr>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-tres" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-visita-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                                <button id="btn-quinto-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paso-quinto-aprov paso-no-actived" id="paso-quinto-aprov">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>ACCESO DE RED</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">TecnologiaAcceso</label>
+                                    <label for="">FTTH</label>
+                                    <label for="">Estado Servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">Potencia</label>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>ONT/DSL</td>
+                                                    <td>elementBrand: ZTE <br> Serial: <script>document.write(document.getElementById('ont-instalada').value)</script></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Señal</th>
+                                                <th>Estado Plataforma</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Potencia</td>
+                                                    <td>-18.418</td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>INTERNET</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">UsuarioPPPoE</label>
+                                    <p>SR-37020706</p>
+                                    <label for="">Estado del servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">VLAN</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>IP DINÁMICA</td>
+                                                    <td>-18.418</td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PLAN 300M /300M</td>
+                                                    <td>VelocidadBajada: 300M <br>
+                                                        VelocidadSubida: 300M    
+                                                    </td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NEGOCIO SEGURO</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="actions-pasos-g">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <audio id="au-info-dia" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
+                                <button><i class="fa-solid fa-arrows-rotate"></i></button>
+                                <button>Ping</button>
+                                <button id="btn-red"><i class="fa-solid fa-wifi" style="color: #ffffff;"></i></button>
+                            </div>
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>LÍNEA TELEFONICA</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">IMPU</label>
+                                    <label for="">tel +576018009444</label>
+                                    <label for="">Estado del servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">ACS</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>TRANSFERENCIA DE LLAMADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LLAMADA EN ESPERA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IDENTIFICADOR DE LLAMADAS</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IDENTIFICADOR DE SEGUNDA LLAMADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONEXION SIN MARCAR</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONFERENCIA ENTRE TRES</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MARCACION ABREVIADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LOCAL EXCLUSIVO +LDN Y LDI MOVIL</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NUMERO LINEA TELEFONICA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-cuatro" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-punto-nor-6" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="paso-sexto-aprov paso-no-actived" id="paso-sexto-aprov">
+                        <div class="contenido-paso">
+                            <h3>Registrar Material <label for=""> <img src="./assets/img/Group 3.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6" onclick="alertAudio('au-register-material-p6', 'img-register-material-p6')" style="margin-left: 20px;"></label></h3>
+                            <audio id="au-register-material-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Registral material.m4a">
+                            </audio>
+                                <div class="con-table">
+                                    <table id="register-inventario" class="table-general">
+                                        <tr>
+                                        <th>Tipo Material</th>
+                                        <th>Material</th>
+                                        <th>Cantidad</th>
+                                        <th>Cantidad Asignada</th>
+                                        <th>Remover</th>
+                                        </tr>
+                                        <tbody id="tbody-material">
+                                        <tr id="fila-in-0">
+                                            <td><select name="" id="tipo-material-0">
+                                            <option value="noserial" selected>No serializado</option>
+                                            <option value="serial">Serializado</option>
+                                            </select></td>
+                                            <td>
+                                            <select name="" id="material-0">
+                                                <option value="Cable UTP CAT 6">CONECTOR MECANICO OPTICO ODN SC-APC 8°</option>
+                                                <option value="">CABLE FO DROP BAJA FRICCION 1 HILO</option>
+                                                <option value="">CABLE UTP CAT 6</option>
+                                                <option value="">TOMA DE PARED FO</option>
+                                                <option value="">DROP 1 HILO INDOOR/OUTDOOR</option>
+                                                <option value="">HERRAJE RETENCION FO AREA DROP 1 HILO</option>
+                                                <option value="">CAJA DISTRIBUCION DE FO PISO 4 SALIDAS</option>
+                                            </select>
+                                            </td>
+                                            <td>
+                                            <input type="number" name="" id="cantidad-0">
+                                            </td>
+                                            <td id="material-a-0">783</td>
+                                            <td><i class="fa-solid fa-xmark" id="borrar-in-0"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                              <br>
+                              <button  id="agregar-in"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></button>
+                              <br>
+                              <h4>Observaciones <label for=""><img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6" onclick="alertAudio('au-obser-p6', 'img-obser-p6')" style="margin-left: 20px;"></label></h4>
+                              <audio id="au-obser-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Observaciones.m4a">
+                            </audio>
+                              <textarea name="" id="" cols="30" rows="10"></textarea>
+                              <div class="con-action-t-6">
+                                <button id="guardar-in">Guardar</button>
+                              </div>
+                              <br>
+                              <h5>Inventario Registrado <label for=""><img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4" onclick="alertAudio('au-inv-pso4', 'img-inv-pso4')" style="margin-left: 20px;"></label></h5>
+                              <audio id="au-inv-pso4" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Inventario.m4a">
+                            </audio>
+                              <div class="con-table">
+        
+                                    <table class="table-general">
+                                      <tr>
+                                        <th>Tipo Material</th>
+                                        <th>Nombre</th>
+                                        <th>Serial</th>
+                                        <th>Tipo</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Serializado</td>
+                                        <td id="nombretdontps6">ONT ZXHN F620E 200mW+ACCESORIOS ZTE</td>
+                                        <td id="serialtdontps6">ZTEGC1D36799</td>
+                                        <td>ONT</td>
+                                      </tr>
+                                    </table>
+                              </div>
+                              <br>
+                              <div class="con-prox-act">
+                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6" onclick="alertAudio('au-prox-act-p6', 'img-prox-act-p6')"></label>
+                               <audio id="au-prox-act-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Proxima actividad.m4a">
+                            </audio>
+                               <select name="" id="">
+                                <option value="">MDM-FIBRA-002325839-KR 28 46 72 AP 501-Instalación FTTH</option>
+                                <option value="">Almuerzo</option>
+                               </select>
+                              <br><br>
+                              <div class="con-un-btn-retor">
+                                <button id="btn-punto-nor-7">Siguiente >></button>
+                            </div>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paso-septimo-aprov paso-no-actived" id="paso-septimo-aprov">
+                        <div class="contenido-paso">
+                            
+                        </div>
+                    </div>
+                    <div class="paso-octavo-aprov paso-no-actived" id="paso-octavo-aprov">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">Numero de Orden: </label>
+                                    <p>MDM-PQR-37926711</p>
+                                    <label for="">CUN</label>
+                                    <p>4347210001220101</p>
+                                    <label for="">Bundle Seleccionado</label>
+                                    <p>DUO 100M HOG-VS</p>
+                                    <label for="">Tecnologia</label>
+                                    <p>FTTH</p>
+                                    <label for="">Valor del Servicio</label>
+                                    <p>$149,900.00</p>
+                                    <label for="">Fecha de Agendamiento</label>
+                                    <p><script>document.write(`${month}/${day}/${year}`)</script></p> 
+                                    <label for="">Franja de Agendamento</label>
+                                    <p>PM 2</p>
+                                </div>
+                            </div>
+                            <div class="con-un-btn-retor">
+                                <button id="btn-fin-aprov">Finalizar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Aprovisionamiento -->
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Botones emergentes -->
+    <div id="acceso-btn" class="btn-flot">Acceso</div>
+    <div id="flujo-btn" class="btn-flot">Flujo</div>
+    <div class="alert-flotante" id="alert-flotante">
+        <div class="etb-flotant" id="etb-flotant">
+            <img src="./assets/img/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante" id="mensaje-parlante">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+    </div>
+    <!-- Botones emergentes -->
+
+    <!-- Modal -->
+        <!-- modal loading -->
+        <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">PROCESANDO TU PETICIÓN</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="con-spiner">
+                        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    <div class="text-spiner"><p>Por favor no cierres la ventana</p></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- modal loading -->
+        <!-- Modal Ubi -->
+        <div class="modal" tabindex="-1" id="modal-ubi">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ubicación Elementos Terminales Cercanos NAP/CTO</h5>
+                </div>
+                <div class="modal-body">
+                  <img src="./assets/img/map.png" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Modal Ubi -->
+        <!-- Modal Acceso -->
+        <div class="modal fade" id="modal-acceso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" id="btn-close-acceso">
+                  <h1 class="modal-title fs-5 header-modal-flujo" id="staticBackdropLabel">Accesos <div><i class="fa-regular fa-hand-pointer" style="color: #ffffff;"></i> Click para cerrar</d></h1>
+                </div>
+                <div class="modal-body">
+                    <div class="con-items-acces">
+                        <br>
+                        <div class="con-tej">
+                            <p class="cabecera">ACCESO DE RED</p>
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>PONID: 1-1-1-2</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>CVLAN: 69</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>OLTID: 10.241.196.145</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>objectName: BOTOAL738016:1-1-1-2-7</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>objectName: BOTOAL738016:1-1-1-2-7</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>elementBrand: ALCATEL</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>UbicacionRed: CENTRAL TOBERIN</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>OLT SHELF: BOTOAL738016</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>NAP: N1TO16_A1</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>NAP_Puerto: 4</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/CARPETA.png" alt="">
+                                    <p>SerialEquipo: ALCLB2BF4F8B</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="con-tej">
+                            <p class="cabecera">Internet</p>
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>CVLAN: 648</p>
+                                </li>
+                                <li>
+                                  <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                  <img src="./assets/img/CARPETA.png" alt="">
+                                  <p>PLAN 300M/300M</p>
+                              </li>
+                                <li>
+                                  <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                  <img src="./assets/img/CARPETA.png" alt="">
+                                  <p>1 IP PUBLICA FIJA NEG</p>
+                              </li>
+                              
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="con-tej">
+                            <p class="cabecera">Linea Telefonica</p>
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>IMPU: tel:+576012778376</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
+                                    <img src="./assets/img/file.svg" alt="">
+                                    <p>CVLAN: 45</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Modal Acceso -->
+        <!-- Modal flujo -->
+        <div class="modal fade" id="modal-flujo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" id="btn-close-flujo">
+                  <h1 class="modal-title fs-5 header-modal-flujo" id="staticBackdropLabel">Flujo <div><i class="fa-regular fa-hand-pointer" style="color: #ffffff;"></i> Click para cerrar</d></h1>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://etb.my.salesforce-sites.com/DIGITAL" frameborder="0" id="recomendador"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Modal flujo -->
+        <!-- Modal venta SVA -->
+        <div class="con-venta-SVA btn-flot-b" id="con-venta-SVA">
+            Venta SVAs
+        </div>
+        <div class="con-SN1 btn-flot-b" id="con-N1">
+            SN1
+        </div>
+        <!-- Modal venta SVA -->
+        <!-- Adiccion de SVA -->
+        <div class="modal" tabindex="-1" id="modal-sva">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">ADICCIÓN SVAs</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-ciencip2" onclick="alertAudio('au-ciencip2', 'img-ciencip2')">
+                                            <audio id="au-ciencip2" controls class="audio">
+                                    <source type="audio/wav" src="./assets/audio/Paso 2/643359bc50af61.30852281.m4a">
+                                </audio>
+                  <input type="checkbox" name="" id="c-VC">
+                  <h5>SVA MAS VELOCIDAD 50M</h5>
+                  <select name="" id="can-VC" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                  </select>
+                  <!-- <input type="number" name="" id="can-vC" placeholder="Cantidad" disabled> -->
+        
+                  <img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-cienpdos" onclick="alertAudio('au-cienpdos', 'img-cienpdos')">
+                                          <audio id="au-cienpdos" controls class="audio">
+                                    <source type="audio/wav" src="./assets/audio/Paso 2/100 M.mp3">
+                                </audio>
+                  <input type="checkbox" name="" id="c-vD">
+                  <h5>SVA MAS VELOCIDAD 100M</h5>
+                  <select name="" id="can-vD" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                  </select>
+        
+                  <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-puntocab-p2" onclick="alertAudio('au-puntocab-p2', 'img-puntocab-p2')">
+                                          <audio id="au-puntocab-p2" controls class="audio">
+                                    <source type="audio/wav" src="./assets/audio/Paso 2/64335a232e90a3.53172697.m4a">
+                                </audio>
+                  <input type="checkbox" name="" id="c-PC">
+                  <h5>PUNTO CABLEADO</h5>
+                  <select name="" id="can-PC" disabled>
+                    <!-- <option disabled selected>Cantidad</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select>
+
+                  <img src="./assets/img/Group 17.svg" alt="parlante-audio-etb" class="img-audio" id="img-widiplus-p2" onclick="alertAudio('au-widiplus-p2', 'img-widiplus-p2')">
+                    <audio id="au-widiplus-p2" controls class="audio">
+                        <source type="audio/wav" src="./assets/audio/Paso 2/64335a6c27e225.27896978.m4a">
+                    </audio>
+                    <input type="checkbox" name="" id="c-WP">
+                    <h5>WIFI PLUS TIPO 1</h5>
+                    <select name="" id="canWp" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                    <!-- <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> -->
+                    </select>
+
+                    <img src="./assets/img/Group 18.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshtwop2" onclick="alertAudio('au-meshtwop2', 'img-meshtwop2')">
+                                    <audio id="au-meshtwop2" controls class="audio">
+                                <source type="audio/wav" src="./assets/audio/Paso 2/64335b1784da96.77854970.m4a">
+                            </audio>
+                    <input type="checkbox" name="" id="c-MTW">
+                    <h5>SOLUCION AP MESH 2</h5>
+                    <select name="" id="canMTW" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                    </select>
+
+                    <img src="./assets/img/Group 19.svg" alt="parlante-audio-etb" class="img-audio" id="img-mesh-thrp2" onclick="alertAudio('au-mesh-thrp2', 'img-mesh-thrp2')">
+                                    <audio id="au-mesh-thrp2" controls class="audio">
+                                <source type="audio/wav" src="./assets/audio/Paso 2/64335b3fbd0153.86009907.m4a">
+                            </audio>
+                    <input type="checkbox" name="" id="c-MTH">
+                    <h5>SOLUCION AP MESH 3</h5>
+                    <select name="" id="canMth" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                    </select>
+
+                    <img src="./assets/img/Group 20.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshadici-p2" onclick="alertAudio('au-meshadici-p2', 'img-meshadici-p2')">
+                                    <audio id="au-meshadici-p2" controls class="audio">
+                                <source type="audio/wav" src="./assets/audio/Paso 2/64335b599b9489.36218762.m4a">
+                            </audio>
+                    <input type="checkbox" name="" id="c-MA" disabled>
+                    <h5>AP MESH ADICIONAL</h5>
+                    <select name="" id="canMa" disabled>
+                    <!-- <option hidden>Cantidad</option> -->
+                    <option value="1">1</option>
+                    </select>
+        
+                  <div class="con-bop-fo">
+                    <p>Cantidad Total:</p><span id="can-sva">0</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" id="btnventSva">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tabla SVA -->
+          <div class="modal" tabindex="-1" id="info-modal-sva">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">ADICCIÓN SVAs</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>DETALLE SVAs</h5>
+                        </div>
+                        <div class="body-items-inf">
+                            <div class="con-table">
+                                <table class="table-general" id="table-sva">
+                                    <tr>
+                                        <th>Nombre SVA</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                    <tbody id="con-new-sva">
+                                        <!-- <tr>
+                                            <td></td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-bop-fo">
+                        <p>Cantidad Total:</p><span id="total-sva">0</span>
+                      </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" id="btninfoSva">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Adiccion de SVA -->
+        <!-- Modal Activar -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-punto-activar">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SUCCESS </h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>No se activaron todos los servicios</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Activar -->
+        <!-- Modal exito guardar cambio de ONT -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-exito-c-ont">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mensaje</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>000 - Proceso ejecutado exitosamente</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal exito guardar cambio de ONT -->
+
+        <!-- Modal boleta -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-punto-exito-bole">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">SUCCESS </h5>
+                </div>
+                <div class="modal-body">
+                <p>Proceso ejecutado exitosamente</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal seleccionar ont -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-ont-ptwo">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">SUCCESS </h5>
+                </div>
+                <div class="modal-body">
+                <p>502 - Las ONT single deben ser aprovisionadas con un AP, se debe adicionar el (WIFI PLUS TIPO 1)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal seleccionar ont -->
+
+        <!-- Modal guardar boleta -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-punto-fail-bole">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Antes de continuar </h5>
+                        </div>
+                        <div class="modal-body">
+                <p>Debe guardar la boleta</p>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal guardar boleta -->
+        <!-- Modal no retorno -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-confirm">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">CONFIRMACIÓN</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>INSO041 - Señor Instalador, recuerde que este es el punto de NO RETORNO, por lo tanto, antes de continuar debe verificar en los equipos del cliente la operatividad de la totalidad de los servicios incluidos en la oferta. ¿Está seguro en continuar?</p>
+                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" id="btn-sexto-aprov">Si</button>
+                    <button type="button" class="btn btn-primary" id="btn-septimo-aprov" style="display: none;">Si</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal no retorno -->
+        <!-- Modal red -->
+        <div class="modal" tabindex="-1" id="modal-red">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">DATOS RED</h5>
+                    </div>
+                    <div class="modal-body">
+                            <label for="">Banda</label>
+                            <span>
+                                <select name="" id="">
+                                    <option value="">2.4 G</option>
+                                    <option value="">5.0 G</option>
+                                </select>
+                            </span>
+
+                            <label for="">Encriptación</label>
+                            <span><input type="text" name="" id=""></span>
+
+                            <label for="">Nombre</label>
+                            <span><input type="text" name="" id="" placeholder="Nuevo Nombre"></span>
+
+                            <label for="">Contraseña</label>
+                            <span><input type="text" name="" id="" placeholder="Nueva Contraseña"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ENVIAR</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal red -->
+        <!-- Modal contacto visita -->
+        <div class="modal fade modal-visita" tabindex="-1" id="modal-visita" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">CONTACTO VISITA                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Contacto Visita</h5>
+                        </div>
+                        <div class="body-items-inf">
+                            <label for="">Quien recibe la visita</label>
+                            <select name="" id="contacto">
+                                <option value="titular" selected>Titular</option>
+                                <option value="autorizado">Contacto autorizado</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <label for="">Tipo Documento</label>
+                            <select name="" id="tdd" disabled>
+                                <option value="CC">CC <option>
+                                <option value="TI">TI</option>
+                            </select>
+                            <label for="">Número Documento</label>
+                            <input type="number" name="" id="docu" value="52005880" disabled>
+                            <label for="">Nombres</label>
+                            <input type="text" name="" id="nombre-u" value="ANA CARMENA" disabled>
+                            <label for="">Apellidos</label>
+                            <input type="text" name="" id="apellido-u" value="MORENO BURAGO" disabled>
+                            <label for="">Celular</label>
+                            <input type="number" name="" id="cel" value="3133318143" minlength="10" maxlength="10" disabled>
+                            <label for="" id="label-sms" class="disabled">Código SMS</label>
+                            <input type="text" name="" id="inpt-sms" class="disabled">
+                            <input type="button" value="ENVIAR SMS" class="btn-contac" id="verifi-co">
+                            <input type="button" value="CONFIRMAR CELULAR" class="btn-contac" style="display: none;" id="verifi-sms">
+                            <input type="button" value="ACTUALIZAR DATOS" class="btn-contac" style="display: none;" id="actualizar-da">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal contacto visita -->
+        <!-- Modal error numero -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-error-cel">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ERROR</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Número ingresado no válido, Debe iniciar con 3 y contar con 10 dígitos e ingresar todo el formulario</p>
+                        </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary" id="btn-con-s">Si</button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal error numero -->
+        <!-- sms exitoso -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-sms-corr">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INFORMACIÓN</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Mensaje de texto enviado exitosamente</p>
+                        </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary" id="btn-con-s">Si</button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sms exitoso -->
+        <!-- SMS CORRECTO -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-co-corr">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INFORMACIÓN</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>El código es correcto</p>
+                        </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary" id="btn-con-s">Si</button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SMS CORRECTO -->
+        <!-- SMS INCORRECTO -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-co-erro">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INFORMACIÓN</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>El código es incorrecto</p>
+                        </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary" id="btn-con-s">Si</button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SMS INCORRECTO -->
+
+
+
+
+
+
+        <!-- Modal Soporte Nivel 1 -->
+
+        <!-- Modal Soporte Nivel 1 -->
+    <!-- Modal -->
+    <script src="./bootstrap/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/pasos.js"></script>
+    <script src="./js/pasoTwo.js"></script>
+    <script src="./js/pasoSix.js"></script>
+    <!-- <script src="./package/dist/sweetalert2.all.min.js"></script> -->
+</body>
+</html>

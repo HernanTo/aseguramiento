@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Field Service</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="./assets/img/ETB.svg">
+
+</head>
+<body>
+    <div class="container-genre container-login">
+        <div class="con-info-audios">
+            <div class="con-img-au">
+                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+            </div>
+            <div class="info-audios">
+                <p>Nota: Hacer touch sobre estos iconos para más información</p>
+            </div>
+        </div>
+        <div class="header-login">
+            <div class="con-header-login">
+                <h3>Sign In</h3>
+                <h2>Oracle Field Service</h2>
+            </div>
+        </div>
+        <div class="con-body-login">
+            <form>
+                <label for="">Welcome to Etb</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <button  class="button" id="submitlogin" type="button">Sign In</button>
+                <div class="alert alert-dark" role="alert">
+                    User: escueladigital <br> Password: digital
+                  </div>
+            </form>
+            <div class="con-alert-login">
+                <img src="./assets/img/Group 8.svg" alt="parlante-audio-etb" class="img-audio" id="img-login-inicio" onclick="alertAudio('au-login-inicio', 'img-login-inicio')">
+                <div class="alert-info" id="alert-info">
+                    <p>Ingresar el usuario asignado y la contraseña correspondiente</p>
+                </div>
+            </div>
+            <audio id="au-login-inicio" controls class="audio" style="display: none">
+                <source type="audio/wav" src="./assets/audio/Login.m4a">
+            </audio>
+        </div>
+        <div class="footer">
+            <section><img src="../assets/img/login_logo.png" alt=""></section>
+            <section><img src="../assets/img/oracle_logo_r_light.svg" alt=""></section>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Password incorrecta -->
+    <div class="modal modal-susc" tabindex="-1" id="usuarioerroneo">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Incorrect Instance name</h5>
+                </div>
+                <div class="confirmacion">
+                    <br>
+                    <p>Username or Password</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Password incorrecta -->
+    <!-- modal loading -->
+    <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">PROCESANDO TU PETICIÓN</h5>
+            </div>
+            <div class="modal-body">
+                <div class="con-spiner">
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+                <div class="text-spiner"><p>Por favor no cierres la ventana</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- modal loading -->
+    <!-- Modal -->
+  <script src="./bootstrap/jquery.js"></script>
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

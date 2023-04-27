@@ -1,0 +1,239 @@
+.body-dash{
+    border: 1PX solid #73879C;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.header-dash{
+    border-bottom: 1px solid ;
+    display: flex;
+    color: #73879C;
+    font-weight: 400;
+    padding-left: 7px;
+    width: 100%;
+}
+.header-dash h2 span{
+    font-size: 19.5px;
+}
+.con-cards-portal{
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    width: 100%;
+    justify-items: center;
+}
+.card{
+    border: 2px solid #f26821;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    column-gap: 10px;
+    border-radius: 25px;
+    position: relative;
+    padding: 0px 20px;
+    font-size: 13px;
+    width: 100%;
+}
+.cabecera{
+    position: absolute;
+    background: white;
+    top: -13px;
+    left: 20px;
+    padding: 0px 10px;
+}
+.card .left{
+    color: #f26821;
+    font-weight: bold;
+}
+.cabecera{
+   font-size: 17px; 
+   color: #f26821;
+   font-weight: bold;
+}
+.con-table{
+    grid-column: 1/3;
+}
+.con-table table{
+    width: 100%;
+}
+tr{
+    border: 1px solid #73879C;
+}
+.con-table table .head-t{
+    background: #20A4CB;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+.footer-dash{
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    justify-content: center;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: 30px;
+}
+.footer-dash a{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #20A4CB;
+    color: white;
+}
+.footer-dash .ac{
+    background-color: #f26821;
+    color: white;
+}
+.con-bundle{
+    grid-column: 1/3;
+    display: grid ;
+    justify-content: center;
+}
+.bundle{
+    width: 253px;
+    height: 268px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+}
+.header-b{
+    height: 66px;
+    background: #f26821;
+    text-align: center;
+}
+.header-b p{
+    font-size: 26px;
+    color: white;
+}
+.header-b .f-h-b{
+    font-size: 19px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+.service{
+    border: 1px solid #20A4CB;
+}
+.service .header-serv{
+    background: #20A4CB;
+    color: white;
+    text-align: center;
+    height: 25px;
+}
+.list-s-l{
+    height: 150px;
+    overflow-y: scroll;
+}
+.list-s ul li{
+    color: #20A4CB;
+}
+li span{
+    color: #f26821;
+}
+.header-serv{
+    cursor: pointer;
+}
+.service-two{
+    background: white;
+    position: absolute;
+    z-index: 1;
+    margin-top: -151px;
+    width: 253px;
+    height: 150px;
+    transition: all 10 ms;
+}
+
+@media (min-width: 800px){
+    .con-cards-portal{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .card:nth-child(1){
+        grid-row: 1/4;
+        height: 400px;
+    }
+    .card:nth-child(2){
+        height: 120px;
+    }
+    .card:nth-child(3){
+        grid-column: 2/3;
+        height: 322px;
+    }
+    
+    .card:nth-child(5){
+        height: 170px;
+    }
+    .card:nth-child(6){
+        height: 110px;
+    }
+    
+ 
+}
+@media(min-width: 1200px){
+    .card{
+        max-width: none;
+    }
+    .con-cards-portal{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card:nth-child(4){
+        grid-row: 1/3;
+        grid-column: 3/4;
+        height: 110px;
+    }
+    .card:nth-child(5){
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .card:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin-top: -150px;
+    }
+    .card:nth-child(7){
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+}
+
+/* actividad select */
+.portal-comen{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: -30px;
+}
+.portal-comen label{
+    padding: 0 8px 0 0;
+}
+.portal-comen select{
+    width: 300px;
+} 
+
+
+@media (max-width: 800px){
+    .footer-dash{
+        display: block;
+        margin: 15px auto;
+        
+    }
+    .footer-dash a{
+        width: 100px;
+        margin-bottom: 12px;
+        padding: 5px;
+    }
+}

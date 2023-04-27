@@ -1,0 +1,610 @@
+/* Lista paso a paso */
+.sw-theme-arrows > ul.step-anchor {
+    
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    list-style: none;
+    overflow: hidden;
+    /*margin: -1px -1px 0 -1px -1px;*/;
+}
+
+.sw-theme-arrows > ul.step-anchor li+li:before {
+    padding: 0;
+}
+
+
+.sw-theme-arrows > ul.step-anchor > li > a, .sw-theme-arrows > ul.step-anchor > li > a:hover {
+    color: #bbb;
+    text-decoration: none;
+    padding: 10px 0 10px 35px;
+    position: relative;
+    display: block;
+    border: 0 !important;
+    border-radius: 0;
+    outline-style: none;
+    background: #f5f5f5;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #f5f5f5;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #ddd;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.sw-theme-arrows > ul.step-anchor > li:first-child > a {
+    padding-left: 10px;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:hover {
+    color: #bbb;
+    text-decoration: none;
+    outline-style: none;
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:hover:after {
+    border-left-color: #f5f5f5;
+}
+
+    .sw-theme-arrows > ul.step-anchor > li.clickable > a:hover {
+        color: #F26922 !important;
+        background: #F26922 !important;
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li.active > a {
+        border-color: #F26922 !important;
+        color: #fff !important;
+        background: #F26922 !important;
+    }
+
+        .sw-theme-arrows > ul.step-anchor > li.active > a:after {
+            border-left: 30px solid #F26922 !important;
+        }
+
+    .sw-theme-arrows > ul.step-anchor > li.done > a {
+        border-color: #46b8da !important;
+        color: #fff !important;
+        background: #46b8da !important;
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li.done > a:after {
+        border-left: 30px solid #46b8da;
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li.danger > a {
+        border-color: #46b8da !important;
+        color: #46b8da !important;
+        background: #fff !important;
+    }
+
+.sw-theme-arrows > ul.step-anchor > li.disabled > a, .sw-theme-arrows > ul.step-anchor > li.disabled > a:hover {
+    color: #eee !important;
+}
+
+/* Responsive CSS */
+@media (min-width: 1200px){
+    .step-anchor{
+        display: flex !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .sw-theme-arrows > ul.step-anchor {
+        border: 0;
+        background: #ddd !important;
+    }
+
+    .sw-theme-arrows > .nav-tabs > li {
+        float: none !important;
+        margin-bottom: 0;
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li > a, .sw-theme-arrows > ul.step-anchor > li > a:hover {
+        padding-left: 15px;
+        margin-right: 0;
+        margin-bottom: 1px;
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li > a:after, .sw-theme-arrows > ul.step-anchor > li > a:before {
+        display: none;
+    }
+}
+
+
+.sw-theme-arrows > ul.step-anchor > li.loading:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #1285B6;
+    border-right-color: #1285B6;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    z-index: 99;
+    -webkit-animation: ld 1s ease-in-out infinite;
+    animation: ld 1s ease-in-out infinite;
+}
+/* Lista paso a paso */
+/* Botones flotantes */
+.btn-flot{
+    width: 130px;
+    text-align: center;
+    display: grid;
+    padding: 10px;
+    position: fixed;
+    background: var(--orange-etb);
+    font-size: 18px;
+    color: white;
+    font-weight: 600px;
+    border-radius: 15px 15px 0px 0px;
+    top: calc(100vh - 37px);
+    cursor: pointer;
+}
+#flujo-btn{
+    left: 180px;
+}
+#acceso-btn{
+    left: 30px;
+}
+.btn-flot-b{
+    width: 140px;
+    border-radius: 20px;
+    text-align: right;
+    position: fixed;
+    padding: 10px 40px 10px 10px;
+    background: #1285B6;
+    cursor: pointer;
+    right: -15px;
+    color: white;
+}
+.con-venta-SVA{
+    top: 50vh;
+}
+.con-SN1{
+    top: 40vh;
+    text-align: center;
+    
+}
+/* Botones flotantes */
+
+/* Actions general */
+.actions-pasos-g{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    height: 30px;
+    margin-top: 20px;
+}
+.actions-pasos-g button{
+    /* width: 30px; */
+    color: white;
+    border: 0px;
+    border-style: none;
+    border-radius: 5px;
+    background: var(--orange-etb);
+}
+.actions-pasos-g button i{
+    color: white;
+}
+/* Actions general */
+
+.btn-avanzar{
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    background: var(--orange-etb);
+}
+.paso-no-actived{
+    display: none !important;
+}
+.semaforo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: brightness(1.75);
+}
+.semaforo-error{
+    background: #FF0000;
+}
+.semaforo-co{
+    background: #00BB28;
+}
+/* ============================== Paso 2 ================================================= */
+.serv-paso-dos{
+    display: grid;
+    grid-template-columns: 30% 50% 10%;
+    row-gap: 10px;
+    margin-bottom: 50px;
+}
+.serv-paso-dos label{
+    grid-column: 1/2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+}
+.serv-paso-dos img{
+    margin-left: 10px;
+}
+.serv-paso-dos label{
+    color: var(--orange-etb);
+    font-weight: 400;
+}
+.child-serv-s{
+    grid-column: 2/3;
+}
+.serv-paso-dos select{
+    width: 100%;
+}
+.con-funtions-serv-dos{
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 40px 55px;
+    grid-template-rows: 35px;
+    column-gap: 7px;
+}
+.con-funtions-serv-dos button{
+    background: #00BC9D;
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    /* height: 100%;
+    width: 100%; */
+}
+.con-funtions-serv-dos button i{
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+@media (min-width: 1200px){
+    .serv-paso-dos{
+        display: grid;
+        grid-template-columns:  10% repeat(3,20%) repeat(2, 10%);
+        grid-auto-rows: 40px;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+    .serv-paso-dos select{
+        height: 100%;
+    }
+    .child-serv-s{
+        grid-column: auto;
+    }
+    .serv-paso-dos label{
+        text-align: right;
+        justify-content: end;
+
+    }
+    .con-funtions-serv-dos{
+        justify-content: center;
+    }
+    /* .serv-paso-dos img{
+        grid-column: 6/7;
+    } */
+}
+/* modal sva */
+#modal-sva .modal-dialog{
+    justify-content: center;
+}
+#modal-sva .modal-content{
+    width: 400px;
+    height: 450px;
+}
+#modal-sva  .modal-footer, #info-modal-sva  .modal-footer, #modal-red .modal-footer, #modal-confirm .modal-footer{
+    display: flex;
+    justify-content: center ;
+    border: none;
+}
+#modal-sva .modal-footer button, #info-modal-sva .modal-footer button, #modal-red  .modal-footer button{
+    background: #f26821;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+#modal-sva .modal-header h5, #info-modal-sva .modal-header h5{
+    width: 100%;
+    text-align: center;
+    color: #1285B6;
+    font-weight: bold;
+}
+#modal-sva .modal-body{
+    display: grid;
+    grid-template-columns: 15px 15px 1fr 90px;
+    column-gap: 10px;
+    row-gap: 8px;
+    grid-auto-rows: 28px;
+    align-items: center;
+}
+#modal-sva .modal-body img{
+    width: 100%;
+    cursor: pointer;
+    animation-name: rotaralerta;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+#modal-sva .modal-body h5{
+    color: #f26821;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+#table-sva{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+#table-sva tr th{
+    height: 30px;
+}
+#table-sva tbody tr td{
+    height: 30px;
+}
+audio{
+    display: none;
+}
+.con-bop-fo{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    color: #73879C;
+    margin-top: 20px;
+}
+/* sVA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APROVISIONAMIENTO */
+.paso-dos-aprov .contenido-paso .serv-paso-dos{
+    justify-content: center;
+    grid-template-columns: 10% 40% 10%;
+}
+.croos-sva{
+    background: red;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.modal-visita .modal-dialog{
+    /* width: 600px !important; */
+    /* max-width: none !important; */
+    /* min-width: 100% !important; */
+}
+.modal-visita .modal-body{
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+.modal-visita .items-info{
+    margin: 0px;
+}
+.modal-visita .items-info .cabecera{
+    background: none;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padd */
+}
+.modal-visita .items-info .cabecera h5{
+    background: white;
+    padding: 0px 10px;
+}
+.modal-visita .items-info .body-items-inf{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    column-gap: 5%;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.modal-visita .items-info .body-items-inf label{
+    color: var(--orange-etb);
+    text-align: center;
+    font-weight: 600;
+}
+.modal-visita .items-info .body-items-inf .btn-contac{
+    border-radius: 10px;
+    border-style: none;
+    background: var(--orange-etb);
+    color: white;
+    font-weight: bold;
+}
+#btn-quinto-aprov{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.paso-quinto-aprov .contenido-paso .actions-pasos-g{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.paso-quinto-aprov .items-info .body-items-inf{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.paso-quinto-aprov .items-info .body-items-inf label{
+    color: var(--orange-etb);
+    font-weight: 600;
+}
+.paso-quinto-aprov .items-info .body-items-inf .con-table{
+    grid-column: 1/3;
+}
+#modal-red .modal-body{
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-items: center;
+}
+/* Temp */
+#agregar-in, .agregar-gene{
+    background: #1285B6;
+    padding: 5px;
+    border-radius: 7px;
+    display: grid;
+    height: 30px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+}
+#paso-6 h4{
+    color: #f26821;
+    font-size: 18px;
+}
+#paso-6 textarea{
+    width: 100%;
+    height: 70px;
+}
+.con-action-t-6{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+.con-action-t-6 button{
+    background: #20a4cb;
+    color: white;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+}
+.con-prox-act{
+    display: grid;
+    /* grid-template-columns: 130px 1fr; */
+    column-gap: 50px;
+}
+.con-prox-act select{
+    width: 100%;
+    padding: 0px;
+    appearance: auto;
+}
+/* Temp */
+.paso-octavo-aprov .contenido-paso{
+    justify-items: center;
+}
+.paso-octavo-aprov .contenido-paso .items-info{
+    max-width: 700px;
+}
+.paso-octavo-aprov .contenido-paso .items-info .body-items-inf{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    column-gap: 50px;
+}
+.paso-octavo-aprov .contenido-paso .items-info .body-items-inf label{
+    color: var(--orange-etb);
+    font-weight: 700;
+}
+.paso-octavo-aprov .contenido-paso .items-info .body-items-inf p{
+    text-align: left;
+    margin: 0px;
+}
+@media (min-width: 1200px) {
+    .paso-octavo-aprov .contenido-paso .items-info .body-items-inf{
+        grid-template-columns: 30% 70%;
+    }
+}
+/* APROVISIONAMIENTO */
