@@ -16,31 +16,32 @@ function alertAudio(idAudio, idimg, array, textE){
     if(!audioR){
         // alert('repro audio');
         idAudio.play();
-        // idAudio.currentTime = 0;
+        idAudio.currentTime = 0;
         idAudioRepro = idAudio;
         audioR = !audioR;
         cambioParlanteE(idimg)
-        idAudio.addEventListener('ended', event=>{
-            setInterval(() => {
-                $('#alert-flotante').removeClass("etb-flotant-active");
-            }, 2000);
-        })
+        // idAudio.addEventListener('ended', desaparecerHablador)
+        $(idAudio).one('ended', desaparecerHablador)
     }else{
         // alert('pausar audio')
         idAudioRepro.pause();
-        // idAudioRepro.currentTime = 0;
+        idAudioRepro.currentTime = 0;
         idAudioRepro = idAudio;
         idAudio.play()
         cambioParlanteE(idimg)
-        idAudio.addEventListener('ended', event=>{
-            setInterval(() => {
-                $('#alert-flotante').removeClass("etb-flotant-active");
-            }, 2000);
-        })
+        // idAudio.addEventListener('ended', desaparecerHablador)
+        $(idAudio).one('ended', desaparecerHablador)
+        console.log(idAudio)
     }
     console.log(array)
     console.log(textE)
     hablador(array, textE)
+
+function desaparecerHablador(e){
+    setInterval(() => {
+        $('#alert-flotante').removeClass("etb-flotant-active");
+    }, 2000);
+}
 }
 function cambioParlanteE(idimg){
     document.getElementById(idimg).src = "./assets/img/Group 11.svg";

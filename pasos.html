@@ -68,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="con-general-pasos">
-                    <div class="paso-uno" id="paso-uno">
+                    <div class="paso-uno paso-no-actived" id="paso-uno">
                         <div class="contenido-paso">
                             <div class="items-info">
                                 <div class="cabecera">
@@ -97,33 +97,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="paso-dos" id="paso-dos">
+                    <div class="paso-dos paso-no-actived" id="paso-dos">
                         <div class="contenido-paso">
                             <div class="serv-paso-dos">
                                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
                                 <label for="">ONT 1</label>
                                 <select name="" id="ont-instalada" disabled>
                                     <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
-                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
+                                    <option value="ZTEGC8FEAFD1" selected id="ont-opt">ZTEGC8FEAFD1</option>
                                 </select>
                                 <select name="" id="motivo-re-ont" class="child-serv-s">
                                     <option value="" selected disabled></option>
-                                    <option value="">RE01 - Fallo: Aparente falla eléctrica</option>
-                                    <option value="">RE02-Fallo: Aparente mala manipulación</option>
-                                    <option value="">RE02-Fallo: Aparente mala manipulación</option>
-                                    <option value="">RE03-Fallo: Revisión</option>
-                                    <option value="">RE04-Fallo: Degradación</option>
-                                    <option value="">RE08-Fallo: Daño por Cliente</option>
-                                    <option value="">RE07 -Fallo: Daño puerto Ethernet (Datos)</option>
-                                    <option value="">RE08 -Fallo: Daño puerto Ethernet (TV)</option>
-                                    <option value="">RE09-Fallo: Reposición por perdida del cliente</option>
-                                    <option value="">RE11 -Fallo: Daño no toma configuración</option>
-                                    <option value="">RE12-Fallo: Daño por conexión inalámbrica</option>
-                                    <option value="">RE13-Fallo: Daño por temperatura lector óptico</option>
-                                    <option value="">RE14-Fallo: Daño por temperatura</option>
-                                    <option value="">RE15-Fallo: Modernización</option>
+                                    <option value="RE01 - Fallo: Aparente falla eléctrica">RE01 - Fallo: Aparente falla eléctrica</option>
+                                    <option value="RE02-Fallo: Aparente mala manipulación">RE02-Fallo: Aparente mala manipulación</option>
+                                    <option value="RE02-Fallo: Aparente mala manipulación">RE02-Fallo: Aparente mala manipulación</option>
+                                    <option value="RE03-Fallo: Revisión">RE03-Fallo: Revisión</option>
+                                    <option value="RE04-Fallo: Degradación">RE04-Fallo: Degradación</option>
+                                    <option value="RE08-Fallo: Daño por Cliente">RE08-Fallo: Daño por Cliente</option>
+                                    <option value="RE07 -Fallo: Daño puerto Ethernet (Datos)">RE07 -Fallo: Daño puerto Ethernet (Datos)</option>
+                                    <option value="RE08 -Fallo: Daño puerto Ethernet (TV)">RE08 -Fallo: Daño puerto Ethernet (TV)</option>
+                                    <option value="RE09-Fallo: Reposición por perdida del cliente">RE09-Fallo: Reposición por perdida del cliente</option>
+                                    <option value="RE11 -Fallo: Daño no toma configuración">RE11 -Fallo: Daño no toma configuración</option>
+                                    <option value="RE12-Fallo: Daño por conexión inalámbrica">RE12-Fallo: Daño por conexión inalámbrica</option>
+                                    <option value="RE13-Fallo: Daño por temperatura lector óptico">RE13-Fallo: Daño por temperatura lector óptico</option>
+                                    <option value="RE14-Fallo: Daño por temperatura">RE14-Fallo: Daño por temperatura</option>
+                                    <option value="RE15-Fallo: Modernización">RE15-Fallo: Modernización</option>
                                 </select>
-                                <select name="" id="ont-cambiar" class="child-serv-s">
+                                <select name="" id="ont-cambiar" class="child-serv-s" disabled>
                                     <option value="" disabled selected>Seleccione un opción...</option>
                                     <option value="ZTEGC8FEAFD1-Remanufacturado">ZTEGC8FEAFD1-Remanufacturado</option>
                                     <option value="ALCLB2938591-Remanufacturado">ALCLB2938591-Remanufacturado</option>
@@ -133,7 +133,7 @@
                                 </select>
                                 <div class="con-funtions-serv-dos child-serv-s">
                                     <button id="save-ont"><i class="fa-regular fa-floppy-disk" style="margin-right: 0px;"></i></button>
-                                    <button><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
+                                    <button id="btn-modal-normalizar"><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
                                 </div>
                                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                 
@@ -216,10 +216,563 @@
                             </div>
                         </div>
                     </div>
+                    <div class="paso-tres paso-no-actived" id="paso-tres">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>ACCESO DE RED</h5>
+                                </div>
+                                <div class="body-items-inf" id="info-ont-insta">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>PONID: 1-1-2-1</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN : 22</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>objectName: BOCOZTC30001:1-1-2-1-6</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>OLTID: 10.240.77.4</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>elementBrand: ZTE</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>UbicacionRed : CHICO</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>OLT SHELF: BOCOZTC30001</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>NAP: N4C034_L6</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>NAP_Puerto : 1</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                        <p>ONT/DSL</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>Serial Equipo: <span id="serial-paso-3-ont-aseg"></span></p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>MacEquipo: D4B709C2881C</p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>INTERNET</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN: 3918</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                        <p>PLAN 100M/50M (MAS PRODUCTO)</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>VelocidadBajada : 200M</p>
+                                    </div>
+                                    <div class="row-item-info sub-row-i-i">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>VelocidadSubida: 100M</p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>LINEA TELEFONICA</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>IMPU: tel:+5718005864</p>
+                                    </div>
+                                    <div class="row-item-info">
+                                        <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                        <img src="./assets/img/file.svg" alt="arrow-right">
+                                        <p>CVLAN: 2441</p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-dos-aseg" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-confirmar-aseg" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="paso-cuatro paso-no-actived" id="paso-cuatro">
+                        <div class="contenido-paso">
+                            
+                            <div class="con-table">
+                                <table class="table-general" style="min-width: auto;">
+                                    <tr>
+                                        <th>Servicio</th>
+                                        <th style="width: 40%;"></th>
+                                        <th>Estado</th>
+                                    </tr>
+                                    <tbody id="servicios-paso-cuatro">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-tres" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-visita" class="btn-avanzar">SIGUIENTE >></button>
+                                <button id="btn-paso-quinto" class="btn-avanzar" style="display: none;">SIGUIENTE >></button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="paso-quinto paso-no-actived" id="paso-quinto">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>ACCESO DE RED</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">TecnologiaAcceso</label>
+                                    <label for="">FTTH</label>
+                                    <label for="">Estado Servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">Potencia</label>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>ONT/DSL</td>
+                                                    <td>elementBrand: ZTE <br> Serial: <span id="ont-paso-quinto"></span></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Señal</th>
+                                                <th>Estado Plataforma</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Potencia</td>
+                                                    <td>-18.418</td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>INTERNET</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">UsuarioPPPoE</label>
+                                    <p>SR-37020706</p>
+                                    <label for="">Estado del servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">VLAN</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>IP DINÁMICA</td>
+                                                    <td>-18.418</td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PLAN 300M /300M</td>
+                                                    <td>VelocidadBajada: 300M <br>
+                                                        VelocidadSubida: 300M    
+                                                    </td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NEGOCIO SEGURO</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="actions-pasos-g">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <audio id="au-info-dia" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
+                                <button><i class="fa-solid fa-arrows-rotate"></i></button>
+                                <button>Ping</button>
+                                <button id="btn-red"><i class="fa-solid fa-wifi" style="color: #ffffff;"></i></button>
+                            </div>
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>LÍNEA TELEFONICA</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">IMPU</label>
+                                    <label for="">tel +576018009444</label>
+                                    <label for="">Estado del servicio</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <label for="">ACS</label>
+                                    <div class="semaforo semaforo-co"></div>
+                                    <div class="con-table">
+                                        <table class="table-general">
+                                            <tr>
+                                                <th>Servicio</th>
+                                                <th>Atributos</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>TRANSFERENCIA DE LLAMADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LLAMADA EN ESPERA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IDENTIFICADOR DE LLAMADAS</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IDENTIFICADOR DE SEGUNDA LLAMADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONEXION SIN MARCAR</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONFERENCIA ENTRE TRES</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MARCACION ABREVIADA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LOCAL EXCLUSIVO +LDN Y LDI MOVIL</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NUMERO LINEA TELEFONICA</td>
+                                                    <td></td>
+                                                    <td><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con-dos-btn-retor">
+                                <button id="btn-paso-volver-cuatro" class="btn-avanzar"> << ANTERIOR</button>
+                                <button id="btn-punto-nor-6-aseg" class="btn-avanzar">SIGUIENTE >></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="paso-sexto paso-no-actived" id="paso-sexto">
+                        <div class="contenido-paso">
+                            <h3>Registrar Material <label for=""> <img src="./assets/img/Group 3.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6" onclick="alertAudio('au-register-material-p6', 'img-register-material-p6')" style="margin-left: 20px;"></label></h3>
+                            <audio id="au-register-material-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Registral material.m4a">
+                            </audio>
+                                <div class="con-table">
+                                    <table id="register-inventario" class="table-general">
+                                        <tr>
+                                        <th>Tipo Material</th>
+                                        <th>Material</th>
+                                        <th>Cantidad</th>
+                                        <th>Cantidad Asignada</th>
+                                        <th>Remover</th>
+                                        </tr>
+                                        <tbody id="tbody-material">
+                                        <tr id="fila-in-0">
+                                            <td><select name="" id="tipo-material-0">
+                                            <option value="noserial" selected>No serializado</option>
+                                            <option value="serial">Serializado</option>
+                                            </select></td>
+                                            <td>
+                                            <select name="" id="material-0">
+                                                <option value="Cable UTP CAT 6">CONECTOR MECANICO OPTICO ODN SC-APC 8°</option>
+                                                <option value="">CABLE FO DROP BAJA FRICCION 1 HILO</option>
+                                                <option value="">CABLE UTP CAT 6</option>
+                                                <option value="">TOMA DE PARED FO</option>
+                                                <option value="">DROP 1 HILO INDOOR/OUTDOOR</option>
+                                                <option value="">HERRAJE RETENCION FO AREA DROP 1 HILO</option>
+                                                <option value="">CAJA DISTRIBUCION DE FO PISO 4 SALIDAS</option>
+                                            </select>
+                                            </td>
+                                            <td>
+                                            <input type="number" name="" id="cantidad-0">
+                                            </td>
+                                            <td id="material-a-0">783</td>
+                                            <td><i class="fa-solid fa-xmark" id="borrar-in-0"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="con-codigos-rel">
+                                    <label for="">Código Resolución N 1</label>
+                                    <select name="" id="">
+                                       <option value="">a</option> 
+                                    </select>
+                                    <label for="">Código Resolución N 2</label>
+                                    <select name="" id="">
+                                        <option value="">b</option>
+                                    </select>
+                                    <label for="">Código Resolución N 3</label>
+                                    <select name="" id="">
+                                        <option value="">b</option>
+                                    </select>
+                                </div>
+                              <br>
+                              <button  id="agregar-in"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></button>
+                              <br>
+                              <h4>Observaciones <label for=""><img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6" onclick="alertAudio('au-obser-p6', 'img-obser-p6')" style="margin-left: 20px;"></label></h4>
+                              <audio id="au-obser-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Observaciones.m4a">
+                            </audio>
+                              <textarea name="" id="observ-materiales" cols="30" rows="10"></textarea>
+                              <div class="con-action-t-6">
+                                <button id="guardar-in-aseg">Guardar</button>
+                              </div>
+                              <br>
+                              <div id="inventario-reg">
+                                <h5>Inventario Registrado <label for=""><img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4" onclick="alertAudio('au-inv-pso4', 'img-inv-pso4')" style="margin-left: 20px;"></label></h5>
+                                <audio id="au-inv-pso4" controls class="audio" style="display: none;">
+                                  <source type="audio/wav" src="./assets/audio/Paso 6/Inventario.m4a">
+                              </audio>
+                                <div class="con-table">
+          
+                                      <table class="table-general">
+                                        <tr>
+                                          <th>Tipo Material</th>
+                                          <th>Nombre</th>
+                                          <th>Serial</th>
+                                          <th>Tipo</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Serializado</td>
+                                          <td id="nombretdontpssix-aseg">ONT/DSL</td>
+                                          <td id="serialtdontpssix-aseg"></td>
+                                          <td>ONT</td>
+                                        </tr>
+                                      </table>
+                                </div>
+                                <br>
+                              </div>
+                              <div class="con-prox-act">
+                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6" onclick="alertAudio('au-prox-act-p6', 'img-prox-act-p6')"></label>
+                               <audio id="au-prox-act-p6" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/Proxima actividad.m4a">
+                            </audio>
+                               <select name="" id="">
+                                <option value="">MDM-FIBRA-002325839-KR 28 46 72 AP 501-Instalación FTTH</option>
+                                <option value="">Almuerzo</option>
+                               </select>
+                              <br><br>
+                              <div class="con-un-btn-retor">
+                                <button id="btn-punto-nor-7-aseg">Siguiente >></button>
+                            </div>
+                            
+                                
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Semaforo</th>
+                                        <th>TipoCliente: Natural</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-co"></div></td>
+                                            <td>PQR nivel 1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-error"></div></td>
+                                            <td>PQR nivel 2</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="semaforo semaforo-co"></div></td>
+                                            <td>Agendamiento PQR Actual</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paso-septimo" id="paso-septimo">
+                        <div class="contenido-paso">
+                            <div class="con-contactos">
+                                <input type="button" value="" id="visita-name">
+                                <input type="button" value="Contactos">
+                                <input type="button" value="Otros">
+                                <input type="button" value="Escanear boleta digital">
+                            </div>
+                            <div class="proce-paso-siete deshide">
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Punto Cableado</h5>
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+
+                                    </div>
+                                </div>
+                                
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Mapa de Calor</h5>
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+                                        <input type="file" name="" id="file-mapa-calor"  accept=".pdf" >
+                                        <input type="button" value="Ver Archivo"  id="verMapa-calor" style="display: none;">
+                                    </div>
+                                </div>
+                                
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Espacio Habitables</h5>
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+                                        <div class="con-table">
+                                            <table class="table-general">
+                                                <tr>
+                                                    <th>Espacio</th>
+                                                    <th>Tipo Hab.</th>
+                                                    <th>Piso</th>
+                                                    <th>Cobertura banda 2.4</th>
+                                                    <th>Velocidad 2.4 (Mbs)</th>
+                                                    <th>Cobertura banda 5.0 (Mbs)</th>
+                                                    <th>Velocidad 5.0 (Mbs)</th>
+                                                    <th>Remover</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn-add-e"><i class="fa-solid fa-circle-plus" style="color: white;"></i></button>
+                                    </div>
+                                </div>
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Dispositivos adicionales (Sin punto cableado)</h5>
+                                    </div>
+                                    <div class="body-items-inf item-larg" id="info-ont-insta">
+                                        <div class="con-table">
+                                            <table class="table-general">
+                                                <tr>
+                                                    <th>¿Cuál?</th>
+                                                    <th>Tipo Contacto</th>
+                                                    <th>Banda de conexion</th>
+                                                    <th>Configuro</th>
+                                                    <th>Espacio</th>
+                                                    <th>Piso Ubicación</th>
+                                                    <th>Remover</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn-add-e"><i class="fa-solid fa-circle-plus" style="color: white;"></i></button>
+                                    </div>
+                                </div>
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Firma Cliente</h5>
+                                    </div>
+                                    <div class="body-items-inf con-fat-firm">
+                                        <div class="con-firmas">
+                                            <!-- <canvas id="firma-client" ></canvas> -->
+                                            <canvas id="paint-canvas" class="firma"></canvas>
+
+                                            <p>Firma Aquí</p>
+                                            <div class="con-action-fir">
+                                                <input type="button" value="Limpiar Firma" id="clear">
+                                                <input type="button" value="Guardar" class="btn-clas" id="save">
+                                            </div>
+                                        </div>
+                                        <p>Con su firma usted autoriza de manera libre y voluntaria a ETB el tratamiento de datos personales y reconoce que la información suministrada es cierta y no ha sido adulterada. Nuestra Politica de datos personales puede ser consultada en www.eitb.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="con-dos-btn-retor">
+                                    <button class="btn-boleta">Guardar Boleta digital</button>
+                                    <button id="btn-paso-tres-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                
 
 
 
@@ -238,7 +791,7 @@
                                 <label for="">ONT 1</label>
                                 <select name="" id="ont-instalada-aprov" disabled>
                                     <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
-                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
+                                    <option value="ZTEGC8FEAFD1" selected id="ont-insta-paso-two">ZTEGC8FEAFD1</option>
                                 </select>
                                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                             </div>
@@ -1158,6 +1711,24 @@
             </div>
         </div>
         <!-- Modal no retorno -->
+        <!-- Modal no retorno -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-confirm-aseg">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">CONFIRMACIÓN</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>IINS042 - Esta seguro de que desea completar esta orden, por favor validar el inventario antes de continuar, recuerde que se encuentra en un punto de no retorno.</p>
+                        </div>
+                <div class="modal-footer d-flex flex-row mb-2">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-primary" id="btn-septimo">SI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal no retorno -->
         <!-- Modal red -->
         <div class="modal" tabindex="-1" id="modal-red">
             <div class="modal-dialog modal-dialog-centered">
@@ -1307,11 +1878,130 @@
             </div>
         </div>
         <!-- SMS INCORRECTO -->
+        <!-- Modal Normalizar -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-normalizacion">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Normalización                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <p class="label-nor">Ingresar serial del equipo</p>
+                        <input type="text" name="" id="ont-norm-serial">
+                        <p class="label-nor">Ingresar mac del equipo</p>
+                        <input type="text" id="ont-norm-mac">
 
-
-
-
-
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btn-normalizar">ACEPTAR</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">CANCELAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Normalizar -->
+        <!-- Modal error Normalización -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-error-normal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Error</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ingrese todos los campos asignados</p>
+                        </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary" id="btn-con-s">Si</button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal error Normalización -->
+        <!-- Modal confirmacion Aseguramiento -->
+        <div class="modal fade modal-visita" tabindex="-1" id="modal-confirmar-aseg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">CONFIRMACIÓN ASEGURAMIENTO                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="con-table">
+                        <table class="table-general" style="min-width: auto;">
+                            <tr>
+                                <th>Tipo Equipo</th>
+                                <th>Serial Previo</th>
+                                <th>Serial Nuevo</th>
+                            </tr>
+                            <tr>
+                                <td>ONT</td>
+                                <td id="serial-actual"></td>
+                                <td id="serial-cambiar-con"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+                    <button type="button" class="btn btn-secondary" id="btn-paso-cuatro">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal confirmacion Aseguramiento -->
+        <!-- Modal punto de no retorno paso 5 -->
+        <div class="modal modal-success-sim fade" tabindex="-1" id="modal-punto-de-no-retorno-quin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INFORMACIÓN</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                        <p>Se encuentra realizando una validación del servicio con el cliente, por favor espere 5 minutos. La encuesta se envió al Número
+                            Celular: <span id="telefono-encuesta"></span>
+                        <br><br>
+                        0 Dia, 0 hora, 0 minutos, <span id="time-paso-quinto"></span> segundos
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal punto de no retorno paso 5 -->
+        <!-- Modal punto de no retorno paso 5 -->
+        <div class="modal modal-success-sim fade" tabindex="-1" id="modal-desbloqueado-orden" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INFORMACIÓN</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Se ha desbloqueado la Orden, por favor continue.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btn-paso-sexto">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal punto de no retorno paso 5 -->
+        <!-- Modal cantidad de caracteres -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-verif">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">CONFIRMACIÓN</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Por favor ingrese un caracter para continuar</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cerrar-verif">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- Modal cantidad de caracteres -->
 
         <!-- Modal Soporte Nivel 1 -->
 
@@ -1324,6 +2014,7 @@
     <script src="./js/pasos.js"></script>
     <script src="./js/pasoTwo.js"></script>
     <script src="./js/pasoSix.js"></script>
+    <script src="./js/firma.js"></script>
     <!-- <script src="./package/dist/sweetalert2.all.min.js"></script> -->
 </body>
 </html>

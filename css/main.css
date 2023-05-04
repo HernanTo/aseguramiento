@@ -664,3 +664,18 @@ a{
 .disabled{
   display: none;
 }
+.btn-add-e{
+  width: 30px;
+  height: 28px;
+  background: var(--blue-os-etb);
+  text-align: center;
+  padding: 0px;
+  border: 0px;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.btn-add-e i{
+  font-size: 14px;
+}

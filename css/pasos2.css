@@ -1,0 +1,30 @@
+.item-formato .item-option label{
+    margin-right: 10px;;
+}
+.item-formato .item-option{
+    width: 90%;
+}
+@media (max-width: 850px){
+    .firma-cli .firma img{
+        width: 90%;
+    }
+    .firma-cli{
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 900px){
+    .item-formato .item-option{
+        display: block;
+    }
+    .item-formato .item-option label{
+        float:  left;
+        display: block;
+    }
+    .item-formato .item-option span{
+        float: rigth;
+        display: block;
+    }
+}

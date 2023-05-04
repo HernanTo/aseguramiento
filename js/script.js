@@ -38,10 +38,100 @@ document.getElementById('btn-paso-tres').addEventListener('click', event=>{
             $('#modal-loading').modal('hide')
             $('#paso-dos').addClass("paso-no-actived");
             $('#paso-tres').removeClass('paso-no-actived');
+            document.getElementById('serial-paso-3-ont-aseg').appendChild(document.createTextNode(bd.ont.serial))
+            if(bd.ont.cambioOnt == true){
+                addInfoOntNueva();
+            }
+            confirmAseg();
+        });
+    }, 2000)    
+
+})
+// Paso 3 - 4
+document.getElementById('btn-paso-cuatro').addEventListener('click', event=>{
+    $( document ).ready(function() {
+        $('#modal-confirmar-aseg').modal('hide')
+        $('#modal-loading').modal('toggle')
+    });
+    setTimeout( function (){
+        $( document ).ready(function() {
+            $('#modal-loading').modal('hide')
+            $('#paso-tres').addClass("paso-no-actived");
+            $('#paso-cuatro').removeClass('paso-no-actived');
+            verificarServicio()
+        });
+    }, 2000)
+})
+// Paso 4 - 5
+document.getElementById('btn-paso-quinto').addEventListener('click', event=>{
+    $( document ).ready(function() {
+        $('#modal-confirmar-aseg').modal('hide')
+        $('#modal-loading').modal('toggle')
+    });
+    setTimeout( function (){
+        $( document ).ready(function() {
+            $('#modal-loading').modal('hide')
+            $('#paso-cuatro').addClass("paso-no-actived");
+            $('#paso-quinto').removeClass('paso-no-actived');
+            document.getElementById('ont-paso-quinto').appendChild(document.createTextNode(bd.ont.cambioOnt == true ? bd.ont.serialNuevo : bd.ont.serial));
+        }); 
+    }, 2000)
+})
+// Paso 5 - 6
+document.getElementById('btn-paso-sexto').addEventListener('click', event=>{
+    $( document ).ready(function() {
+        $('#modal-desbloqueado-orden').modal('hide')
+        $('#modal-loading').modal('toggle')
+    });
+    setTimeout( function (){
+        $( document ).ready(function() {
+            $('#modal-loading').modal('hide')
+            $('#paso-quinto').addClass("paso-no-actived");
+            $('#paso-sexto').removeClass('paso-no-actived');
+            window.scrollTo(0, 0);
+            document.getElementById('ont-paso-quinto').appendChild(document.createTextNode(bd.ont.cambioOnt == true ? bd.ont.serialNuevo : bd.ont.serial));
+
+            if(bd.ont.cambioOnt != true){
+                document.getElementById('inventario-reg').style.display = "none";
+            }else{
+                document.getElementById('serialtdontpssix-aseg').appendChild(document.createTextNode(bd.ont.serialNuevo));
+            }
+        }); 
+    }, 2000)
+})
+
+// Paso 6 - 7
+document.getElementById('btn-septimo').addEventListener('click', event=>{
+    $( document ).ready(function() {
+        $('#modal-confirm-aseg').modal('hide')
+        $('#modal-loading').modal('toggle')
+    });
+    setTimeout( function (){
+        $( document ).ready(function() {
+            $('#modal-loading').modal('hide')
+            $('#paso-sexto').addClass("paso-no-actived");
+            $('#paso-septimo').removeClass('paso-no-actived');
+            bd.personas.forEach(element => {
+                if(element.seleted == true){
+                    document.getElementById('visita-name').value = `${element.nombres} ${element.apellidos}`;
+                }
+            })
         });
     }, 2000)
 })
 
+document.getElementById('btn-paso-volver-dos-aseg').addEventListener('click', event=>{
+    $( document ).ready(function() {
+        $('#modal-loading').modal('toggle')
+    });
+    setTimeout( function (){
+        $( document ).ready(function() {
+            $('#modal-loading').modal('hide')
+            $('#paso-tres').addClass("paso-no-actived");
+            $('#paso-dos').removeClass('paso-no-actived');
+        });
+    }, 2000)
+})
 
 
 
