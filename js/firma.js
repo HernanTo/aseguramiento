@@ -1,81 +1,123 @@
-window.onload = function () {
+const canvas = document.getElementById('paint-canvas');
+const context = canvas.getContext('2d');
+let isDrawing = false;
+let x = 0;
+let y = 0;
+var offsetX;
+var offsetY;
 
-    // Definitions
-    var canvas = document.getElementById("paint-canvas");
-    var context = canvas.getContext("2d");
-    var boundings = canvas.getBoundingClientRect();
-  
-    // Specifications
-    var mouseX = 0;
-    var mouseY = 0;
-    context.strokeStyle = 'black'; // initial brush color
-    context.lineWidth = 1; // initial brush width
-    var isDrawing = false;
-  
-  
-    // Handle Colors
-    // var colors = document.getElementsByClassName('colors')[0];
-  
-    // colors.addEventListener('click', function(event) {
-    //   context.strokeStyle = event.target.value || 'black';
-    // });
-  
-    // // Handle Brushes
-    // var brushes = document.getElementsByClassName('brushes')[0];
-  
-    // brushes.addEventListener('click', function(event) {
-    //   context.lineWidth = event.target.value || 1;
-    // });
-  
-    // Mouse Down Event
-    canvas.addEventListener('mousedown', function(event) {
-      setMouseCoordinates(event);
-      isDrawing = true;
-  
-      // Start Drawing
-      context.beginPath();
-      context.moveTo(mouseX, mouseY);
-    });
-  
-    // Mouse Move Event
-    canvas.addEventListener('mousemove', function(event) {
-      setMouseCoordinates(event);
-  
-      if(isDrawing){
-        context.lineTo(mouseX, mouseY);
-        context.stroke();
-      }
-    });
-  
-    // Mouse Up Event
-    canvas.addEventListener('mouseup', function(event) {
-      setMouseCoordinates(event);
-      isDrawing = false;
-    });
-  
-    // Handle Mouse Coordinates
-    function setMouseCoordinates(event) {
-      mouseX = event.clientX - boundings.left;
-      mouseY = event.clientY - boundings.top;
+function startup() {
+  canvas.addEventListener('touchstart', handleStart);
+  canvas.addEventListener('touchend', handleEnd);
+  canvas.addEventListener('touchcancel', handleCancel);
+  canvas.addEventListener('touchmove', handleMove);
+  canvas.addEventListener('mousedown', (e) => {
+    x = e.offsetX;
+    y = e.offsetY;
+    isDrawing = true;
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (isDrawing) {
+      drawLine(context, x, y, e.offsetX, e.offsetY);
+      x = e.offsetX;
+      y = e.offsetY;
     }
-  
-    // Handle Clear Button
-    var clearButton = document.getElementById('clear');
-  
-    clearButton.addEventListener('click', function() {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-    });
-  
-    // Handle Save Button
-    var saveButton = document.getElementById('save');
-  
-    saveButton.addEventListener('click', function() {
-      var imageName = prompt('Please enter image name');
-      var canvasDataURL = canvas.toDataURL();
-      var a = document.createElement('a');
-      a.href = canvasDataURL;
-      a.download = imageName || 'drawing';
-      a.click();
-    });
-  };
-  
+  });
+
+  canvas.addEventListener('mouseup', (e) => {
+    if (isDrawing) {
+      drawLine(context, x, y, e.offsetX, e.offsetY);
+      x = 0;
+      y = 0;
+      isDrawing = false;
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", startup);
+
+const ongoingTouches = [];
+
+function handleStart(evt) {
+  evt.preventDefault();
+  const touches = evt.changedTouches;
+  offsetX = canvas.getBoundingClientRect().left;
+  offsetY = canvas.getBoundingClientRect().top;
+  for (let i = 0; i < touches.length; i++) {
+    ongoingTouches.push(copyTouch(touches[i]));
+  }
+}
+
+function handleMove(evt) {
+  evt.preventDefault();
+  const touches = evt.changedTouches;
+  for (let i = 0; i < touches.length; i++) {
+    const color = document.getElementById('selColor').value;
+    const idx = ongoingTouchIndexById(touches[i].identifier);
+    if (idx >= 0) {
+      context.beginPath();
+      context.moveTo(ongoingTouches[idx].clientX - offsetX, ongoingTouches[idx].clientY - offsetY);
+      context.lineTo(touches[i].clientX - offsetX, touches[i].clientY - offsetY);
+      context.lineWidth = document.getElementById('selWidth').value;
+      context.strokeStyle = color;
+      context.lineJoin = "round";
+      context.closePath();
+      context.stroke();
+      ongoingTouches.splice(idx, 1, copyTouch(touches[i]));  // swap in the new touch record
+    }
+  }
+}
+
+function handleEnd(evt) {
+  evt.preventDefault();
+  const touches = evt.changedTouches;
+  for (let i = 0; i < touches.length; i++) {
+    const color = document.getElementById('selColor').value;
+    let idx = ongoingTouchIndexById(touches[i].identifier);
+    if (idx >= 0) {
+      context.lineWidth = document.getElementById('selWidth').value;
+      context.fillStyle = color;
+      ongoingTouches.splice(idx, 1);  // remove it; we're done
+    }
+  }
+}
+
+function handleCancel(evt) {
+  evt.preventDefault();
+  const touches = evt.changedTouches;
+  for (let i = 0; i < touches.length; i++) {
+    let idx = ongoingTouchIndexById(touches[i].identifier);
+    ongoingTouches.splice(idx, 1);  // remove it; we're done
+  }
+}
+
+function copyTouch({ identifier, clientX, clientY }) {
+  return { identifier, clientX, clientY };
+}
+
+function ongoingTouchIndexById(idToFind) {
+  for (let i = 0; i < ongoingTouches.length; i++) {
+    const id = ongoingTouches[i].identifier;
+    if (id === idToFind) {
+      return i;
+    }
+  }
+  return -1;    // not found
+}
+
+function drawLine(context, x1, y1, x2, y2) {
+  context.beginPath();
+  context.strokeStyle = 'black';
+  context.lineWidth = 1;
+  context.lineJoin = "round";
+  context.moveTo(x1, y1);
+  context.lineTo(x2, y2);
+  context.closePath();
+  context.stroke();
+}
+
+function clearArea() {
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+}
