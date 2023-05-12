@@ -68,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="con-general-pasos">
-                    <div class="paso-uno paso-no-actived" id="paso-uno">
+                    <div class="paso-uno" id="paso-uno">
                         <div class="contenido-paso">
                             <div class="items-info">
                                 <div class="cabecera">
@@ -99,7 +99,7 @@
                     </div>
                     <div class="paso-dos paso-no-actived" id="paso-dos">
                         <div class="contenido-paso">
-                            <div class="serv-paso-dos">
+                            <div class="serv-paso-dos" id="serv-install-aseg">
                                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
                                 <label for="">ONT 1</label>
                                 <select name="" id="ont-instalada" disabled>
@@ -673,18 +673,20 @@
                         </div>
                     </div>
 
-                    <div class="paso-septimo" id="paso-septimo">
+                    <div class="paso-septimo paso-no-actived" id="paso-septimo">
                         <div class="contenido-paso">
                             <div class="con-contactos">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 20px;">
                                 <input type="button" value="" id="visita-name">
                                 <input type="button" value="Contactos">
                                 <input type="button" value="Otros">
                                 <input type="button" value="Escanear boleta digital">
                             </div>
-                            <div class="proce-paso-siete deshide">
+                            <div class="proce-paso-siete">
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Punto Cableado</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
 
@@ -694,6 +696,7 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Mapa de Calor</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <input type="file" name="" id="file-mapa-calor"  accept=".pdf" >
@@ -704,6 +707,7 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Espacio Habitables</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <div class="con-table">
@@ -726,6 +730,7 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Dispositivos adicionales (Sin punto cableado)</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     </div>
                                     <div class="body-items-inf item-larg" id="info-ont-insta">
                                         <div class="con-table">
@@ -747,6 +752,7 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Firma Cliente</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     </div>
                                     <div class="body-items-inf con-fat-firm">
                                         <div class="con-firmas">
@@ -764,10 +770,55 @@
                                 </div>
 
                                 <div class="con-dos-btn-retor">
-                                    <button class="btn-boleta">Guardar Boleta digital</button>
-                                    <button id="btn-paso-tres-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                                    <button class="btn-boleta" id="btn-boleta">Guardar Boleta digital
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </button>
+                                    <button id="btn-paso-octavo" class="btn-avanzar">SIGUIENTE >></button>
                                 </div>
 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paso-octavo ocho paso-no-actived" id="paso-octavo">
+                        <div class="contenido-paso">
+                            <div class="items-info">
+                                <div class="cabecera">
+                                    <h5>Resumen</h5>
+                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                </div>
+                                <div class="body-items-inf">
+                                    <label for="">Número de Orden</label>
+                                    <p>MDM-PQR-37926711</p>
+
+                                    <label for="">CUN</label>
+                                    <p>4347230000776558</p>
+
+                                    <label for="">Bundle Seleccionado</label>
+                                    <p>3PLAY 80M SILVER 1</p>
+
+                                    <label for="">Tecnología</label>
+                                    <p>FTTH</p>
+
+                                    <label for="">Valor del Servicio</label>
+                                    <p>$ 199,583.00</p>
+
+                                    <label for="">Nombre Oferta Anterior</label>
+                                    <p>3PLAY 60M SILVER 1</p>
+
+                                    <label for="">Precio Oferta Anterior</label>
+                                    <p>$188883</p>
+
+                                    <label for="">Fecha de Agendamiento</label>
+                                    <p><script>document.write(`${year}/${month}/${day}`)</script></p>
+
+                                    <label for="">Franja de Agendamiento</label>
+                                    <p>AM3-10:00 12:00</p>
+                                </div>
+                            </div>
+                            <div class="con-un-btn-retor">
+                                <!-- <button id="btn-paso-volver-uno" class="btn-avanzar"> << ANTERIOR</button> -->
+                                <button id="btn-paso-final" class="btn-avanzar">Finalizar</button>
                             </div>
                         </div>
                     </div>
@@ -1233,35 +1284,153 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="paso-septimo-aprov paso-no-actived" id="paso-septimo-aprov">
                         <div class="contenido-paso">
-                            
+                            <div class="con-contactos">
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 20px;">
+                                <input type="button" value="" id="visita-name-aprov">
+                                <input type="button" value="Contactos">
+                                <input type="button" value="Otros">
+                                <input type="button" value="Escanear boleta digital">
+                            </div>
+                            <div class="proce-paso-siete-aprov">
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Punto Cableado</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+
+                                    </div>
+                                </div>
+                                
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Mapa de Calor</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+                                        <input type="file" name="" id="file-mapa-calor"  accept=".pdf" >
+                                        <input type="button" value="Ver Archivo"  id="verMapa-calor" style="display: none;">
+                                    </div>
+                                </div>
+                                
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Espacio Habitables</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf" id="info-ont-insta">
+                                        <div class="con-table">
+                                            <table class="table-general">
+                                                <tr>
+                                                    <th>Espacio</th>
+                                                    <th>Tipo Hab.</th>
+                                                    <th>Piso</th>
+                                                    <th>Cobertura banda 2.4</th>
+                                                    <th>Velocidad 2.4 (Mbs)</th>
+                                                    <th>Cobertura banda 5.0 (Mbs)</th>
+                                                    <th>Velocidad 5.0 (Mbs)</th>
+                                                    <th>Remover</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn-add-e"><i class="fa-solid fa-circle-plus" style="color: white;"></i></button>
+                                    </div>
+                                </div>
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Dispositivos adicionales (Sin punto cableado)</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf item-larg" id="info-ont-insta">
+                                        <div class="con-table">
+                                            <table class="table-general">
+                                                <tr>
+                                                    <th>¿Cuál?</th>
+                                                    <th>Tipo Contacto</th>
+                                                    <th>Banda de conexion</th>
+                                                    <th>Configuro</th>
+                                                    <th>Espacio</th>
+                                                    <th>Piso Ubicación</th>
+                                                    <th>Remover</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn-add-e"><i class="fa-solid fa-circle-plus" style="color: white;"></i></button>
+                                    </div>
+                                </div>
+                                <div class="items-info">
+                                    <div class="cabecera">
+                                        <h5>Firma Cliente</h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf con-fat-firm">
+                                        <div class="con-firmas">
+                                            <!-- <canvas id="firma-client" ></canvas> -->
+                                            <canvas id="paint-canvas" class="firma"></canvas>
+
+                                            <p>Firma Aquí</p>
+                                            <div class="con-action-fir">
+                                                <input type="button" value="Limpiar Firma" id="clear">
+                                                <input type="button" value="Guardar" class="btn-clas" id="save">
+                                            </div>
+                                        </div>
+                                        <p>Con su firma usted autoriza de manera libre y voluntaria a ETB el tratamiento de datos personales y reconoce que la información suministrada es cierta y no ha sido adulterada. Nuestra Politica de datos personales puede ser consultada en www.etb.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="con-dos-btn-retor">
+                                    <button class="btn-boleta" id="btn-boleta-aprov">Guardar Boleta digital
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </button>
+                                    <button id="btn-paso-octavo-aprov" class="btn-avanzar">SIGUIENTE >></button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="paso-octavo-aprov paso-no-actived" id="paso-octavo-aprov">
+
+                    <div class="paso-octavo-aprov ocho paso-no-actived" id="paso-octavo-aprov">
                         <div class="contenido-paso">
                             <div class="items-info">
                                 <div class="cabecera">
+                                    <h5>Resumen</h5>
+                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                 </div>
                                 <div class="body-items-inf">
-                                    <label for="">Numero de Orden: </label>
+                                    <label for="">Número de Orden</label>
                                     <p>MDM-PQR-37926711</p>
+
                                     <label for="">CUN</label>
-                                    <p>4347210001220101</p>
+                                    <p>4347230000776558</p>
+
                                     <label for="">Bundle Seleccionado</label>
-                                    <p>DUO 100M HOG-VS</p>
-                                    <label for="">Tecnologia</label>
+                                    <p>3PLAY 80M SILVER 1</p>
+
+                                    <label for="">Tecnología</label>
                                     <p>FTTH</p>
+
                                     <label for="">Valor del Servicio</label>
-                                    <p>$149,900.00</p>
+                                    <p>$ 199,583.00</p>
+
+                                    <label for="">Nombre Oferta Anterior</label>
+                                    <p>3PLAY 60M SILVER 1</p>
+
+                                    <label for="">Precio Oferta Anterior</label>
+                                    <p>$188883</p>
+
                                     <label for="">Fecha de Agendamiento</label>
-                                    <p><script>document.write(`${month}/${day}/${year}`)</script></p> 
-                                    <label for="">Franja de Agendamento</label>
-                                    <p>PM 2</p>
+                                    <p><script>document.write(`${year}/${month}/${day}`)</script></p>
+
+                                    <label for="">Franja de Agendamiento</label>
+                                    <p>AM3-10:00 12:00</p>
                                 </div>
                             </div>
                             <div class="con-un-btn-retor">
-                                <button id="btn-fin-aprov">Finalizar</button>
+                                <!-- <button id="btn-paso-volver-uno" class="btn-avanzar"> << ANTERIOR</button> -->
+                                <button id="btn-fin-aprov" class="btn-avanzar">Finalizar</button>
                             </div>
                         </div>
                     </div>
@@ -1328,107 +1497,118 @@
                   <h1 class="modal-title fs-5 header-modal-flujo" id="staticBackdropLabel">Accesos <div><i class="fa-regular fa-hand-pointer" style="color: #ffffff;"></i> Click para cerrar</d></h1>
                 </div>
                 <div class="modal-body">
-                    <div class="con-items-acces">
-                        <br>
-                        <div class="con-tej">
-                            <p class="cabecera">ACCESO DE RED</p>
-                            <ul>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>PONID: 1-1-1-2</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>CVLAN: 69</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>OLTID: 10.241.196.145</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>objectName: BOTOAL738016:1-1-1-2-7</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>objectName: BOTOAL738016:1-1-1-2-7</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>elementBrand: ALCATEL</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>UbicacionRed: CENTRAL TOBERIN</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>OLT SHELF: BOTOAL738016</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>NAP: N1TO16_A1</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>NAP_Puerto: 4</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/CARPETA.png" alt="">
-                                    <p>SerialEquipo: ALCLB2BF4F8B</p>
-                                </li>
-                            </ul>
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>ACCESO DE RED</h5>
                         </div>
-                        <br>
-                        <div class="con-tej">
-                            <p class="cabecera">Internet</p>
-                            <ul>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>CVLAN: 648</p>
-                                </li>
-                                <li>
-                                  <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                  <img src="./assets/img/CARPETA.png" alt="">
-                                  <p>PLAN 300M/300M</p>
-                              </li>
-                                <li>
-                                  <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                  <img src="./assets/img/CARPETA.png" alt="">
-                                  <p>1 IP PUBLICA FIJA NEG</p>
-                              </li>
-                              
-                            </ul>
+                        <div class="body-items-inf" id="info-ont-insta">
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>PONID: 1-1-2-1</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>CVLAN : 22</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>objectName: BOCOZTC30001:1-1-2-1-6</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>OLTID: 10.240.77.4</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>elementBrand: ZTE</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>UbicacionRed : CHICO</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>OLT SHELF: BOCOZTC30001</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>NAP: N4C034_L6</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>NAP_Puerto : 1</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                <p>ONT/DSL</p>
+                            </div>
+                            <div class="row-item-info sub-row-i-i">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>Serial Equipo: <span id="serial-paso-3-ont-aseg"></span></p>
+                            </div>
+                            <div class="row-item-info sub-row-i-i">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>MacEquipo: D4B709C2881C</p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="con-tej">
-                            <p class="cabecera">Linea Telefonica</p>
-                            <ul>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>IMPU: tel:+576012778376</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/arrow-turn-down-right.svg" alt="">
-                                    <img src="./assets/img/file.svg" alt="">
-                                    <p>CVLAN: 45</p>
-                                </li>
-                            </ul>
+                    </div>
+
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>INTERNET</h5>
                         </div>
-                        <br>
+                        <div class="body-items-inf">
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>CVLAN: 3918</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/CARPETA.png" alt="arrow-right">
+                                <p>PLAN 100M/50M (MAS PRODUCTO)</p>
+                            </div>
+                            <div class="row-item-info sub-row-i-i">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>VelocidadBajada : 200M</p>
+                            </div>
+                            <div class="row-item-info sub-row-i-i">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>VelocidadSubida: 100M</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>LINEA TELEFONICA</h5>
+                        </div>
+                        <div class="body-items-inf">
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>IMPU: tel:+5718005864</p>
+                            </div>
+                            <div class="row-item-info">
+                                <img src="./assets/img/arrow-turn-down-right.svg" alt="arrow-right">
+                                <img src="./assets/img/file.svg" alt="arrow-right">
+                                <p>CVLAN: 2441</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
               </div>
@@ -1453,7 +1633,7 @@
         <div class="con-venta-SVA btn-flot-b" id="con-venta-SVA">
             Venta SVAs
         </div>
-        <div class="con-SN1 btn-flot-b" id="con-N1">
+        <div class="con-SN1 btn-flot-b" id="btn-soporte-eficiente">
             SN1
         </div>
         <!-- Modal venta SVA -->
@@ -1592,7 +1772,7 @@
                         </div>
                     </div>
                     <div class="con-bop-fo">
-                        <p>Cantidad Total:</p><span id="total-sva">0</span>
+                        <p>Valor Total:</p><span id="total-sva">0</span>
                       </div>
 
                 </div>
@@ -1639,6 +1819,24 @@
         </div>
         <!-- Modal exito guardar cambio de ONT -->
 
+        <!-- Modal firma -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-firma">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mensaje</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>INS046 - Firma almacenada correctamente.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal firma -->
+
         <!-- Modal boleta -->
         <div class="modal modal-success-sim" tabindex="-1" id="modal-punto-exito-bole">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -1682,8 +1880,8 @@
                         <h5 class="modal-title">Antes de continuar </h5>
                         </div>
                         <div class="modal-body">
-                <p>Debe guardar la boleta</p>
-                </div>
+                            <p>Debe guardar la boleta</p>
+                        </div>
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ACEPTAR</button>
@@ -2004,8 +2202,1084 @@
         <!-- Modal cantidad de caracteres -->
 
         <!-- Modal Soporte Nivel 1 -->
+        <div class="modal fade" tabindex="-1" id="modal-soporte" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SOPORTE EFICIENTE</h5>
+                    </div>
+                    <div class="modal-body" id="modal-body-soporte">
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-info')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    INFORMACIÓN</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf">
+                                <div class="contet" id="con-sopo-info">
+                                    <label for="">Teléfono</label>
+                                    <p>6017647268</p>
 
+                                    <label for="">Nombre Suscriptor</label>
+                                    <p id="nombre-ti"></p>
+
+                                    <label for="">Estado Cuenta facturación</label>
+                                    <p>Activo</p>
+
+                                    <label for="">Estado Cuenta Servicio</label>
+                                    <p>Activo</p>
+
+                                    <label for="" class="sub-info-so">INC Falla Masiva</label>
+                                    <p  class="sub-info-so">Dato no existente</p>
+
+                                    <label for="" class="sub-info-so">Fecha Creacion FM</label>
+                                    <p  class="sub-info-so">Dato no existente</p>
+
+                                    <label for="" class="sub-info-so">TES</label>
+                                    <p  class="sub-info-so">Dato no existente</p>
+
+                                    <label for="" class="sub-info-so">Cantidad INC Relacionados</label>
+                                    <p  class="sub-info-so">Dato no existente</p>
+
+                                    <label for="" class="sub-info-so">Grupo Asignado INC Falla Masiva</label>
+                                    <p  class="sub-info-so">Dato no existente</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-infro')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    INFRAESTRUCTURA ACCESO</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf item-larg">
+                                <div class="contet hide-body" id="con-sopo-infro">
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>EQUIPOS DE ACCESO</th>
+                                                <th>INVENTARIO</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Fabricante</td>
+                                                    <td>ZTE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hostname</td>
+                                                    <td>BOCUZTC60116G03</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>Central</td>
+                                                    <td>CENTRAL CUNI</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Puerto OLT</td>
+                                                    <td>PON PORTIO</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>NAP</td>
+                                                    <td>NICU31_G46:8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VLAN ACCESO</td>
+                                                    <td>84</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>VLAN INTERNET</td>
+                                                    <td>2838</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UV INTERNET</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>VLAN VOZ</td>
+                                                    <td>60</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VOIP IP</td>
+                                                    <td>IP 10.211.232.145</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>VLAN TV</td>
+                                                    <td>531</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>MODEM</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Marca</td>
+                                                    <td>ZTE</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Modelo</td>
+                                                    <td>ZTE-F680-1FXS</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>Serial</td>
+                                                    <td>ZTEGD0348FB8</td>
+                                                    <td class="dell-sem">ZTEGD0348FBB <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mac</td>
+                                                    <td>7426FFESE7EE</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>Versión Firmware</td>
+                                                    <td>V6.0.22</td>
+                                                    <td>1-1-2-1</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>SEÑAL</th>
+                                                <th>PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                               <tr class="row-bl">
+                                                <td>Estado Modem</td>
+                                                <td>UP</td>
+                                               </tr>
+
+                                               <tr>
+                                                <td>Potencia</td>
+                                                <td class="dell-sem">-22.220 <div class="semaforo semaforo-co"></div></td>
+                                               </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="items-actions-soporte">
+                                        <button style="background: red;" id="btn-consul-veci"><i class="fa-solid fa-triangle-exclamation" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00C2DF;" id="btn-consul-equipos">Imagen del Equipo</button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #FF5E00;" id="action-infra">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act" id="dropdrown-act-infr">
+                                            <label for="" onclick="modalExitoSoporte('RESET_MODEM', false, false)">Reset de Modem</label>
+                                            <label for="" onclick="modalExitoSoporte('REINICIO DE FABRICA', false, false)">Reinicio de Fábrica</label>
+                                            <label for="" onclick="modalExitoSoporte('REAPROVISIONAR_SERVICIOS', false, false)">Reaprovisionar Servicios</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-telefo')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    LINEA TELEFONICA</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf">
+                                <div class="contet hide-body" id="con-sopo-telefo">
+
+                                    <div class="con-cards-soporte">
+                                        <div class="cards-soporte">
+                                            <h2>Telefono</h2>
+                                            <p>576017647268</p>
+                                        </div>
+                                
+                                        <div class="cards-soporte">
+                                            <h2>ID servicios MMS</h2>
+                                            <p>SR-35728454</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>SUPLEMENTARIOS</th>
+                                                <th>PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>
+                                                        Coferencia entre Tres;
+
+                                                        Contestador Virtual;
+
+                                                        Identificador de Llamadas
+
+                                                        Idenificador de Segunda Llamada;
+
+                                                        Llamada en Espera;
+
+                                                        Marcación Abreviada
+
+                                                        Marcación Redial
+                                                    </td>
+                                                    <td class="dell-sem" style="min-width: 250px;">
+                                                        Código Secreto;
+
+                                                        Conferencia entre Tres;
+
+                                                        Contestador Virtual;
+
+                                                        Identificador de Llamadas;
+
+                                                        Identificador de Segunda Llamada;
+
+                                                        Llamada en Espera;
+
+                                                        Marcación Abreviada;
+
+                                                        Marcación Redial
+
+                                                        <div class="semaforo semaforo-error" id="semaforo-serv-secundarios"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transferencia de Llamada</td>
+                                                    <td class="dell-sem">Transferencia de Llamada <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ESTADOS</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMAS</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Estado No Tel</td>
+                                                    <td>Activo</td>
+                                                    <td class="dell-sem">Normal, Sin Bloqueos <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Numero Tel Programado en Modem</td>
+                                                    <td>+576017647268</td>
+                                                    <td class="dell-sem">+576017647268 <div class="semaforo semaforo-error" id="semaforo-tel-modem"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>Registro linea</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">Up <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="items-actions-soporte">
+                                        <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00A7CC;" id="btn-consul-infra">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext dropdrown-consulta-ge" id="dropdrown-act-consulta">
+                                            <label for="" id="btn-validar-serv">Validar Conectividad</label>
+                                            <label for="" id="btn-transferencia">TRANSFERENCIA INMEDIATA</label>
+                                        </div>
+                                        <button style="background: #FF5E00;" id="action-linea-t">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-linea-t">
+                                            <label for="" onclick="modalExitoSoporte(' Normalizar Servicios Suplementarios', false, true)" id="btn-norm-se-secun">Normalizar Servicios Suplementarios</label>
+                                            <label for="" class="label-disa">Normalizar CategorÃa Cliente</label>
+                                            <label for=""  onclick="modalExitoSoporte('NORMALIZAR_LINEA_SIP', false, false)" id="btn-norm-tel-modem">Normalizar No. Tel Configurado en Modem</label>
+                                            <label for=""  id="btn-reset-codigo">Reset CÃ³digo Secreto</label>
+                                            <label for="" class="label-disa">Normalizar la Linea Telefónica con bloqueo</label>
+                                            <label for="" onclick="modalExitoSoporte('REAPROVISIONAR_SERVICIOS_ACS', false, false)">Reaprovisionar Servicio - ACS</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-inter')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    INTERNET</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf">
+                                <div class="contet hide-body" id="con-sopo-inter">
+                                    <div class="con-cards-soporte">
+                                        <div class="cards-soporte">
+                                            <h2>Plan</h2>
+                                            <p>300M/300M</p>
+                                        </div>
+    
+                                        <div class="cards-soporte">
+                                            <h2>ID servicios MSS</h2>
+                                            <p>SR-21490464</p>
+                                        </div>
+    
+                                        <div class="cards-soporte">
+                                            <h2>Modelo ONT</h2>
+                                            <p>G-2425G-A</p>
+                                        </div>
+    
+                                        <div class="cards-soporte">
+                                            <h2>Fabricante ONT</h2>
+                                            <p>ALCATEL</p>
+                                        </div>
+    
+                                        <div class="cards-soporte">
+                                            <h2>Tipo Servicio</h2>
+                                            <p>Sin IP Fija</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ESTADOS</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMAS</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Velocidad Bajada</td>
+                                                    <td>300M</td>
+                                                    <td class="dell-sem">300M<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Velocidad Subida</td>
+                                                    <td>300M</td>
+                                                    <td class="dell-sem">300M<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>Sesión Activa ACS</td>
+                                                    <td>SR-21490464</td>
+                                                    <td class="dell-sem"><span id="sesionActiva">#NOTFOUNDBO#</span><div class="semaforo semaforo-error" id="semafaro-sesion"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Última conexión ACS</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">2023-04-02T16:26:10<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>VLAN Internet</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">Activo<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Usuario PPPOE ACS</td>
+                                                    <td>SR-21490464</td>
+                                                    <td class="dell-sem">SR-21490464<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>DHCP Estado</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">Activo<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>DHCP Lease Time</td>
+                                                    <td>dd:HH:mm:ss</td>
+                                                    <td class="dell-sem">01:00:00:00<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>DHCP Router IP</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">192.168.0.1<div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Estado Puerto 3</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">-<div class="semaforo semaforo-error"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>Estado Puerto 4</td>
+                                                    <td>-</td>
+                                                    <td class="dell-sem">-<div class="semaforo semaforo-error"></div></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>  
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>SERVICIOS ADICIONALES</th>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>  
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>PAQUETES IP</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMAS</th>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>  
+                                    </div>
+
+                                    <div class="items-actions-soporte">
+                                        <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00A7CC;" id="btn-consul-internet">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext dropdrown-consulta-ge" id="dropdrown-act-consulta-interne">
+                                            <label for="" id="btn-consul-ping">PING</label>
+                                            <label for="" id="btn-consul-ping_lan">PING LAN CLIENTE</label>
+                                            <label for="" id="btn-lan">LAN</label>
+                                            <label for="" id="btn-wan">WAN</label>
+                                            <label for="" id="btn-equipos-con">Equipos Conectados</label>
+                                            <label for="" id="change-name-wifi">WIFI (Red)</label>
+                                            <label for="" id="change-pass-wifi">WIFI (clave)</label>
+                                            <label for="" id="change-all-wifi">WIFI (Red y clave)</label>
+                                            <label for="" id="btn-alepo">ALEPO</label>
+                                            <label for="" id="btn-consulta-name-wifi">NOMBRE DE RED WIFI</label>
+                                            <label for="" id="btn-consulta-estado-wifi">ESTADO DE RED WIFI</label>
+                                        </div>
+                                        <button style="background: #FF5E00;" id="action-interne">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-internet">
+                                            <label for="" onclick="modalExitoSoporte('INT_NORMUSER', false, false)" id="btn-session-actived">Normalizar Usuario Navegación</label>
+                                            <label for="" onclick="modalExitoSoporte('Normalizar Velocidades', false, true)">Normalizar Velocidades</label>
+                                            <label for="" class="label-disa">Normalizar estado(Cliente)</label>
+                                            <label for="">CAMBIO SEGMENTO RED LAN DE ONT O MODEM</label>
+                                            <label for="" onclick="modalExitoSoporte('CAMBIO_ESTADO_REDWIFI', false, false)">CAMBIO ESTADO DE RED WIFI</label>
+                                            <label for="" class="label-disa">Apertura de puertos</label>
+                                            <label for="" onclick="modalExitoSoporte('INT_NORMUSER', false, false)">Reaprovisionar Servicio - ACS</label>
+                                            <label for="" class="label-disa">Reconfiguración Puerto 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-ajustes-wifi')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    Ajustes WIFI (ONT)</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf">
+                                <div class="contet hide-body" id="con-sopo-ajustes-wifi">
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ESTADOS</th>
+                                                <th>PLATAFORMAS</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Estado WIFI</td>
+                                                    <td class="dell-sem"><span id="estado-red"></span> <div class="semaforo" id="semaforo-estado"></div></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Canal</td>
+                                                    <td class="dell-sem">Automático <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>SSID Visible</td>
+                                                    <td class="dell-sem">Activo <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Potencia WIFI</td>
+                                                    <td class="dell-sem">100 <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>DHCP Estado</td>
+                                                    <td class="dell-sem">Activo <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>DHCP Lease Time (dd:HH:mm:ss)</td>
+                                                    <td class="dell-sem">01:00:00:00 <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr class="row-bl">
+                                                    <td>DHCP Router IP</td>
+                                                    <td class="dell-sem">192.168.0.1 <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>EQUIPOS CONECTADOS</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td class="dell-sem" id="con-cell-tab">
+                                                        <table class="table-general table-sopor">
+                                                            <tr>
+                                                                <th>HOSTNAME</th>
+                                                                <th>IpAddress</th>
+                                                                <th>MACaddress</th>
+                                                                <th>SerialAP</th>
+                                                            </tr>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Archer_CS</td>
+                                                                    <td class="dell-sem" style="color: var(--orange-etb);">192.168.0.3 <img src="./assets/img/laptop.svg" alt=""></td>
+                                                                    <td>84-d8-1b-1e-a3-33</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+    
+                                                        <div class="semaforo semaforo-co"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ESTADOS</th>
+                                                <th>PLATAFORMAS</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Protocolo WIFI</td>
+                                                    <td class="dell-sem">b,g,n <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Nombre Red WIFI</td>
+                                                    <td class="dell-sem"><span id="Nombre-red-ont-so"></span> <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+
+                                                <tr class="row-bl">
+                                                    <td>TKIPandAESEncryption</td>
+                                                    <td class="dell-sem"><span id="encrypt-table">Encriptación WIFI</span><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <!-- <div class="con-divisor-item">
+                                        <h3>Ajustes WIFI 5.0</h3>
+                                    </div> -->
+
+
+                                    <div class="items-actions-soporte">
+                                        <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00A7CC;" id="btn-consul-ont">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext dropdrown-act-fir" id="dropdrown-act-consulta-ont">
+                                            <label for="">PING</label>
+                                            <label for="">PING LAN CLIENTE</label>
+                                            <label for="">LAN</label>
+                                            <label for="">WAN</label>
+                                            <label for="">Equipos Conectados</label>
+                                            <label for="">WIFI (Red)</label>
+                                            <label for="">WIFI (clave)</label>
+                                            <label for="">WIFI (Red y clave)</label>
+                                            <label for="">ALEPO</label>
+                                            <label for="">NOMBRE DE RED WIFI</label>
+                                            <label for="">ESTADO DE RED WIFI</label>
+                                        </div>
+                                        <button style="background: #FF5E00;" id="action-ont">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-ont">
+                                            <label for="" id="change-name-ont">Cambiar Nombre</label>
+                                            <label for="" id="change-pass-ont">Cambiar Contraseña</label>
+                                            <label for="" id="change-all-ont">Cambiar Nombre y Contraseña</label>
+                                            <label for="" id="change-estado-wifi-ont">Cambiar Estado WIFI</label>
+                                            <label for="" class="label-disa">Cambiar Estado de Red Visible</label>
+                                            <label for="" class="label-disa">Normalizar Canal</label>
+                                            <label for="" class="label-disa">Normalizar Potencia</label>
+                                            <label for="" id="change-encryp-ont">Cambiar Tipo Encriptación</label>
+                                            <label for="" >Reaprovisionar Servicio - ACS</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items-info items-sopor">
+                            <div class="cabecera">
+                                <h5 onclick="itemInfoSoporte('con-sopo-tv')">
+                                    <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                    TELEVISIÓN</h5>
+                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                            </div>
+                            <div class="body-items-inf">
+                                <div class="contet hide-body" id="con-sopo-tv">
+                                    <div class="con-cards-soporte">
+                                        <div class="cards-soporte">
+                                            <h2>Subscriber ID</h2>
+                                            <p>531271</p>
+                                        </div>
+    
+                                        <div class="cards-soporte">
+                                            <h2>ID servicios MSS</h2>
+                                            <p>1-4T307W</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ESTADO</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Estado</td>
+                                                    <td>Activo</td>
+                                                    <td class="dell-sem"><span id="estado-tv">Suspendida</span><div class="semaforo semaforo-error" id="semaforo-estado-tv"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Plan</td>
+                                                    <td>PLAN BASICO</td>
+                                                    <td class="dell-sem">PLAN BASICO <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>ADICIONALES</th>
+                                                <th>INVENTARIO</th>
+                                                <th>PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>Canales</td>
+                                                    <td>PREMIUM HBO</td>
+                                                    <td class="dell-sem">PREMIUM HBO <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Servicios</td>
+                                                    <td>Grabador Virtual;<br>La TV de Ayer; <br>Pausa en Vivo </td>
+                                                    <td class="dell-sem">Grabador Virtual; <br> La TV de Ayer; <br> Pausa en Vivo <div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>STB</th>
+                                                <th>SERIAL</th>
+                                                <th>MAC <br> INVETARIO</th>
+                                                <th>MAC <br> PLATAFORMA</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr class="row-bl">
+                                                    <td>1- 4T309M; 1- 4T309Z</td>
+                                                    <td>6534**234212; 6534**234217</td>
+                                                    <td>OC565C0392E4; 0C565C0392E9</td>
+                                                    <td class="dell-sem"><br>0C565C0392E4;<br> OC565C0392E9<br><br><div class="semaforo semaforo-co"></div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="items-actions-soporte">
+                                        <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <button style="background: #00A7CC;" id="btn-consul-ont">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext dropdrown-act-fir" id="dropdrown-act-consulta-ont">
+                                            <label for="">PING</label>
+                                            <label for="">PING LAN CLIENTE</label>
+                                            <label for="">LAN</label>
+                                            <label for="">WAN</label>
+                                            <label for="">Equipos Conectados</label>
+                                            <label for="">WIFI (Red)</label>
+                                            <label for="">WIFI (clave)</label>
+                                            <label for="">WIFI (Red y clave)</label>
+                                            <label for="">ALEPO</label>
+                                            <label for="">NOMBRE DE RED WIFI</label>
+                                            <label for="">ESTADO DE RED WIFI</label>
+                                        </div>
+                                        <button style="background: #FF5E00;" id="action-tv">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-tv">
+                                            <label for="" id="btn-norm-subs-id">Normalizar Estado Subscriber ID</label>
+                                            <label for="" class="label-disa">Normalizar MAC DECO</label>
+                                            <label for="" class="label-disa">Normalizar Canales Adicionales</label>
+                                            <label for="" class="label-disa">Normalizar Servicios Adicionales</label>
+                                            <label for="" onclick="modalExitoSoporte('Reset Clave Control Parental', false, true);">Reset Clave Control Parental</label>
+                                            <label for="" class="label-disa">Normalizar Plan TV</label>
+                                            <label for="" onclick="modalExitoSoporte('Reaprovisionar Servicios-ACS', false, true);">Reaprovisionar Servicios-ACS</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="con-consulta" id="modal-consulta-vecinos">
+                            <div class="header-cons"> <h3>Estados de Equipos en la Tarjeta </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-vecino"></i></div>
+                            <div class="body-cons">
+                                <div class="con-filt">
+                                    <label for="">Mostrar</label>
+                                    <select name="" id="">
+                                         <option value="">10</option>
+                                         <option value="">50</option>
+                                         <option value="">100</option>
+                                         <option value="">500</option>
+                                    </select>
+                                    <label for="">Registros</label>
+                                    <label for="">Buscar:</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Semáforo</th>
+                                            <th>Estado</th>
+                                            <th>Potencia</th>
+                                            <th>Numero <br> Orden</th>
+                                            <th>Telefono</th>
+                                            <th>Marca <br> Equipo <br> ONT</th>
+                                            <th>Dirección Instalación</th>
+                                            <th>Pecho <br> A. ??</th>
+                                            <th>OLFID</th>
+                                            <th>PONID</th>
+                                            <th>ONUID</th>
+                                            <th>objectName</th>
+                                            <th>Propietario</th>
+                                            <th>NombreCliente</th>
+                                        </tr>
+                                        <tbody>
+                                           <tr class="row-bl">
+                                                <td><div class="semaforo semaforo-co"></div></td>
+                                                <td>Activo</td>
+                                                <td>-19.678</td>
+                                                <td></td>
+                                                <td>6014523019</td>
+                                                <td>ALCATEL</td>
+                                                <td>KR 738 5 05</td>
+                                                <td>2018/03/31</td>
+                                                <td>10.241.250.5</td>
+                                                <td>1-1-3-4</td>
+                                                <td>ALCLFA47F5C2</td>
+                                                <td>BOMUAL7360043- <br> 1-3-4-17</td>
+                                                <td></td>
+                                                <td>MIGUEL ABOON <br> ARDILA QUINCHE</td>
+                                           </tr>
+                                           <tr>
+                                                <td><div class="semaforo semaforo-co"></div></td>
+                                                <td>Activo</td>
+                                                <td>-18.186</td>
+                                                <td></td>
+                                                <td>6012736331</td>
+                                                <td>ALCATEL</td>
+                                                <td>KR 738 5 29</td>
+                                                <td>2018/11/22</td>
+                                                <td>10.241.250.5</td>
+                                                <td>1-1-3-4</td>
+                                                <td>ALCLFA47F5C2</td>
+                                                <td>BOMUAL736004:1 <br> 1-3-4-7</td>
+                                                <td></td>
+                                                <td>ADELA GARNICA <br> SILVA</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-equipos">
+                            <div class="header-cons"> <h3>Características del equipo </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-equipo"></i></div>
+                            <div class="body-cons">
+                                <img src="./assets/img/modemUno.png" alt="">
+                                <img src="./assets/img/modemDos.png" alt="">
+                                <img src="./assets/img/modemTres.png" alt="">
+                                <img src="./assets/img/modemCuatro.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-pqr">
+                            <div class="header-cons"> <h3>PQR </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="AbrirModalConsulta('modal-consulta-pqr')"></i></div>
+                            <div class="body-cons">
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Número</th>
+                                            <th>Estado</th>
+                                            <th>Fecha Creación</th>
+                                            <th>Sintoma</th>
+                                            <th>Causal</th>
+                                            <th>Motivo</th>
+                                            <th>CUN</th>
+                                            <th>Gestión</th>
+                                            <th>Solución</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>MDM-PQR 38675280</td>
+                                                <td>Enviado a Segundo Nivel</td>
+                                                <td>2023-05- 07T10:47:23.0750000Z</td>
+                                                <td>ONT NO ENCIENDE / FALLA</td>
+                                                <td>FALLA EN OPE</td>
+                                                <td>FALLA TÉCNICA</td>
+                                                <td>4347230001111374</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-sus">
+                            <div class="header-cons"> <h3>Suspensiones y Reconexiones </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="AbrirModalConsulta('modal-consulta-sus')"></i></div>
+                            <div class="body-cons">
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Fuente</th>
+                                            <th>Fecha Ejecucion (MES/DIA/AÑO)</th>
+                                            <th>Tramite</th>
+                                            <th>Numero Asociado </th>
+                                            <th>Estado del Tramite </th>
+                                            <th>Transaccion Id</th>
+                                            <th>Fecha Transaccion</th>
+                                        </tr>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="con-consulta" id="modal-consulta-tramites">
+                            <div class="header-cons"> <h3>Trámites </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="AbrirModalConsulta('modal-consulta-tramites')"></i></div>
+                            <div class="body-cons">
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Front</th>
+                                            <th>Fecha Ejecucion (MES/DIA/AÑO)</th>
+                                            <th>CUN</th>
+                                            <th>Número Conexión</th>
+                                            <th>Tipo Orden  </th>
+                                            <th>SubTipo Orden</th>
+                                            <th>Estado Orden</th>
+                                            <th>Reincidente</th>
+                                        </tr>
+                                        <tbody>
+                                            <td>1-DPORDKD</td>
+                                            <td>2020-05-27 05:29:00</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>VTA</td>
+                                            <td></td>
+                                            <td>Validación Cobertura</td>
+                                            <td>No</td>
+                                            <!-- <td></td> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-promos">
+                            <div class="header-cons"> <h3>Promociones </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="AbrirModalConsulta('modal-consulta-promos')"></i></div>
+                            <div class="body-cons">
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Descripción</th>
+                                            <th>Vigencia</th>
+                                            <th>Fecha Asignación</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-pagos">
+                            <div class="header-cons"> <h3>Pagos </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="AbrirModalConsulta('modal-consulta-promos')"></i></div>
+                            <div class="body-cons">
+                                <div class="con-table">
+                                    <table class="table-general table-sopor">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Descripción</th>
+                                            <th>Vigencia</th>
+                                            <th>Fecha Asignación</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="con-consulta" id="modal-consulta-log">
+                            <div class="header-cons"> <h3>LOG del sistema </h3> <i class="fa-solid fa-xmark btns-close-sopo" id="close-caracte-pqr" onclick="modalLog('modal-consulta-log')"></i></div>
+                            <div class="body-cons">
+                                <div class="items-info items-sopor">
+                                    <div class="cabecera">
+                                        <h5 onclick="itemInfoSoporte('con-sopo-log')">
+                                            <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                                            LOG del sistema </h5>
+                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    </div>
+                                    <div class="body-items-inf">
+                                        <div class="contet hide-body" id="con-sopo-log">
+                                            <div class="con-table">
+                                                <table class="table-general table-sopor">
+                                                    <tr>
+                                                        <th>Fecha Inicio</th>
+                                                        <th>Fecha Fin</th>
+                                                        <th>Comando</th>
+                                                        <th>Descripcion</th>
+                                                        <th>Tipo Comando</th>
+                                                        <th>Respuesta</th>
+                                                    </tr>
+
+                                                    <tbody id="tbody-log">
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cerrar-modal-so">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-soporte" id="sidebar-soporte">
+            <div class="item-sidebar-sop" onclick="AbrirModalConsulta('modal-consulta-pqr')">
+                <p class="text-item-sideb-so">PQR</p>
+                <img src="./assets/img/megafono.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+            <div class="item-sidebar-sop" onclick="AbrirModalConsulta('modal-consulta-sus')">
+                <p class="text-item-sideb-so">Suspensiones y Reconexiones</p>
+                <img src="./assets/img/lista.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+            <div class="item-sidebar-sop" onclick="AbrirModalConsulta('modal-consulta-tramites')">
+                <p class="text-item-sideb-so">Trámites</p>
+                <img src="./assets/img/grafico-histograma.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+            <div class="item-sidebar-sop" onclick="AbrirModalConsulta('modal-consulta-promos')">
+                <p class="text-item-sideb-so">Promociones</p>
+                <img src="./assets/img/base-de-datos.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+            <div class="item-sidebar-sop" onclick="AbrirModalConsulta('modal-consulta-pagos')">
+                <p class="text-item-sideb-so">Pagos</p>
+                <img src="./assets/img/estadisticas.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+            <div class="item-sidebar-sop" onclick="modalLog('modal-consulta-log')">
+                <p class="text-item-sideb-so">LOG del sistema</p>
+                <img src="./assets/img/business-time.svg" alt="" class="ico-element-sidebar-so">
+            </div>
+        </div>
         <!-- Modal Soporte Nivel 1 -->
+
+        <!-- Modal Reaprovisionamiento de servicios -->
+        <div class="modal fade modales-soporte" tabindex="-1" id="modal-reapro-serv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><span id="tittle-main-exit">ACC_BTN_</span><span id="titulo-alerta-corr"></span></h5>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Operación realizada exitosamente</h3>
+                        <br>
+                        <p id="contenido-alerta-cor"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Reaprovisionamiento de servicios -->
+
+        <!-- Modal Reaprovisionamiento de servicios -->
+        <div class="modal fade modales-soporte" tabindex="-1" id="modal-serv-ont-act" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Campos de entrada para <b id="tittle-ont-sop"></b></h5>
+                    </div>
+                    <div class="modal-body" id="con-modal-ont-sopo">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-ont-sopo btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Reaprovisionamiento de servicios -->
+
     <!-- Modal -->
     <script src="./bootstrap/jquery.js"></script>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
@@ -2015,6 +3289,7 @@
     <script src="./js/pasoTwo.js"></script>
     <script src="./js/pasoSix.js"></script>
     <script src="./js/firma.js"></script>
+    <script src="./js/soporteEficiente.js"></script>
     <!-- <script src="./package/dist/sweetalert2.all.min.js"></script> -->
 </body>
 </html>

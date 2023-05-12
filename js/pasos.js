@@ -259,10 +259,20 @@ function verificacionlenght(textarea){
         return false;
     }
 }
+function verificacionlenghtCondi(textarea, minimo, maximo){
+    if(textarea.value.length >= minimo && textarea.value != '' && textarea.value != ' ' && textarea.value.length < maximo){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
 document.getElementById('visita-name').addEventListener('click', event_=>{
     document.querySelector('.proce-paso-siete').style.display = "grid";
     $('.proce-paso-siete').addClass('deshide');
 })
+
 
 document.getElementById('file-mapa-calor').addEventListener('change', event =>{
     if(document.getElementById('file-mapa-calor').value != ''){
@@ -275,6 +285,34 @@ document.getElementById('verMapa-calor').addEventListener('click', event=>{
     // window.location.href = document.getElementById('file-mapa-calor').value;
 })
 
+// ** Soporte eficiente
+// $( document ).ready(function() {
+//     $('#modal-soporte').modal('toggle')
+// });
+// ** Soporte eficiente
+
+function addselect(array, select){
+    let iterable = 0;
+    array.forEach(element => {
+        let option = document.createElement('option')
+        option.value = element;
+        option.text = element;
+        select.appendChild(option);
+        $(select).attr('class', 'materiales-select');
+        iterable = iterable + 1;
+    });
+}
+document.getElementById('btn-soporte-eficiente').addEventListener('click', event =>{
+    $( document ).ready(function() {
+        $('#modal-soporte').modal('toggle')
+    });
+    document.getElementById('sidebar-soporte').style.display = "grid";
+})
+
+document.getElementById('btn-cerrar-modal-so').addEventListener('click', event =>{
+
+    document.getElementById('sidebar-soporte').style.display = "none";
+})
 
 
 
@@ -306,6 +344,9 @@ bd.personas.push(
         seleted: true,
     }
 )
+document.getElementById('visita-name').value = `${bd.personas[0].nombres} ${bd.personas[0].apellidos}`;
+document.getElementById('visita-name-aprov').value = `${bd.personas[0].nombres} ${bd.personas[0].apellidos}`;
+
 document.getElementById('contacto').addEventListener('change', event=>{
     if(document.getElementById('contacto').value == 'otro'){
         document.getElementById('tdd').disabled = false;
@@ -445,10 +486,34 @@ document.getElementById('save-ont').addEventListener('click', event=>{
     });
 })
 
+document.getElementById('visita-name-aprov').addEventListener('click', event_=>{
+    document.querySelector('.proce-paso-siete-aprov').style.display = "grid";
+    $('.proce-paso-siete').addClass('deshide');
+})
+
 // Temp
 bd.personas.forEach(element => {
     if(element.seleted == true){
-        document.getElementById('visita-name').value = `${element.nombres} ${element.apellidos}`;
+        $('#visita-name').empty();
+        if(tipoOrden == 'APROV'){
+            document.getElementById('visita-name-aprov').value = `${element.nombres} ${element.apellidos}`;
+            
+        }else{
+            document.getElementById('visita-name-aprov').value = `${element.nombres} ${element.apellidos}`;
+
+        }
     }
 })
 // Temp
+
+let estadoBoleta = false;
+document.getElementById('btn-boleta').addEventListener('click', event=>{
+  $('#modal-punto-exito-bole').modal('toggle');
+  estadoBoleta = true;
+})
+let estadoBoletaAprov = false;
+document.getElementById('btn-boleta-aprov').addEventListener('click', event=>{
+  $('#modal-punto-exito-bole').modal('toggle');
+  estadoBoletaAprov = true;
+})
+

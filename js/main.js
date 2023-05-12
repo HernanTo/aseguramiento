@@ -1,5 +1,4 @@
 let idAudioRepro = 0;
-let estadoAudio = false;
 let audios = [
     ['ola', 'Pero que es la vida sin escesos mi bro'],
     ['ola', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium quod']
@@ -76,3 +75,4 @@ function habladorText(text){
     document.getElementById('wait-text').style.display = "none";
     document.getElementById('text-msg-hab').appendChild(document.createTextNode(text))
 }
+

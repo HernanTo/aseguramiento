@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- !! Tablas -->
+    <div class="con-table">
+        <table class="table-general table-sopor">
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="dell-sem"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="dell-sem"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- !! Items soporte -->
+    <div class="items-info items-sopor">
+        <div class="cabecera">
+            <h5 onclick="itemInfoSoporte('con-sopo-inter')">
+                <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
+                LINEA TELEFONICA</h5>
+            <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+        </div>
+        <div class="body-items-inf">
+            <div class="contet" id="con-sopo-inter">
+
+                <div class="items-actions-soporte">
+                    <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
+                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                    <button style="background: #00A7CC;" id="btn-consul-internet">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                    <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-consulta">
+                        <label for="">PING</label>
+                        <label for="">PING LAN CLIENTE</label>
+                        <label for="">LAN</label>
+                        <label for="">WAN</label>
+                        <label for="">Equipos Conectados</label>
+                        <label for="">WIFI (Red)</label>
+                        <label for="">WIFI (clave)</label>
+                        <label for="">WIFI (Red y clave)</label>
+                        <label for="">ALEPO</label>
+                        <label for="">NOMBRE DE RED WIFI</label>
+                        <label for="">ESTADO DE RED WIFI</label>
+                    </div>
+                    <button style="background: #FF5E00;" id="action-interne">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
+                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                    <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-internet">
+                        <label for="">Normalizar Usuario Navegación</label>
+                        <label for="" class="label-disa">Normalizar Velocidades</label>
+                        <label for="" class="label-disa">Normalizar estado(Cliente)</label>
+                        <label for="">CAMBIO SEGMENTO RED LAN DE ONT O MODEM</label>
+                        <label for="">CAMBIO ESTADO DE RED WIFI</label>
+                        <label for="">Apertura de puertos</label>
+                        <label for="">Reaprovisionar Servicio - ACS</label>
+                        <label for="" class="label-disa">Reconfiguración Puerto 3</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- !! Items dentro de un item -->
+    <div class="con-cards-soporte">
+        <div class="cards-soporte">
+            <h2>Subscriber ID</h2>
+            <p>531271</p>
+        </div>
+
+        <div class="cards-soporte">
+            <h2>ID servicios MSS</h2>
+            <p>1-4T307W</p>
+        </div>
+    </div>
+
+</body>
+</html>

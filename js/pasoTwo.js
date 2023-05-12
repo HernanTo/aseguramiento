@@ -8,6 +8,7 @@ document.getElementById('con-venta-SVA').addEventListener("click", event =>{
     $( document ).ready(function() {
         $('#modal-sva').modal('show')
     });
+    $('#con-new-sva').empty();
     // document.getElementById('c-VC').checked = false;
     // document.getElementById('can-VC').disabled = true;
     // document.getElementById('can-VC').selectedIndex = 0
@@ -323,6 +324,8 @@ document.getElementById('btninfoSva').addEventListener('click', event =>{
             $('#id-orden').empty()
             document.getElementById('id-orden').appendChild(document.createTextNode('MDM-FIBRA-000081569'))
             shopSva();
+            document.getElementById('con-venta-SVA').style.display = "none";
+            document.getElementById('btn-soporte-eficiente').style.display = "none";
         });
       }, "3000");
 })
@@ -344,6 +347,7 @@ function shopSva(){
         let crossIco = document.createElement('i');
         
         if(element.name == "c-WP"){
+            element.campo = "select-wp";
             label.appendChild(document.createTextNode('AP 1'));
             label.setAttribute("id", "label-wp");
             select.setAttribute("id", "select-wp");

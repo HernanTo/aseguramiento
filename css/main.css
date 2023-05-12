@@ -501,7 +501,7 @@ a{
     
   }
   .table-general tbody tr td{
-    height: 50px;
+    min-height: 50px;
     border: 2px solid var(--gray-etb);
     padding-left: 20px;
   }
@@ -549,6 +549,12 @@ a{
   left: 28px;
   background: white;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  column-gap: 10px;
+}
+.cabecera img{
+  margin-top: -10px;
 }
 .cabecera h5{
   color: #F26922;
@@ -629,4 +635,12 @@ a{
 }
 .btn-add-e i{
   font-size: 14px;
+}
+.item-larg{
+  padding-top: 80px;
+}
+@media (min-width: 720px){
+  .item-larg{
+      padding-top: 32px;
+  }
 }
