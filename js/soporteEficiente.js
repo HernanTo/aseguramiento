@@ -69,6 +69,7 @@ document.getElementById('close-vecino').addEventListener('click', event=>{
     $('#modal-consulta-vecinos').removeClass('deshide');
     document.getElementById("modal-body-soporte").style['overflow-y'] = "scroll";
     document.getElementById("modal-body-soporte").scrollTo(0,0)
+    ocultarHablador();
 })
 
 document.getElementById('btn-consul-equipos').addEventListener('click', event=>{
@@ -386,6 +387,7 @@ document.getElementById('btn-consul-ping_lan').addEventListener('click', event=>
     $('.btn-ont-sopo').addClass('btn-ping-search');
     let btn = document.querySelector('.btn-ping-search');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         $('#modal-serv-ont-act').modal('hide')
             modalExitoSoporte('ACC_BTN_CAMBIO_ESTADO_REDWIFI', true, true);
             document.getElementById('tittle-main-exit').appendChild(document.createTextNode('Consulta: '));
@@ -714,6 +716,7 @@ document.getElementById('change-name-ont').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-name');
     let btn = document.querySelector('.btn-change-name');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenght(document.getElementById('namessid'));
         if(canssid){
             $( document ).ready(function() {
@@ -751,6 +754,7 @@ document.getElementById('change-name-wifi').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-name');
     let btn = document.querySelector('.btn-change-name');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenght(document.getElementById('namessid'));
         if(canssid){
             $( document ).ready(function() {
@@ -792,6 +796,7 @@ document.getElementById('change-pass-ont').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-pass');
     let btn = document.querySelector('.btn-change-pass');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenghtCondi(document.getElementById('pass'), 8, 63);
         if(canssid){
             $( document ).ready(function() {
@@ -831,6 +836,7 @@ document.getElementById('change-pass-wifi').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-pass');
     let btn = document.querySelector('.btn-change-pass');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenghtCondi(document.getElementById('namessid'), 8, 63);
         if(canssid){
             $( document ).ready(function() {
@@ -877,6 +883,7 @@ document.getElementById('change-all-ont').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-name');
     let btn = document.querySelector('.btn-change-name');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenght(document.getElementById('namessid'));
         canpass = verificacionlenghtCondi(document.getElementById('passw'), 8, 63);
         if(canssid && canpass){
@@ -929,6 +936,7 @@ document.getElementById('change-all-wifi').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-name');
     let btn = document.querySelector('.btn-change-name');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenght(document.getElementById('namessid'));
         canpass = verificacionlenghtCondi(document.getElementById('passssid'), 8, 63);
         if(canssid && canpass){
@@ -1012,6 +1020,7 @@ document.getElementById('change-estado-wifi-ont').addEventListener('click', even
     $('.btn-ont-sopo').addClass('btn-change-estado-wifi');
     let btn = document.querySelector('.btn-change-estado-wifi');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
 
         $('#modal-serv-ont-act').modal('hide')
         modalExitoSoporte('Estado Red', true, true);
@@ -1055,6 +1064,7 @@ document.getElementById('change-encryp-ont').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-change-encrip');
     let btn = document.querySelector('.btn-change-encrip');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         canssid = verificacionlenghtCondi(document.getElementById('pass'), 8, 32);
         if(canssid){
             $( document ).ready(function() {
@@ -1094,6 +1104,7 @@ document.getElementById('btn-reset-codigo').addEventListener('click', event=>{
     $('.btn-ont-sopo').addClass('btn-code-change');
     let btn = document.querySelector('.btn-code-change');
     btn.addEventListener('click', event=> {
+        ocultarHablador();
         modalExitoSoporte('Reset Código Secreto', false, true)
         $('#modal-serv-ont-act').modal('hide')
     })
@@ -1129,6 +1140,7 @@ function AbrirModalConsulta(idModal){
         document.getElementById("modal-body-soporte").style['overflow-y'] = "scroll";
         document.getElementById("modal-body-soporte").scrollTo(0,0)
         sidebarSoporte.style.display = "grid";
+        ocultarHablador();
     }else{
         document.getElementById("modal-body-soporte").style['overflow-y'] = "hidden";
         $(`#${idModal}`).addClass('deshide');
@@ -1147,6 +1159,7 @@ function modalLog(idModal){
         $('#tbody-log').empty();
         $('#con-sopo-log').addClass('hide-body');
         
+        ocultarHablador();
     }else{
         document.getElementById("modal-body-soporte").style['overflow-y'] = "hidden";
         $(`#${idModal}`).addClass('deshide');

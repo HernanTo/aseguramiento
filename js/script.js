@@ -323,12 +323,12 @@ document.getElementById('btn-paso-volver-tres').addEventListener('click', event=
     }, 2000)
 })
 // Paso 5 - 6
-document.getElementById('btn-sexto-aprov').addEventListener('click', event=>{
+document.getElementById('btn-sexto-aprov-secuencia').addEventListener('click', event=>{
     window.scrollTo(0,0);
     document.getElementById('btn-sexto-aprov').style.display = "none";
     document.getElementById('btn-septimo-aprov').style.display = "block";
     $( document ).ready(function() {
-        $('#modal-confirm').modal('hide')
+        $('#modal-desbloqueado-orden-aprov').modal('hide')
     });
     $( document ).ready(function() {
         $('#modal-loading').modal('toggle')
@@ -362,6 +362,12 @@ document.getElementById('btn-septimo-aprov').addEventListener('click', event=>{
             $('#pasoli-6').removeClass('active')
             $('#pasoli-6').addClass('done')
             $('#pasoli-7').addClass('active')
+
+            bd.personas.forEach(element => {
+                if(element.seleted == true){
+                    document.getElementById('visita-name-aprov').value = `${element.nombres} ${element.apellidos}`;
+                }
+            })
         });
     }, 2000)
 })
@@ -416,46 +422,67 @@ document.getElementById('btn-fin-aprov').addEventListener('click', event =>{
     document.getElementById('con-venta-SVA').style.display = "none";
 
     // let label = document.createElement('label');
-    listSVAShop.forEach(element=>{
-        if(element.name = "c-WP"){
-            let label = document.createElement('label');
-            label.appendChild(document.createTextNode('AP 1'));
-            document.getElementById('serv-install-aseg').appendChild(label);
-            let select = document.createElement('select');
-            select.disabled = true;
-            document.getElementById('serv-install-aseg').appendChild(select);
-            let opt = document.createElement('option');
-            opt.value = element.value;
-            opt.text = element.value;
-            select.appendChild(opt);
-            select = document.createElement('select');
-            select.disabled = true;
-            document.getElementById('serv-install-aseg').appendChild(select);
-            select = document.createElement('select');
-            select.disabled = true;
-            document.getElementById('serv-install-aseg').appendChild(select);
+    // listSVAShop.forEach(element=>{
+    //     if(element.name = "c-WP"){
+    //         let label = document.createElement('label');
+    //         label.appendChild(document.createTextNode('AP 1'));
+    //         document.getElementById('serv-install-aseg').appendChild(label);
+    //         let select = document.createElement('select');
+    //         select.disabled = true;
+    //         document.getElementById('serv-install-aseg').appendChild(select);
+    //         let opt = document.createElement('option');
+    //         opt.value = element.value;
+    //         opt.text = element.value;
+    //         select.appendChild(opt);
+    //         select = document.createElement('select');
+    //         select.disabled = true;
+    //         document.getElementById('serv-install-aseg').appendChild(select);
+    //         select = document.createElement('select');
+    //         select.disabled = true;
+    //         document.getElementById('serv-install-aseg').appendChild(select);
 
-            let div = document.createElement('div');
-            $(div).addClass('con-funtions-serv-dos');
-            $(div).addClass('child-serv-s');
+    //         let div = document.createElement('div');
+    //         $(div).addClass('con-funtions-serv-dos');
+    //         $(div).addClass('child-serv-s');
 
-            let button = document.createElement('button');
-            $(button).addClass('save-ont');
-            let i = document.createElement('i');
-            $(i).addClass('fa-regular fa-floppy-disk');
-            button.appendChild(i);
-            div.appendChild(button);
-            button.addEventListener('click', event => {
-                $( document ).ready(function() {
-                    $('#modal-exito-c-ont').modal('toggle')
-                });
-            })
-            document.getElementById('serv-install-aseg').appendChild(div);
-            document.getElementById('flujo-btn').style.display = "grid";
-            document.getElementById('con-venta-SVA').style.display = "none";
-            document.getElementById('btn-soporte-eficiente').style.display = "grid";
-        }
+    //         let button = document.createElement('button');
+    //         $(button).addClass('save-ont');
+    //         let i = document.createElement('i');
+    //         $(i).addClass('fa-regular fa-floppy-disk');
+    //         button.appendChild(i);
+    //         div.appendChild(button);
+    //         button.addEventListener('click', event => {
+    //             $( document ).ready(function() {
+    //                 $('#modal-exito-c-ont').modal('toggle')
+    //             });
+    //         })
+    //         document.getElementById('serv-install-aseg').appendChild(div);
+    //         document.getElementById('flujo-btn').style.display = "grid";
+    //         document.getElementById('con-venta-SVA').style.display = "none";
+    //         document.getElementById('btn-soporte-eficiente').style.display = "grid";
+    //     }
         
+    // })
+
+    document.getElementById('contacto').disabled = false;
+    $('#verifi-co').css('display','block');
+    $('#verifi-co').prop('disabled', false);
+    $('#label-sms').css('display','none');
+    $('#actualizar-da').css('display','none');
+    $('#inpt-sms').css('display','none');
+    $('#inpt-sms').prop('disabled', false);
+    $('#inpt-sms').empty();
+    document.getElementById('contacto').selectedIndex = 0;
+    $('#verifi-sms').css('display','none');
+    $('#actualizar-dat').css('display','none');
+    $('#id-orden').empty()
+    document.getElementById('id-orden').appendChild(document.createTextNode('MDM-PQR-37926711'))
+
+    bd.personas.forEach(element => {
+        if(element.seleted == true){
+            element.seleted = false;
+        }
     })
+    bd.personas[0].seleted = true;
 
 })

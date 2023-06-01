@@ -98,17 +98,7 @@ document.getElementById('btn-ac-aprovi').addEventListener('click', event=>{
         $( document ).ready(function() {
             $('#modal-loading').modal('hide')
             let numrandom = Math.floor(Math.random() * (4 - 1) + 1);
-            switch(numrandom){
-                case 1:
-                    window.location.href = "./orden.html";
-                    break;
-                    case 2:
-                    window.location.href = "./orden2.html";
-                    break;
-                    case 3:
-                    window.location.href = "./tvbox/orden3.html";
-                    break;  
-            }
+            window.location.href = "./orden.html";
         });
       }, "4000");
 })

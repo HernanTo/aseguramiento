@@ -122,7 +122,7 @@ body{
     display: grid;
     justify-items: center;
     grid-template-columns: 100%;
-    grid-template-rows: 515px;
+    /* grid-template-rows: 515px; */
     display: none;
 }
 .con-in-dia{

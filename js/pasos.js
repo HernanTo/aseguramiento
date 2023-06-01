@@ -39,9 +39,9 @@ document.getElementById('con-venta-SVA').addEventListener('click', event=>{
         $('#modal-sva').modal('toggle')
     });
 })
-document.getElementById('motivo-re-ont').addEventListener('change', event =>{
-    if(document.getElementById('motivo-re-ont').value != ""){
-        document.getElementById('ont-cambiar').disabled = false;
+document.getElementById('ont-cambiar').addEventListener('change', event =>{
+    if(document.getElementById('ont-cambiar').value != ""){
+        document.getElementById('motivo-re-ont').disabled = false;
     }
 })
 document.getElementById('btn-modal-normalizar').addEventListener('click', event=>{
@@ -238,7 +238,9 @@ document.getElementById('btn-punto-nor-7-aseg').addEventListener('click', event=
             $('#modal-verif').modal('toggle')
         });
     }
-})
+})  
+
+
 document.getElementById('guardar-in-aseg').addEventListener('click', event=>{
     let verfiLenght = verificacionlenght(document.getElementById('observ-materiales'));
     if(verfiLenght){
@@ -302,6 +304,14 @@ function addselect(array, select){
         iterable = iterable + 1;
     });
 }
+function addselectNormal(array, select){
+    array.forEach(element => {
+        let option = document.createElement('option')
+        option.value = element;
+        option.text = element;
+        select.appendChild(option);
+    });
+}
 document.getElementById('btn-soporte-eficiente').addEventListener('click', event =>{
     $( document ).ready(function() {
         $('#modal-soporte').modal('toggle')
@@ -312,6 +322,9 @@ document.getElementById('btn-soporte-eficiente').addEventListener('click', event
 document.getElementById('btn-cerrar-modal-so').addEventListener('click', event =>{
 
     document.getElementById('sidebar-soporte').style.display = "none";
+})
+document.getElementById('btn-paso-final').addEventListener('click', event=>{
+    window.location.href = "./ordenesCom.html";  
 })
 
 
@@ -368,7 +381,6 @@ document.getElementById('verifi-co').addEventListener('click', event=>{
     let number = document.getElementById('cel').value;
     let veriRelleno = true;
     inputContacto.forEach(element =>{
-        console.log(document.getElementById(element).value);
         if(document.getElementById(element).value == '' || document.getElementById(element).value == ' ' || document.getElementById(element).value == '  '){
             veriRelleno = false;
         }
@@ -433,6 +445,7 @@ document.getElementById('actualizar-da').addEventListener('click', event=>{
                 if(tipoOrden == 'APROV'){
                     document.getElementById('btn-visita-aprov').style.display = 'none';
                     document.getElementById('btn-quinto-aprov').style.display = 'block';
+
                 }else{
                     document.getElementById('btn-visita').style.display = 'none';
                     document.getElementById('btn-paso-quinto').style.display = 'block';
@@ -440,7 +453,8 @@ document.getElementById('actualizar-da').addEventListener('click', event=>{
 
             });
         }, 2000)
-        if(document.getElementById('contacto').value == 'Otro'){
+
+        if(document.getElementById('contacto').value == 'otro'){
             bd.personas.push(
                 {
                     id: document.getElementById('docu').value,
@@ -448,7 +462,7 @@ document.getElementById('actualizar-da').addEventListener('click', event=>{
                     nombres:document.getElementById('nombre-u').value,
                     apellidos: document.getElementById('apellido-u').value,
                     telefono: document.getElementById('cel').value,
-                    tipo: document.getElementById('Otro').value,
+                    tipo: document.getElementById('contacto').value,
                     seleted: true,
                 }
             )
@@ -475,11 +489,6 @@ document.getElementById('btn-punto-nor-6').addEventListener('click', event=>{
         $('#modal-confirm').modal('toggle')
     });
 })
-document.getElementById('btn-punto-nor-7').addEventListener('click', event=>{
-    $( document ).ready(function() {
-        $('#modal-confirm').modal('toggle')
-    });
-})
 document.getElementById('save-ont').addEventListener('click', event=>{
     $( document ).ready(function() {
         $('#modal-exito-c-ont').modal('toggle')
@@ -488,7 +497,22 @@ document.getElementById('save-ont').addEventListener('click', event=>{
 
 document.getElementById('visita-name-aprov').addEventListener('click', event_=>{
     document.querySelector('.proce-paso-siete-aprov').style.display = "grid";
-    $('.proce-paso-siete').addClass('deshide');
+    $('.proce-paso-siete-aprov').addClass('deshide');
+})
+
+document.getElementById('btn-punto-nor-7-aseg-rial').addEventListener('click', event=>{
+    let verfiLenght = verificacionlenght(document.getElementById('obser-ase'));
+    if(verfiLenght){
+        $( document ).ready(function() {
+            document.getElementById('btn-sexto-aprov').style.display = "none";
+            document.getElementById('btn-septimo-aprov').style.display = "block";
+            $('#modal-confirm').modal('toggle')
+        });
+    }else{
+        $( document ).ready(function() {
+            $('#modal-verif').modal('toggle')
+        });
+    }
 })
 
 // Temp
@@ -516,4 +540,23 @@ document.getElementById('btn-boleta-aprov').addEventListener('click', event=>{
   $('#modal-punto-exito-bole').modal('toggle');
   estadoBoletaAprov = true;
 })
+document.getElementById('btn-sexto-aprov').addEventListener('click', event=>{
 
+    $('#modal-confirm').modal('hide')
+    $('#modal-punto-de-no-retorno-quin').modal('toggle')
+    temporizadoraprov(5);
+    document.getElementById('telefono-encuesta').appendChild(document.createTextNode(document.getElementById('cel').value))
+})
+function temporizadoraprov(time){
+    document.getElementById('time-paso-quinto').appendChild(document.createTextNode(time))
+    let tempo = setInterval(function(){
+        time = time - 1;
+        $('#time-paso-quinto').empty();
+        document.getElementById('time-paso-quinto').appendChild(document.createTextNode(time))
+        if(time == 0){
+            $('#modal-punto-de-no-retorno-quin').modal('hide')
+            $('#modal-desbloqueado-orden-aprov').modal('toggle')
+            clearInterval(tempo);
+        }
+    }, 1000)
+}

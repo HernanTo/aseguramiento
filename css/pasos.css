@@ -784,7 +784,7 @@ audio{
     width: 45px;
     justify-content: flex-end;
     /* padding: 5px; */
-    position: absolute;
+    position: fixed;
     right: auto;
     left: calc(100% - 45px);
     top: 30vh;
@@ -832,7 +832,7 @@ audio{
     color: white;
 }
 #modal-reapro-serv, #modal-serv-ont-act{
-    z-index: 9999999999;
+    z-index: 100000;
 }
 @media (min-width: 576px){
     .sidebar-soporte{
@@ -1005,7 +1005,9 @@ audio{
 }
 #btn-soporte-eficiente{
     display: none;
-
+}
+.recomendador{
+    width: 500px;    
 }
 
 
@@ -1162,6 +1164,26 @@ audio{
     padding: 0px;
     appearance: auto;
 }
+.dad-item-pc{
+    overflow-x: scroll;
+    display: grid;
+    row-gap: 20px;
+}
+.punto-cableado-aprov{
+    display: grid;  
+}
+.config-punt label{
+    color: var(--orange-etb);
+    font-weight: 600;
+}
+.config-punt span{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
+}
+.con-filtro-pc{
+    display: flex;
+    column-gap: 10px;
+}
 /* Temp */
 .paso-octavo-aprov .contenido-paso{
     justify-items: center;
@@ -1187,5 +1209,15 @@ audio{
     .paso-octavo-aprov .contenido-paso .items-info .body-items-inf{
         grid-template-columns: 30% 70%;
     }
+    .config-punt span{
+        display: grid;
+        grid-template-columns: 170px;
+    }
+    .config-punt{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 160px);
+        column-gap: 50px;
+    }
+
 }
 /* APROVISIONAMIENTO */

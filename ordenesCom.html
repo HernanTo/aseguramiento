@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Aseguramiento</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/solid.css">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pasos.css">
+    <link rel="shortcut icon" href="./assets/img/ETB.svg">
+
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+    </script>
+    <div class="container-genre container-pasos">
+        <div class="con-info-audios">
+            <div class="con-img-au">
+                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+            </div>
+            <div class="info-audios">
+                <p>Nota: Hacer touch sobre estos iconos para más información</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="volver-header"><img src="./assets/img/angle-left.svg" alt="volver-left"></div>
+            <div class="text-header">ETBQA_Tecnico1
+                <span><script>document.write(`${month}/${day}/${year}`)</script></span>
+            </div>
+            <div class="text-header-ac">Activar ruta de trabajo</div>
+            <img src="./assets/img/search.svg" alt="search">
+            <img src="./assets/img/comment-alt.svg" alt="msg">
+        </div>
+        <div class="container-struct">
+            <div class="breadcump">
+                <a href="./dashboard.html" class="item-bread">Home</a>
+                <a href="./dashboard.html" class="item-bread" style="color: rgba(55, 0, 255, 0.623); color: white;">Ordenes Agendadas</a>
+            </div>
+            <div class="con-main-pasos" style="padding: 20px;">
+                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 30px;">
+                <audio id="au-funciones-p1" controls class="audio" style="display: none;">
+                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                </audio>
+
+                <div class="con-table">
+                    <table class="table-general table-sopor">
+                        <tr>
+                            <th>Numero Orden</th>
+                            <th>Nombre Cliente</th>
+                            <th>Dirección Instalación</th>
+                            <th>Telefono</th>
+                            <th>Tipo Orden</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>IND</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Inicio de Día</td>
+                            </tr>
+                            <tr>
+                                <td>MDM-PQR-37926711</td>
+                                <td>ANA CARMEN MORENO BUIRAGO</td>
+                                <td>CL 165A 54 83 PI2</td>
+                                <td>3133318143</td>
+                                <td>ASEGURAMIENTO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Botones emergentes -->
+
+    <div class="alert-flotante" id="alert-flotante">
+        <div class="etb-flotant" id="etb-flotant">
+            <img src="./assets/img/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante" id="mensaje-parlante">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="./assets/img/cross-small.svg" alt="">
+        </div>
+    </div>
+    <!-- Botones emergentes -->
+
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <script src="./bootstrap/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/pasos.js"></script>
+    <script src="./js/pasoTwo.js"></script>
+    <script src="./js/pasoSix.js"></script>
+    <script src="./js/firma.js"></script>
+    <script src="./js/soporteEficiente.js"></script>
+    <script src="./js/pasoSeven.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="./package/dist/sweetalert2.all.min.js"></script> -->
+</body>
+</html>
