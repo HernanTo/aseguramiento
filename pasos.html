@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Aseguramiento</title>
+    <title>Simulador Aseguramiento</title>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/solid.css">
     <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <div class="container-genre container-pasos">
         <div class="con-info-audios">
             <div class="con-img-au">
-                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
             </div>
             <div class="info-audios">
                 <p>Nota: Hacer touch sobre estos iconos para más información</p>
@@ -59,7 +59,7 @@
                         <li class="nav-item" id="pasoli-7"><a class="nav-link">Paso 7<br><small>Boleta Digital</small></a></li>
                         <li class="nav-item" id="pasoli-8"><a class="nav-link">Paso 8<br><small>Resumen</small></a></li>
                         <li class="nav-item nav-item-alert"><a class="nav-link">
-                            <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="img-list-paso-a" onclick="alertAudio('au-list-paso-a', 'img-list-paso-a',0,0)" style="margin-left: 20px;">
+                            <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-list-paso-a" onclick="alertAudio('au-list-paso-a', 'img-list-paso-a',3,0)" style="margin-left: 20px;">
                             <audio id="au-list-paso-a" controls class="audio" style="display: none;">
                                 <source type="audio/wav" src="./assets/audio/pasoapaso.m4a">
                             </audio>
@@ -69,9 +69,17 @@
                 <div class="con-general-pasos">
                     <div class="paso-uno" id="paso-uno">
                         <div class="contenido-paso">
+                            <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-uno-g" onclick="alertAudio('au-paso-uno-g', 'img-paso-uno-g', 3, 3)" style="padding-bottom: 30px;">
+                            <audio id="au-paso-uno-g" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            </audio>
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>ACCESO DE RED</h5>
+                                    <img src="./assets/img/img-audios/etbDosA.svg" alt="parlante-audio-etb" class="img-audio" id="img-accred-paso-uno" onclick="alertAudio('au-accred-paso-uno', 'img-accred-paso-uno', 3, 1)">
+                                    <audio id="au-accred-paso-uno" controls class="audio" style="display: none;">
+                                        <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                    </audio>
                                 </div>
                                 <div class="body-items-inf">
                                     <div class="row-item-info">
@@ -82,8 +90,8 @@
                                 </div>
                             </div>
                             <div class="actions-pasos-g">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
-                                <audio id="au-info-dia" controls class="audio" style="display: none;">
+                                <img src="./assets/img/img-audios/etbTresN.svg" alt="parlante-audio-etb" class="img-audio" id="img-func-paso-uno" onclick="alertAudio('au-func-paso-uno', 'img-func-paso-uno', 3, 2)">
+                                <audio id="au-func-paso-uno" controls class="audio" style="display: none;">
                                     <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
                                 </audio>
                                 <button onclick="modalUbi()"><i class="fa-solid fa-location-dot"></i></button>
@@ -99,10 +107,16 @@
                     <div class="paso-dos paso-no-actived" id="paso-dos">
                         <div class="contenido-paso">
                             <div class="serv-paso-dos" id="serv-install-aseg">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-dos-g" onclick="alertAudio('au-paso-dos-g', 'img-paso-dos-g', 4, 0)">
+                                <audio id="au-paso-dos-g" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
                                 <label for="">ONT 1</label>
                                 <select name="" id="ont-instalada" disabled>
-                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_cambiar_ont" onclick="alertAudio('au_cambiar_ont', 'img_cambiar_ont', 4, 1)">
+                                    <audio id="au_cambiar_ont" controls class="audio" style="display: none;">
+                                        <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                    </audio>
                                     <option value="ZTEGC8FF383" selected id="ont-opt">ZTEGC8FF383</option>
                                 </select>
                                 <select name="" id="ont-cambiar" class="child-serv-s">
@@ -130,32 +144,12 @@
                                     <button id="save-ont"><i class="fa-regular fa-floppy-disk" style="margin-right: 0px;"></i></button>
                                     <button id="btn-modal-normalizar"><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
                                 </div>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbDosA.svg" alt="parlante-audio-etb" class="img-audio" id="img_cambiar_ont" onclick="alertAudio('au_cambiar_ont', 'img_cambiar_ont', 4, 1)">
                                 
+                                <audio id="au_cambiar_ont" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
                                 
-                                <label for="" style="display: none;">AP 1</label>
-                                <select name="" id="ont-instalada" disabled style="display: none;">
-                                    <option value="ZTEGC8FEAFD1" selected>ZTEGC8FEAFD1</option>
-                                </select>
-                                <select name="" id="motivo-re-ont" class="child-serv-s" style="display: none;">
-                                    <option value="">Motivo 1</option>
-                                    <option value="">Motivo 2</option>
-                                    <option value="">Motivo 3</option>
-                                </select>
-                                <select name="" id="ont-cambiar" class="child-serv-s" style="display: none;">
-                                    <option value="" disabled selected>Seleccione un opción...</option>
-                                    <option value="ZTEGC8FEAFD1-Remanufacturado">ZTEGC8FEAFD1-Remanufacturado</option>
-                                    <option value="ALCLB2938591-Remanufacturado">ALCLB2938591-Remanufacturado</option>
-                                    <option value="ALCLB3B42228 - Remanufacturado">ALCLB3B42228 - Remanufacturado</option>
-                                    <option value="ALCLB2F39810 - Remanufacturado">ALCLB2F39810 - Remanufacturado</option>
-                                    <option value="ALCLB2F39A01 - Remanufacturado">ALCLB2F39A01 - Remanufacturado</option>
-                                </select>
-                                
-                                <div class="con-funtions-serv-dos child-serv-s" style="display: none;">
-                                    <button><i class="fa-regular fa-floppy-disk" style="margin-right: 0px;"></i></button>
-                                    <button><i class="fa-solid fa-arrow-right-arrow-left"></i><</button>
-                                </div>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="display: none;">
                             </div>
                             <div class="con-table">
                                 <table class="table-general">
@@ -213,8 +207,8 @@
                     </div>
                     <div class="paso-tres paso-no-actived" id="paso-tres">
                         <div class="contenido-paso">
-                            <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 30px;">
-                            <audio id="au-funciones-p1" controls class="audio" style="display: none;">
+                            <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-tres-g" onclick="alertAudio('au-paso-tres-g', 'img-paso-tres-g', 7 , 0)" style="margin-bottom: 30px;">
+                            <audio id="au-paso-tres-g" controls class="audio" style="display: none;">
                                 <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
                             </audio>
 
@@ -341,9 +335,9 @@
                     
                     <div class="paso-cuatro paso-no-actived" id="paso-cuatro">
                         <div class="contenido-paso">
-                            <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 30px;">
-                            <audio id="au-funciones-p1" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-cuatro-g" onclick="alertAudio('au-paso-cuatro-g', 'img-paso-cuatro-g', 8, 0)" style="margin-bottom: 30px;">
+                            <audio id="au-paso-cuatro-g" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 4/au-paso-cuatro-g.wav">
                             </audio>
 
                             <div class="con-table">
@@ -369,6 +363,11 @@
 
                     <div class="paso-quinto paso-no-actived" id="paso-quinto">
                         <div class="contenido-paso">
+                            <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-cinco-g" onclick="alertAudio('au-paso-cinco-g', 'img-paso-cinco-g', 9, 0)" style="padding-bottom: 20px;">
+                            <audio id="au-paso-cinco-g" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            </audio>
+
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>ACCESO DE RED</h5>
@@ -454,8 +453,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="actions-pasos-g">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                            <div class="actions-pasos-g" style="margin-bottom: 30px;">
                                 <audio id="au-info-dia" controls class="audio" style="display: none;">
                                     <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
                                 </audio>
@@ -542,9 +540,9 @@
 
                     <div class="paso-sexto paso-no-actived" id="paso-sexto">
                         <div class="contenido-paso">
-                            <h3>Registrar Material <label for=""> <img src="./assets/img/Group 3.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6" onclick="alertAudio('au-register-material-p6', 'img-register-material-p6')" style="margin-left: 20px;"></label></h3>
-                            <audio id="au-register-material-p6" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 6/Registral material.m4a">
+                            <h3>Registrar Material <label for=""> <img src="./assets/img/img-audios/etbDosN.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6-aseg" onclick="alertAudio('au-register-material-p6-aseg', 'img-register-material-p6-aseg', 10, 0)" style="margin-left: 20px;"></label></h3>
+                            <audio id="au-register-material-p6-aseg" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/au-register-material-p6-aseg.wav">
                             </audio>
                                 <div class="con-table">
                                     <table id="register-inventario" class="table-general">
@@ -563,6 +561,11 @@
                               <button  id="agregar-in"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></button>
                               <br>
                               <div class="con-codigos-rel">
+                                <img src="./assets/img/img-audios/etbTresA.svg" alt="parlante-audio-etb" class="img-audio" id="img-codgigo-rel" onclick="alertAudio('au-codgigo-rel', 'img-codgigo-rel', 10, 1)">
+                                <audio id="au-codgigo-rel" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 6/au-codgigo-rel.wav">
+                                </audio>
+                                
                                 <label for="">Código Resolución N 1</label>
                                 <select name="codigosnone" id="codigosnone">
                                     <option selected hidden>Seleccione una opción</option>
@@ -585,9 +588,9 @@
                                 </select>
                             </div>
                               <br>
-                              <h4>Observaciones <label for=""><img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6" onclick="alertAudio('au-obser-p6', 'img-obser-p6')" style="margin-left: 20px;"></label></h4>
-                              <audio id="au-obser-p6" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 6/Observaciones.m4a">
+                              <h4>Observaciones <label for=""><img src="./assets/img/img-audios/etbCuatroN.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6-aseg" onclick="alertAudio('au-obser-p6-aseg', 'img-obser-p6-aseg', 10, 2)" style="margin-left: 20px;"></label></h4>
+                              <audio id="au-obser-p6-aseg" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/au-obser-p6-aseg.wav">
                             </audio>
                               <textarea name="" id="observ-materiales" cols="30" rows="10"></textarea>
                               <div class="con-action-t-6">
@@ -595,9 +598,9 @@
                               </div>
                               <br>
                               <div id="inventario-reg">
-                                <h5>Inventario Registrado <label for=""><img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4" onclick="alertAudio('au-inv-pso4', 'img-inv-pso4')" style="margin-left: 20px;"></label></h5>
-                                <audio id="au-inv-pso4" controls class="audio" style="display: none;">
-                                  <source type="audio/wav" src="./assets/audio/Paso 6/Inventario.m4a">
+                                <h5>Inventario Registrado <label for=""><img src="./assets/img/img-audios/etbCincoA.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4-aseg" onclick="alertAudio('au-inv-pso4-aseg', 'img-inv-pso4-aseg', 10, 3)" style="margin-left: 20px;"></label></h5>
+                                <audio id="au-inv-pso4-aseg" controls class="audio" style="display: none;">
+                                  <source type="audio/wav" src="./assets/audio/Paso 6/au-inv-pso4-aseg.wav">
                               </audio>
                                 <div class="con-table">
           
@@ -619,8 +622,8 @@
                                 <br>
                               </div>
                               <div class="con-prox-act">
-                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6" onclick="alertAudio('au-prox-act-p6', 'img-prox-act-p6')"></label>
-                               <audio id="au-prox-act-p6" controls class="audio" style="display: none;">
+                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/img-audios/etbSeisN.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6-aseg" onclick="alertAudio('au-prox-act-p6-aseg', 'img-prox-act-p6-aseg', 10, 4)"></label>
+                               <audio id="au-prox-act-p6-aseg" controls class="audio" style="display: none;">
                                 <source type="audio/wav" src="./assets/audio/Paso 6/Proxima actividad.m4a">
                             </audio>
                                <select name="" id="">
@@ -667,7 +670,10 @@
                     <div class="paso-septimo paso-no-actived" id="paso-septimo">
                         <div class="contenido-paso">
                             <div class="con-contactos">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 20px;">
+                                <img src="./assets/img/img-audios/etbDosN.svg" alt="parlante-audio-etb" class="img-audio" id="img-usuarios-psiete-aseg" onclick="alertAudio('au-usuarios-psiete-aseg', 'img-usuarios-psiete-aseg', 11, 0)" style="margin-bottom: 20px;">
+                                <audio id="au-usuarios-psiete-aseg" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 7/au-usuarios-psiete-aseg.wav">
+                                </audio>
                                 <input type="button" value="" id="visita-name">
                                 <input type="button" value="Contactos">
                                 <input type="button" value="Otros">
@@ -677,7 +683,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Punto Cableado</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <!-- <img src="./assets/img/img-audios/etbTresA.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"> -->
+                                        <!-- <audio id="au-funciones-p1" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio> -->
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
 
@@ -687,7 +696,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Mapa de Calor</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbCuatroN.svg" alt="parlante-audio-etb" class="img-audio" id="img-mapa-calor-aseg" onclick="alertAudio('au-mapa-calor-aseg', 'img-mapa-calor-aseg', 11, 1)">
+                                        <audio id="au-mapa-calor-aseg" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-mapa-calor-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <input type="file" name="" id="file-mapa-calor"  accept=".pdf" >
@@ -698,7 +710,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Espacio Habitables</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbCincoA.svg" alt="parlante-audio-etb" class="img-audio" id="img-espacio-ha-aseg" onclick="alertAudio('au-espacio-ha-aseg', 'img-espacio-ha-aseg', 11, 2)">
+                                        <audio id="au-espacio-ha-aseg" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-espacio-ha-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <div class="con-table">
@@ -722,7 +737,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Dispositivos adicionales (Sin punto cableado)</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbSeisN.svg" alt="parlante-audio-etb" class="img-audio" id="img-dis-adici-aseg" onclick="alertAudio('au-dis-adici-aseg', 'img-dis-adici-aseg', 11,3)">
+                                        <audio id="au-dis-adici-aseg" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-dis-adici-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf item-larg" id="info-ont-insta">
                                         <div class="con-table">
@@ -745,7 +763,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Firma Cliente</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbSieteA.svg" alt="parlante-audio-etb" class="img-audio" id="img-firma-cl-aseg" onclick="alertAudio('au-firma-cl-aseg', 'img-firma-cl-aseg', 11, 4)">
+                                        <audio id="au-firma-cl-aseg" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-firma-cl-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf con-fat-firm">
                                         <div class="con-firmas">
@@ -764,7 +785,10 @@
 
                                 <div class="con-dos-btn-retor">
                                     <button class="btn-boleta" id="btn-boleta">Guardar Boleta digital
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbOchoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-guardar-bole-aseg" onclick="alertAudio('au-guardar-bole-aseg', 'img-guardar-bole-aseg', 11, 5)">
+                                        <audio id="au-guardar-bole-aseg" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-guardar-bole-aseg.wav">
+                                        </audio>
                                     </button>
                                     <button id="btn-paso-octavo" class="btn-avanzar">SIGUIENTE >></button>
                                 </div>
@@ -778,7 +802,10 @@
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>Resumen</h5>
-                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <img src="./assets/img/img-audios/etbN.svg" alt="parlante-audio-etb" class="img-audio" id="img-oct-aseg" onclick="alertAudio('au-oct-aseg', 'img-oct-aseg', 12, 0)">
+                                    <audio id="au-oct-aseg" controls class="audio" style="display: none;">
+                                        <source type="audio/wav" src="./assets/audio/Paso 8/au-oct-aseg.wav">
+                                    </audio>
                                 </div>
                                 <div class="body-items-inf">
                                     <label for="">Número de Orden</label>
@@ -831,13 +858,14 @@
                     <div class="paso-dos-aprov paso-no-actived" id="paso-dos-aprov">
                         <div class="contenido-paso">
                             <div class="serv-paso-dos" id="serv-paso-dos-aprov">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-dos-aprov" onclick="alertAudio('au-paso-dos-aprov', 'img-paso-dos-aprov', 14, 0)">
+                                <audio id="au-paso-dos-aprov" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 2/au-paso-dos-aprov.wav">
+                                </audio>
                                 <label for="">ONT 1</label>
                                 <select name="" id="ont-instalada-aprov" disabled>
-                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                                     <option value="ZTEGC8FEAFD1" selected id="ont-insta-paso-two">ZTEGC8FEAFD1</option>
                                 </select>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
                             </div>
                             <div class="con-table">
                                 <table class="table-general">
@@ -869,6 +897,10 @@
 
                     <div class="paso-tres-aprov paso-no-actived" id="paso-tres-aprov">
                         <div class="contenido-paso">
+                            <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-tres-aprov" onclick="alertAudio('au-paso-tres-aprov', 'img-paso-tres-aprov', 7, 0)" style="padding-bottom: 30px;">
+                            <audio id="au-paso-tres-aprov" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            </audio>
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>ACCESO DE RED</h5>
@@ -992,7 +1024,11 @@
 
                     <div class="paso-cuatro-aprov paso-no-actived" id="paso-cuatro-aprov">
                         <div class="contenido-paso">
-                            
+                            <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-cuatro-aprov" onclick="alertAudio('au-paso-cuatro-aprov', 'img-paso-cuatro-aprov', 15, 0)" style="padding-bottom: 30px;">
+                            <audio id="au-paso-cuatro-aprov" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            </audio>
+
                             <div class="con-table">
                                 <table class="table-general" style="min-width: auto;">
                                     <tr>
@@ -1013,8 +1049,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="paso-quinto-aprov paso-no-actived" id="paso-quinto-aprov">
                         <div class="contenido-paso">
+                            <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-cinco-aprov" onclick="alertAudio('au-paso-cinco-aprov', 'img-paso-cinco-aprov', 9, 0)" style="padding-bottom: 30px;">
+                            <audio id="au-paso-cinco-aprov" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                            </audio>
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>ACCESO DE RED</h5>
@@ -1101,10 +1142,6 @@
                                 </div>
                             </div>
                             <div class="actions-pasos-g">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)">
-                                <audio id="au-info-dia" controls class="audio" style="display: none;">
-                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
-                                </audio>
                                 <button><i class="fa-solid fa-arrows-rotate"></i></button>
                                 <button>Ping</button>
                                 <button id="btn-red"><i class="fa-solid fa-wifi" style="color: #ffffff;"></i></button>
@@ -1187,9 +1224,9 @@
                     </div>
                     <div class="paso-sexto-aprov paso-no-actived" id="paso-sexto-aprov">
                         <div class="contenido-paso">
-                            <h3>Registrar Material <label for=""> <img src="./assets/img/Group 3.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6" onclick="alertAudio('au-register-material-p6', 'img-register-material-p6')" style="margin-left: 20px;"></label></h3>
+                            <h3>Registrar Material <label for=""> <img src="./assets/img/img-audios/etbDosN.svg" alt="parlante-audio-etb" class="img-audio" id="img-register-material-p6" onclick="alertAudio('au-register-material-p6', 'img-register-material-p6', 10, 0)" style="margin-left: 20px;"></label></h3>
                             <audio id="au-register-material-p6" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 6/Registral material.m4a">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/au-register-material-p6-aseg.wav">
                             </audio>
                                 <div class="con-table">
                                     <table id="register-inventario" class="table-general">
@@ -1208,18 +1245,18 @@
                               <br>
                               <button  id="agregar-in-aseg" class="btn-add-e"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></button>
                               <br>
-                              <h4>Observaciones <label for=""><img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6" onclick="alertAudio('au-obser-p6', 'img-obser-p6')" style="margin-left: 20px;"></label></h4>
+                              <h4>Observaciones <label for=""><img src="./assets/img/img-audios/etbTresA.svg" alt="parlante-audio-etb" class="img-audio" id="img-obser-p6" onclick="alertAudio('au-obser-p6', 'img-obser-p6', 10, 2)" style="margin-left: 20px;"></label></h4>
                               <audio id="au-obser-p6" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 6/Observaciones.m4a">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/au-obser-p6-aseg.wav">
                             </audio>
                               <textarea name="" id="obser-ase" cols="30" rows="10"></textarea>
                               <div class="con-action-t-6">
                                 <button id="guardar-in">Guardar</button>
                               </div>
                               <br>
-                              <h5>Inventario Registrado <label for=""><img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4" onclick="alertAudio('au-inv-pso4', 'img-inv-pso4')" style="margin-left: 20px;"></label></h5>
+                              <h5>Inventario Registrado <label for=""><img src="./assets/img/img-audios/etbCuatroN.svg" alt="parlante-audio-etb" class="img-audio" id="img-inv-pso4" onclick="alertAudio('au-inv-pso4', 'img-inv-pso4', 10, 3)" style="margin-left: 20px;"></label></h5>
                               <audio id="au-inv-pso4" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="./assets/audio/Paso 6/Inventario.m4a">
+                                <source type="audio/wav" src="./assets/audio/Paso 6/au-inv-pso4-aseg.wav">
                             </audio>
                               <div class="con-table">
         
@@ -1240,7 +1277,7 @@
                               </div>
                               <br>
                               <div class="con-prox-act">
-                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6" onclick="alertAudio('au-prox-act-p6', 'img-prox-act-p6')"></label>
+                               <label for="">Proxima Actividad <label for=""></label>               <img src="./assets/img/img-audios/etbCincoA.svg" alt="parlante-audio-etb" class="img-audio" id="img-prox-act-p6" onclick="alertAudio('au-prox-act-p6', 'img-prox-act-p6', 10, 4)"></label>
                                <audio id="au-prox-act-p6" controls class="audio" style="display: none;">
                                 <source type="audio/wav" src="./assets/audio/Paso 6/Proxima actividad.m4a">
                             </audio>
@@ -1260,7 +1297,10 @@
                     <div class="paso-septimo-aprov paso-no-actived" id="paso-septimo-aprov">
                         <div class="contenido-paso">
                             <div class="con-contactos">
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')" style="margin-bottom: 20px;">
+                                <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-contact-paso-s-aprov" onclick="alertAudio('au-contact-paso-s-aprov', 'img-contact-paso-s-aprov', 11,0)" style="margin-bottom: 20px;">
+                                <audio id="au-contact-paso-s-aprov" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 7/au-usuarios-psiete-aseg.wav">
+                                </audio>
                                 <input type="button" value="" id="visita-name-aprov">
                                 <input type="button" value="Contactos">
                                 <input type="button" value="Otros">
@@ -1270,7 +1310,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Punto Cableado</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbDosA.svg" alt="parlante-audio-etb" class="img-audio" id="img-punto-ca-aprov" onclick="alertAudio('au-punto-ca-aprov', 'img-punto-ca-aprov',16, 0)">
+                                        <audio id="au-punto-ca-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-punto-ca-aprov.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf punto-cableado-aprov" id="info-ont-insta">
                                         <div class="dad-item-pc">
@@ -1348,7 +1391,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Mapa de Calor</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbTresN.svg" alt="parlante-audio-etb" class="img-audio" id="img-mapa-calor-aprov" onclick="alertAudio('au-mapa-calor-aprov', 'img-mapa-calor-aprov', 11, 1)">
+                                        <audio id="au-mapa-calor-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-mapa-calor-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <input type="file" name="" id="file-mapa-calor"  accept=".pdf" >
@@ -1359,7 +1405,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Espacio Habitables</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbCuatroA.svg" alt="parlante-audio-etb" class="img-audio" id="img-espacio-ha-aprov" onclick="alertAudio('au-espacio-ha-aprov', 'img-espacio-ha-aprov', 11, 2)">
+                                        <audio id="au-espacio-ha-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-espacio-ha-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf" id="info-ont-insta">
                                         <div class="con-table">
@@ -1383,7 +1432,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Dispositivos adicionales (Sin punto cableado)</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbCincoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-dis-adici-aprov" onclick="alertAudio('au-dis-adici-aprov', 'img-dis-adici-aprov', 11, 3)">
+                                        <audio id="au-dis-adici-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-dis-adici-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf item-larg" id="info-ont-insta">
                                         <div class="con-table">
@@ -1406,7 +1458,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Firma Cliente</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbSieteA.svg" alt="parlante-audio-etb" class="img-audio" id="img-firma-cli-aprov" onclick="alertAudio('au-firma-cli-aprov', 'img-firma-cli-aprov', 11, 4)">
+                                        <audio id="au-firma-cli-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-firma-cl-aseg.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf con-fat-firm">
                                         <div class="con-firmas">
@@ -1426,7 +1481,10 @@
                                 <div class="items-info">
                                     <div class="cabecera">
                                         <h5>Firma Técnico</h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbOchoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-firma-tec-aprov" onclick="alertAudio('au-firma-tec-aprov', 'img-firma-tec-aprov', 16, 1)">
+                                        <audio id="au-firma-tec-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-firma-tec-aprov.wav">
+                                        </audio>
                                     </div>
                                     <div class="body-items-inf con-fat-firm">
                                         <div class="con-firmas">
@@ -1445,7 +1503,10 @@
 
                                 <div class="con-dos-btn-retor">
                                     <button class="btn-boleta" id="btn-boleta-aprov">Guardar Boleta digital
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbN.svg" alt="parlante-audio-etb" class="img-audio" id="img-guardar-bole-aprov" onclick="alertAudio('au-guardar-bole-aprov', 'img-guardar-bole-aprov', 11, 5)">
+                                        <audio id="au-guardar-bole-aprov" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 7/au-guardar-bole-aseg.wav">
+                                        </audio>
                                     </button>
                                     <button id="btn-paso-octavo-aprov" class="btn-avanzar">SIGUIENTE >></button>
                                 </div>
@@ -1459,35 +1520,38 @@
                             <div class="items-info">
                                 <div class="cabecera">
                                     <h5>Resumen</h5>
-                                    <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <img src="./assets/img/img-audios/etbN.svg" alt="parlante-audio-etb" class="img-audio" id="img-paso-ocho-aprov" onclick="alertAudio('au-paso-ocho-aprov', 'img-paso-ocho-aprov', 17, 0)">
+                                    <audio id="au-paso-ocho-aprov" controls class="audio" style="display: none;">
+                                        <source type="audio/wav" src="./assets/audio/Paso 8/au-paso-ocho-aprov.wav">
+                                    </audio>
                                 </div>
                                 <div class="body-items-inf">
                                     <label for="">Número de Orden</label>
-                                    <p>MDM-PQR-37926711</p>
+                                    <p>MDM-FIBRA-000081569</p>
 
                                     <label for="">CUN</label>
                                     <p>4347230000776558</p>
 
                                     <label for="">Bundle Seleccionado</label>
-                                    <p>3PLAY 80M SILVER 1</p>
+                                    <p>SINGLE INTERNET 100M HOG FTTH V2</p>
 
                                     <label for="">Tecnología</label>
                                     <p>FTTH</p>
 
                                     <label for="">Valor del Servicio</label>
-                                    <p>$ 199,583.00</p>
+                                    <p>$ 64900</p>
 
                                     <label for="">Nombre Oferta Anterior</label>
-                                    <p>3PLAY 60M SILVER 1</p>
+                                    <p>SINGLE INTERNET 100M HOG FTTH V2</p>
 
                                     <label for="">Precio Oferta Anterior</label>
-                                    <p>$188883</p>
+                                    <p>$64900 </p>
 
                                     <label for="">Fecha de Agendamiento</label>
                                     <p><script>document.write(`${year}/${month}/${day}`)</script></p>
 
                                     <label for="">Franja de Agendamiento</label>
-                                    <p>AM3-10:00 12:00</p>
+                                    <p>PM2-14:00 - 16:00</p>
                                 </div>
                             </div>
                             <div class="con-un-btn-retor">
@@ -1496,7 +1560,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Aprovisionamiento -->
                 </div>
             </div>
         </div>
@@ -1707,10 +1770,16 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">ADICCIÓN SVAs</h5>
+                  <h5 class="modal-title">ADICCIÓN SVAs
+                    <img src="./assets/img/img-audios/etbN.svg" alt="parlante-audio-etb" class="img-audio" id="img-general-sva" onclick="alertAudio('au-general-sva', 'img-general-sva', 6, 0)">
+                    <audio id="au-general-sva" controls class="audio" style="display: none;">
+                      <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                  </audio>
+                  </h5>
+
                 </div>
                 <div class="modal-body">
-                    <img src="./assets/img/Group 6.svg" alt="parlante-audio-etb" class="img-audio" id="img-ciencip2" onclick="alertAudio('au-ciencip2', 'img-ciencip2')">
+                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-ciencip2" onclick="alertAudio('au-ciencip2', 'img-ciencip2', 6, 1)">
                                             <audio id="au-ciencip2" controls class="audio">
                                     <source type="audio/wav" src="./assets/audio/Paso 2/643359bc50af61.30852281.m4a">
                                 </audio>
@@ -1722,7 +1791,7 @@
                   </select>
                   <!-- <input type="number" name="" id="can-vC" placeholder="Cantidad" disabled> -->
         
-                  <img src="./assets/img/Group 2.svg" alt="parlante-audio-etb" class="img-audio" id="img-cienpdos" onclick="alertAudio('au-cienpdos', 'img-cienpdos')">
+                  <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-cienpdos" onclick="alertAudio('au-cienpdos', 'img-cienpdos', 6, 2)">
                                           <audio id="au-cienpdos" controls class="audio">
                                     <source type="audio/wav" src="./assets/audio/Paso 2/100 M.mp3">
                                 </audio>
@@ -1733,7 +1802,7 @@
                     <option value="1">1</option>
                   </select>
         
-                  <img src="./assets/img/Group 7.svg" alt="parlante-audio-etb" class="img-audio" id="img-puntocab-p2" onclick="alertAudio('au-puntocab-p2', 'img-puntocab-p2')">
+                  <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-puntocab-p2" onclick="alertAudio('au-puntocab-p2', 'img-puntocab-p2', 6, 3)">
                                           <audio id="au-puntocab-p2" controls class="audio">
                                     <source type="audio/wav" src="./assets/audio/Paso 2/64335a232e90a3.53172697.m4a">
                                 </audio>
@@ -1750,7 +1819,7 @@
                     <option value="7">7</option>
                   </select>
 
-                  <img src="./assets/img/Group 17.svg" alt="parlante-audio-etb" class="img-audio" id="img-widiplus-p2" onclick="alertAudio('au-widiplus-p2', 'img-widiplus-p2')">
+                  <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-widiplus-p2" onclick="alertAudio('au-widiplus-p2', 'img-widiplus-p2', 6, 4)">
                     <audio id="au-widiplus-p2" controls class="audio">
                         <source type="audio/wav" src="./assets/audio/Paso 2/64335a6c27e225.27896978.m4a">
                     </audio>
@@ -1764,7 +1833,7 @@
                     <option value="4">4</option> -->
                     </select>
 
-                    <img src="./assets/img/Group 18.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshtwop2" onclick="alertAudio('au-meshtwop2', 'img-meshtwop2')">
+                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshtwop2" onclick="alertAudio('au-meshtwop2', 'img-meshtwop2', 6, 5)">
                                     <audio id="au-meshtwop2" controls class="audio">
                                 <source type="audio/wav" src="./assets/audio/Paso 2/64335b1784da96.77854970.m4a">
                             </audio>
@@ -1775,7 +1844,7 @@
                     <option value="1">1</option>
                     </select>
 
-                    <img src="./assets/img/Group 19.svg" alt="parlante-audio-etb" class="img-audio" id="img-mesh-thrp2" onclick="alertAudio('au-mesh-thrp2', 'img-mesh-thrp2')">
+                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-mesh-thrp2" onclick="alertAudio('au-mesh-thrp2', 'img-mesh-thrp2', 6, 6)">
                                     <audio id="au-mesh-thrp2" controls class="audio">
                                 <source type="audio/wav" src="./assets/audio/Paso 2/64335b3fbd0153.86009907.m4a">
                             </audio>
@@ -1786,7 +1855,7 @@
                     <option value="1">1</option>
                     </select>
 
-                    <img src="./assets/img/Group 20.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshadici-p2" onclick="alertAudio('au-meshadici-p2', 'img-meshadici-p2')">
+                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-meshadici-p2" onclick="alertAudio('au-meshadici-p2', 'img-meshadici-p2', 6, 7)">
                                     <audio id="au-meshadici-p2" controls class="audio">
                                 <source type="audio/wav" src="./assets/audio/Paso 2/64335b599b9489.36218762.m4a">
                             </audio>
@@ -2030,7 +2099,10 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">CONTACTO VISITA                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"></h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">CONTACTO VISITA                 <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-contacto-visita" onclick="alertAudio('au-contacto-visita', 'img-contacto-visita', 18, 0)"></h5>
+                        <audio id="au-contacto-visita" controls class="audio" style="display: none;">
+                            <source type="audio/wav" src="./assets/audio/Paso 4/au-contacto-visita.wav">
+                        </audio>
                 </div>
                 <div class="modal-body">
                     <div class="items-info">
@@ -2146,7 +2218,7 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Normalización                 <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)"></h5>
+                        <h5 class="modal-title">Normalización                 <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia', 1, 1)"></h5>
                     </div>
                     <div class="modal-body">
                         <p class="label-nor">Ingresar serial del equipo</p>
@@ -2186,7 +2258,10 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">CONFIRMACIÓN ASEGURAMIENTO                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"></h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">CONFIRMACIÓN ASEGURAMIENTO                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img-confi-paso-tres-aseg" onclick="alertAudio('au-confi-paso-tres-aseg', 'img-confi-paso-tres-aseg', 7, 1)"></h5>
+                        <audio id="au-confi-paso-tres-aseg" controls class="audio" style="display: none;">
+                            <source type="audio/wav" src="./assets/audio/Paso 3/au-confi-paso-tres-aseg.wav">
+                        </audio>
                 </div>
                 <div class="modal-body">
                     <div class="con-table">
@@ -2288,7 +2363,10 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">SOPORTE EFICIENTE <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')"></h5>
+                        <h5 class="modal-title">SOPORTE EFICIENTE <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_general_sf" onclick="alertAudio('au_general_sf', 'img_general_sf', 5, 0)"></h5>
+                        <audio id="au_general_sf" controls class="audio" style="display: none;">
+                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                        </audio>
                     </div>
                     <div class="modal-body" id="modal-body-soporte">
                         <div class="items-info items-sopor">
@@ -2296,7 +2374,10 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-info')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     INFORMACIÓN</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_info_sf" onclick="alertAudio('au_info_sf', 'img_info_sf', 5, 1)">
+                                <audio id="au_info_sf" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
                             </div>
                             <div class="body-items-inf">
                                 <div class="contet" id="con-sopo-info">
@@ -2336,7 +2417,10 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-infro')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     INFRAESTRUCTURA ACCESO</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_infra_sf" onclick="alertAudio('au_infra_sf', 'img_infra_sf', 5, 2)">
+                                <audio id="au_infra_sf" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
                             </div>
                             <div class="body-items-inf item-larg">
                                 <div class="contet hide-body" id="con-sopo-infro">
@@ -2456,13 +2540,24 @@
 
                                     <div class="items-actions-soporte">
                                         <button style="background: red;" id="btn-consul-veci" onclick="habladorText('Puede obtener información sobre los equipos NAP en el perímetro, con el objetivo de identificar si existe una falla masiva no reportada.')"><i class="fa-solid fa-triangle-exclamation" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_con_veci_in_sf" onclick="alertAudio('au_con_veci_in_sf', 'img_con_veci_in_sf', 5, 3)">
+
+                                        <audio id="au_con_veci_in_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
                                         <button style="background: #00C2DF;" id="btn-consul-equipos" onclick="habladorText('Muestra algunas imágenes sobre la ONT instalada')">Imagen del Equipo</button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_img_ont_sf" onclick="alertAudio('au_img_ont_sf', 'img_img_ont_sf', 5, 4)">
+                                        <audio id="au_img_ont_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
+
                                         <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" style="visibility: hidden;">
                                         <button style="background: #FF5E00;" id="action-infra">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_act_in_sf" onclick="alertAudio('au_act_in_sf', 'img_act_in_sf', 5, 5)">
+                                        <audio id="au_act_in_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
                                         <div class="dropdrown-act" id="dropdrown-act-infr">
                                             <label for="" onclick="modalExitoSoporte('RESET_MODEM', false, false), habladorText('Esto ejecutará un proceso interno, el cual reiniciará el modem.')">Reset de Modem</label>
                                             <label for="" onclick="modalExitoSoporte('REINICIO DE FABRICA', false, false), habladorText('Esto ejecutará un proceso interno, el cual reiniciará la configuraón de fabrica.')">Reinicio de Fábrica</label>
@@ -2478,7 +2573,10 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-telefo')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     LINEA TELEFONICA</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_lineaT_sf" onclick="alertAudio('au_lineaT_sf', 'img_lineaT_sf', 5, 6)">
+                                <audio id="au_lineaT_sf" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
                             </div>
                             <div class="body-items-inf">
                                 <div class="contet hide-body" id="con-sopo-telefo">
@@ -2576,15 +2674,21 @@
 
                                     <div class="items-actions-soporte">
                                         <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="" alt="" style="visibility: hidden;">
                                         <button style="background: #00A7CC;" id="btn-consul-infra">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_consultas_lt_sf" onclick="alertAudio('au_consultas_lt_sf', 'img_consultas_lt_sf', 5, 7)">
+                                        <audio id="au_consultas_lt_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
                                         <div class="dropdrown-act dropdrown-act-ext dropdrown-consulta-ge" id="dropdrown-act-consulta">
                                             <label for="" id="btn-validar-serv" onclick="habladorText('Proporciona información sobre el tiempo de respuesta del servicio.')">Validar Conectividad</label>
                                             <label for="" id="btn-transferencia" onclick="habladorText('Proporciona información sobre el número de teléfono')">TRANSFERENCIA INMEDIATA</label>
                                         </div>
                                         <button style="background: #FF5E00;" id="action-linea-t">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_act_lt_sf" onclick="alertAudio('au_act_lt_sf', 'img_act_lt_sf', 5, 8)">
+                                        <audio id="au_act_lt_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
                                         <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-linea-t">
                                             <label for="" onclick="modalExitoSoporte(' Normalizar Servicios Suplementarios', false, true), habladorText('Esto ejecutará un proceso interno, Normalizará todos los servicios, por consiguiente todos los semaforos serán refrescados.')" id="btn-norm-se-secun">Normalizar Servicios Suplementarios</label>
                                             <label for="" class="label-disa" onclick="habladorText('Esta función no esta disponible para esta orden')">Normalizar CategorÃa Cliente</label>
@@ -2603,7 +2707,10 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-inter')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     INTERNET</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                    <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_it_sf" onclick="alertAudio('au_it_sf', 'img_it_sf', 5, 11)">
+                                    <audio id="au_it_sf" controls class="audio" style="display: none;">
+                                        <source type="audio/wav" src="./assets/audio/aseg/au_it_sf.wav">
+                                    </audio>
                             </div>
                             <div class="body-items-inf">
                                 <div class="contet hide-body" id="con-sopo-inter">
@@ -2736,9 +2843,14 @@
 
                                     <div class="items-actions-soporte">
                                         <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" style="visibility: hidden;">
+
+
                                         <button style="background: #00A7CC;" id="btn-consul-internet">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_consultas_it_sf" onclick="alertAudio('au_consultas_it_sf', 'img_consultas_it_sf', 5, 12)">
+                                        <audio id="au_consultas_it_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/aseg/au_consultas_it_sf.wav">
+                                        </audio>
                                         <div class="dropdrown-act dropdrown-act-ext dropdrown-consulta-ge" id="dropdrown-act-consulta-interne">
                                             <label for="" id="btn-consul-ping" onclick="habladorText('El sistema de manera interna, hace un ping a una página web y brinda las estadisticas del diagnostico generadas en busca de corroborar la estabuilidad y velocidad de la conexión.')">PING</label>
                                             <label for="" id="btn-consul-ping_lan" onclick="habladorText('Debe ingresar el URL de una página web, para que se generé un diagnostico ping con la red y así conocer las estadisticas generadas en busca de corroborar la estabuilidad y velocidad de la conexión.')">PING LAN CLIENTE</label>
@@ -2753,7 +2865,10 @@
                                             <label for="" id="btn-consulta-estado-wifi" onclick="habladorText('Permite validar el estado de la red wifi')">ESTADO DE RED WIFI</label>
                                         </div>
                                         <button style="background: #FF5E00;" id="action-interne">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_act_it_sf" onclick="alertAudio('au_act_it_sf', 'img_act_it_sf', 5, 13)">
+                                        <audio id="au_act_it_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/aseg/au_act_it_sf.wav">
+                                        </audio>
                                         <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-internet">
                                             <label for="" onclick="modalExitoSoporte('INT_NORMUSER', false, false), habladorText('Permite sincronizar el usuario de acuerdo a la información de inventario')" id="btn-session-actived">Normalizar Usuario Navegación</label>
                                             <label for="" onclick="modalExitoSoporte('Normalizar Velocidades', false, true), habladorText('Permite sincronizar las velocidades de acuerdo a la ordén')">Normalizar Velocidades</label>
@@ -2774,7 +2889,10 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-ajustes-wifi')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     Ajustes WIFI (ONT)</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_aw_sf" onclick="alertAudio('au_aw_sf', 'img_aw_sf', 5, 14)">
+                                <audio id="au_aw_sf" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/aseg/au_aw_sf.wav">
+                                </audio>
                             </div>
                             <div class="body-items-inf">
                                 <div class="contet hide-body" id="con-sopo-ajustes-wifi">
@@ -2886,9 +3004,14 @@
 
                                     <div class="items-actions-soporte">
                                         <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" style="visibility: hidden;">
                                         <button style="background: #00A7CC;" id="btn-consul-ont">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_consultas_aw_sf" onclick="alertAudio('au_consultas_aw_sf', 'img_consultas_aw_sf', 5, 15)">
+                                        <audio id="au_consultas_aw_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/aseg/au_consultas_aw_sf.wav">
+                                        </audio>
+
                                         <div class="dropdrown-act dropdrown-act-ext dropdrown-act-fir" id="dropdrown-act-consulta-ont">
                                             <label for="">PING</label>
                                             <label for="">PING LAN CLIENTE</label>
@@ -2903,7 +3026,11 @@
                                             <label for="">ESTADO DE RED WIFI</label>
                                         </div>
                                         <button style="background: #FF5E00;" id="action-ont">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_act_aw_sf" onclick="alertAudio('au_act_aw_sf', 'img_act_aw_sf', 5, 16)">
+                                        <audio id="au_act_aw_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/aseg/au_act_aw_sf.wav">
+                                        </audio>
+
                                         <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-ont">
                                             <label for="" id="change-name-ont" onclick="habladorText('Permite cambiar el nombre de la red (SSID), debe tener un minimo de un caracter hasta 32 caracteres')">Cambiar Nombre</label>
                                             <label for="" id="change-pass-ont" onclick="habladorText('Permite cambiar la clave de la red, debe tener un minimo de ocho caracter hasta 63 caracteres')">Cambiar Contraseña</label>
@@ -2925,7 +3052,11 @@
                                 <h5 onclick="itemInfoSoporte('con-sopo-tv')">
                                     <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                     TELEVISIÓN</h5>
-                                <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_tv_sf" onclick="alertAudio('au_tv_sf', 'img_tv_sf', 5, 9)">
+                                <audio id="au_tv_sf" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                </audio>
+
                             </div>
                             <div class="body-items-inf">
                                 <div class="contet hide-body" id="con-sopo-tv">
@@ -3007,9 +3138,10 @@
 
                                     <div class="items-actions-soporte">
                                         <button style="background: #00A7CC;"><i class="fa-solid fa-rotate" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" style="visibility: hidden;">
                                         <button style="background: #00A7CC;" id="btn-consul-ont">Consultas  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" style="visibility: hidden;">
+                                        
                                         <div class="dropdrown-act dropdrown-act-ext dropdrown-act-fir" id="dropdrown-act-consulta-ont">
                                             <label for="">PING</label>
                                             <label for="">PING LAN CLIENTE</label>
@@ -3024,7 +3156,10 @@
                                             <label for="">ESTADO DE RED WIFI</label>
                                         </div>
                                         <button style="background: #FF5E00;" id="action-tv">Acciones <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i></button>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+                                        <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="img_act_sf" onclick="alertAudio('Au_act_sf', 'img_act_sf', 5, 10)">
+                                        <audio id="Au_act_sf" controls class="audio" style="display: none;">
+                                            <source type="audio/wav" src="./assets/audio/Paso 1/643358c519b8e527766907_JCRbpcWn.mp3">
+                                        </audio>
                                         <div class="dropdrown-act dropdrown-act-ext" id="dropdrown-act-tv">
                                             <label for="" id="btn-norm-subs-id" onclick="habladorText('Permite sincronizar el estado subscriber ID de acuerdo con la información de inventario')">Normalizar Estado Subscriber ID</label>
                                             <label for="" class="label-disa" onclick="habladorText('Esta función no esta disponible para esta orden')">Normalizar MAC DECO</label>
@@ -3273,7 +3408,7 @@
                                         <h5 onclick="itemInfoSoporte('con-sopo-log')">
                                             <img src="./assets/img/rule.svg" alt="" class="menus-cabecera">
                                             LOG del sistema </h5>
-                                        <img src="./assets/img/Group 10.svg" alt="parlante-audio-etb" class="img-audio" id="img-info-dia" onclick="alertAudio('au-info-dia', 'img-info-dia')">
+
                                     </div>
                                     <div class="body-items-inf">
                                         <div class="contet hide-body" id="con-sopo-log">
@@ -3386,6 +3521,6 @@
     <script src="./js/firma.js"></script>
     <script src="./js/soporteEficiente.js"></script>
     <script src="./js/pasoSeven.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./bootstrap/typed.js"></script>
 </body>
 </html>

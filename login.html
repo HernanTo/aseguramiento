@@ -15,7 +15,7 @@
     <div class="container-genre container-login">
         <div class="con-info-audios">
             <div class="con-img-au">
-                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
             </div>
             <div class="info-audios">
                 <p>Nota: Hacer touch sobre estos iconos para más información</p>
@@ -34,11 +34,12 @@
                 <input type="password" name="password" id="password" placeholder="Password" required>
                 <button  class="button" id="submitlogin" type="button">Sign In</button>
                 <div class="alert alert-dark" role="alert">
-                    User: escueladigital <br> Password: digital
+                    <h2>Usuario Asignado:</h2>
+                    <b>User:</b> escueladigital <br> <b>Password:</b>  digital
                   </div>
             </form>
             <div class="con-alert-login">
-                <img src="./assets/img/Group 8.svg" alt="parlante-audio-etb" class="img-audio" id="img-login-inicio" onclick="alertAudio('au-login-inicio', 'img-login-inicio')">
+                <img src="./assets/img/img-audios/etbUnoN.svg" alt="parlante-audio-etb" class="img-audio" id="img-login-inicio" onclick="alertAudio('au-login-inicio', 'img-login-inicio', 0, 0)">
                 <div class="alert-info" id="alert-info">
                     <p>Ingresar el usuario asignado y la contraseña correspondiente</p>
                 </div>
@@ -87,11 +88,26 @@
         </div>
     </div>
     </div>
+
+    <div class="alert-flotante" id="alert-flotante">
+        <div class="etb-flotant" id="etb-flotant">
+            <img src="./assets/img/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante" id="mensaje-parlante">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="./assets/img/cross-small.svg" alt="">
+        </div>
+    </div>
     <!-- modal loading -->
     <!-- Modal -->
   <script src="./bootstrap/jquery.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/login.js"></script>
+  <script src="./bootstrap/typed.js"></script>
 </body>
 </html>

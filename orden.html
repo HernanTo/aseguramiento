@@ -11,10 +11,16 @@
     <link rel="shortcut icon" href="./assets/img/ETB.svg">
 </head>
 <body>
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+    </script>
     <div class="container-portal">
         <div class="con-info-audios">
             <div class="con-img-au">
-                <img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
+                <img src="./assets/img/img-audios/etbA.svg" alt="parlante-audio-etb" class="img-audio" id="no-audio-f">
             </div>
             <div class="info-audios">
                 <p>Nota: Hacer touch sobre estos iconos para más información</p>
@@ -38,200 +44,263 @@
         </div>
         <div class="body-dash">
             <div class="header-dash">
-                <h2>Detalle Orden <span>MDM-FIBRA-011706262</span><img src="./assets/img/Group 5.svg" alt="parlante-audio-etb" class="img-audio" id="img-detalle-orden" onclick="alertAudio('au-detalle-orden', 'img-detalle-orden')" style="margin-left: 20px;"></h2>
+                <h2>Detalle Orden <span>MDM-PQR-37926711</span><img src="./assets/img/img-audios/etbUnoA.svg" alt="parlante-audio-etb" class="img-audio" id="img-detalle-orden" onclick="alertAudio('au-detalle-orden', 'img-detalle-orden')" style="margin-left: 20px;"></h2>
                 <audio id="au-detalle-orden" controls class="audio" style="display: none;">
-                    <source type="audio/wav" src="./assets/audio/ruta/DetalleOrden.m4a">
+                    <source type="audio/wav" src="./assets/audio/ruta/orden.wav">
                 </audio>
 
             </div>
             <div class="con-cards-portal">
-                <div class="card">
-                    <p class="cabecera">Datos Cliente</p>
-                    <section class="left">
-                        <br>
-                        <p>Tipo Documento</p>
-                        <p>Número Documento</p>
-                        <p>Nombres</p>
-                        <p>Apellidos</p>
-                        <p>Telefono Fijo</p>
-                        <p>Celular</p>
-                        <p>Celular2</p>
-                        <p>Departamento</p>
-                        <p>Ciudad</p>
-                        <p>Dirección</p>
-                        <p>Estrato</p>
-                        <p>Email</p>
-                        <p>Tipo Cliente</p>
-                        <p>Segmento</p>
-                        <p>Segmento UEN</p>
-                        <p>UEN</p>
-                        <p>Categoria</p>
-                        <p>Recurrente</p>
-                        <br>
-                    </section>
-                    <section class="right">
-                        <br>
-                        <p>CC</p>
-                        <p>52005880</p>
-                        <p>ANA CARMENA</p>
-                        <p>MORENO BURAGO</p>
-                        <br>
-                        <p>3133318143</p>
-                        <p>3138304011</p>
-                        <p>BOGOTA</p>
-                        <p>BOGOTA D.C.</p>
-                        <p>CL 165A 54 83 P12</p>
-                        <p>3</p>
-                        <p>carmenzamoreno10@gmail.com</p>
-                        <br>
-                        <p>Hogares</p>
-                        <p>Hogares</p>
-                        <p>Hogares y MiPymes</p>
-                        <br>
-                        <p>PLATA</p>
-                        <br>
-                    </section>
+                <div class="con-it-o">
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Datos Cliente</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-two" >
+                                <div class="ite-header">
+                                    <label for="">Tipo Documento</label>
+                                    <label for="">Número Documento</label>
+                                    <label for="">Nombres</label>
+                                    <label for="">Apellidos</label>
+                                    <label for="">Telefono Fijo</label>
+                                    <label for="">Celular</label>
+                                    <label for="">Celular2</label>
+                                    <label for="">Departamento</label>
+                                    <label for="">Ciudad</label>
+                                    <label for="">Dirección</label>
+                                    <label for="">Estrato</label>
+                                    <label for="">Email</label>
+                                    <label for="">Tipo Cliente</label>
+                                    <label for="">Segmento</label>
+                                    <label for="">Segmento UEN</label>
+                                    <label for="">UEN</label>
+                                    <label for="">Categoria</label>
+                                    <label for="">Recurrente</label>
+                                </div>
+                                <div class="ite-inf">
+                                    <p>CC</p>
+                                    <p>52005880</p>
+                                    <p>ANA CARMEN</p>
+                                    <p>MORENO BUIRAGO</p>
+                                    <br>
+                                    <p>3133318143</p>
+                                    <p>3136304011</p>
+                                    <p>BOGOTA</p>
+                                    <p>BOGOTA D.C.</p>
+                                    <p>CL 185A 54 83 P12</p>
+                                    <p>3</p>
+                                    <p class="all-inf">carmenzamoreno10@gmail.com</p>
+                                    <br>
+                                    <p class="all-inf">Hogares</p>
+                                    <p class="all-inf">Hogares</p>
+                                    <p class="all-inf">Hogares y MiPymes</p>
+                                    <p class="all-inf">PLATA</p>
+                                    <br>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Contacto(s) Instalación</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-table" >
+                                <div class="con-table">
+                                    <table class="table-general">
+                                        <tr>
+                                            <th>Tipo Doc</th>
+                                            <th>Número Doc</th>
+                                            <th>Nombre</th>
+                                            <th>Telefóno</th>
+                                            <th>Email</th>
+                                        </tr>
+                                        <tr>
+                                            <td>CC</td>
+                                            <td>52005880</td>
+                                            <td>ANA CARMEN MORENO BUIRAGO</td>
+                                            <td>3133318143</td>
+                                            <td>carmenzamoreno10@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Contacto Visita</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-two" >
+                                <div class="ite-header">
+                                    <label for="">Tipo Documento</label>
+                                    <label for="">Número Documento</label>
+                                    <label for="">Nombres</label>
+                                    <label for="">Apellidos</label>
+                                    <label for="">Celular</label>
+                                    <label for="">Email</label>
+                                </div>
+                                <div class="ite-inf">
+                                    <input type="text" value="CC" disabled>
+                                    <input type="text" value="52005880" disabled>
+                                    <input type="text" value="ANA CARMEN" disabled>
+                                    <input type="text" value="MORENO BUIRAGO" disabled>
+                                    <input type="text" value="3133318143" disabled>
+                                    <input type="text" value="carmenzamoreno10@gmail.com" disabled>
+                                </div>
+                           </div>
+                        </div>
+                    </div>  
                 </div>
-
-                <div class="card">
-                    <p class="cabecera">Otros Datos Instalación</p>
-                    <section class="left">
-                        <br>
-                        <p>Envío Contrato</p>
-                        <p>Usuario Venta</p>
-                        <p>Usuario creación</p>
-                        <p>Canal</p>
-                        <br>
-                    </section>
-                    <section class="right">
-                        <br>
-                        <p>Digital</p>
-                        <p>1012349033</p>
-                        <p>yurireyr</p>
-                        <p>CIMA GROUPS</p>
-                        <br>
-                    </section>
-                </div>
-
-                <div class="card">
-                    <p class="cabecera">Bundle Seleccionado</p>
-                    <div class="con-bundle">
-                        <div class="bundle">
-                            <div class="header-b">
-                                <p class="f-h-b">DUO 300M HOG FTTH V2</p>
-                                <p>$ 89900 <span>mes</span></p>
-                            </div>
-                            <div class="service">
-                                <div class="header-serv" onclick="bundlle()">
-                                    LINEA TELEFONICA
+                <div class="con-it-o">
+                    <div class="items-info" style="height: 370px;">
+                        <div class="cabecera">
+                            <h5>Bundle Seleccionado</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content" >
+                                <div class="bundle">
+                                    <div class="header-b">
+                                        <p class="f-h-b">SINGLE INTERNET 100M HOG FTTH V2</p>
+                                        <p>$ 64900  <span>mes</span></p>
+                                    </div>
+                                    <div class="service">
+                                        <div class="header-serv">
+                                            INTERNET
+                                        </div>
+                                        <div class="list-s list-s-l">
+                                            <ul>
+                                                <li>PUNTO CABLEADO</li>
+                                                <li>IP DINÁMICA</li>
+                                                <li>PLAN 100M/100M</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="list-s list-s-l">
-                                    <ul>
-                                        <li><span>LLAMADA EN ESPERA</span></li>
-                                        <li><span>TRANSFERENCIA DE LLAMADA</span></li>
-                                        <li><span>LLAMADA EN ESPERA</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="service service-in">
-                                <div class="header-serv" onclick="bundlle()">
-                                    INTERNET
-                                </div>
-                                <div class="list-s">
-                                    <ul>
-                                        <li><span>LLAMADA EN ESPERA</span></li>
-                                        <li><span>TRANSFERENCIA DE LLAMADA</span></li>
-                                        <li><span>LLAMADA EN ESPERA</span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                           </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <p class="cabecera">Producto Contratado</p>
-                    <section class="left">
-                        <br>
-                        <p>Producto</p>
-                        <p>Tecnologia</p>
-                        <p>Tipo de Orden</p>
-                        <p>Subtipo de Orden</p>
-                        <br>
-                    </section>
-                    <section class="right">
-                        <br>
-                        <p>DUO 300M HOG FTTH V2</p>
-                        <p>FTTH</p>
-                        <p>ALTA</p>
-                        <br>
-                        <br>
-                    </section>
-                </div>
-
-                <div class="card">
-                    <p class="cabecera">Agendamiento</p>
-                    <section class="left">
-                        <br>
-                        <p>Fecha Agenda</p>
-                        <p>Franja</p>
-                        <p>Estado</p>
-                        <p>Celular Contacto</p>
-                        <p>Correo Contacto</p>
-                        <p>Inicio Ventana Servicio</p>
-                        <p>Fin Ventana Servicio</p>
-                        <br>
-                    </section>
-                    <section class="right">
-                        <br>
-                        <p>3/23/2023</p>
-                        <p>PM_1</p>
-                        <p>Pendiente</p>
-                        <p>3154101611</p>
-                        <p>boterovasquez@hotmail.com</p>
-                        <p>13:00:00</p>
-                        <p>16:00:00</p>
-                        <br>
-                    </section>
-                </div>
-
-                <div class="card">
-                    <p class="cabecera">Promociones</p>
-                    <div class="con-table">
-                        <br>
-                        <table>
-                                <tr class="head-t">
-                                    <td>Nombre promoción</td>
-                                    <td>Acción</td>
-                                </tr>
-                                <tr>
-                                    <td>PROMOCION DESCUENTO 100% PRORRATEO + 50% MESES 1,2,3,4 FTTH</td>
-                                    <td><a href="#" style="color: gray;">Deshacer</a> </td>
-                                </tr>
-                        </table>
-                        <br>
+                <div class="con-it-o co-it-two">
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Producto Contratado</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-two" >
+                                <div class="ite-header">
+                                    <label for="">Producto</label>
+                                    <label for="">Tecnologia</label>
+                                    <label for="">Tipo de Orden</label>
+                                    <label for="">Subtipo de Orden</label>
+                                </div>
+                                <div class="ite-inf">
+                                    <p>SINGLE INTERNET 100M HOG FTTH V2</p>
+                                    <p>FTTH</p>
+                                    <p><b>ASEGURAMIENTO</b></p>
+                                    <br>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+    
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Agendamiento</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-two" >
+                                <div class="ite-header">
+                                    <label for="">Fecha Agenda</label>
+                                    <label for="">Franja</label>
+                                    <label for="">Estado</label>
+                                    <label for="">Grupo Asignado en Agenda</label>
+                                    <label for="">Inicio Ventana Servicio</label>
+                                    <label for="">Fin Ventana Servicio</label>
+                                </div>
+                                <div class="ite-inf">
+                                    <p>4/1/2023</p>
+                                    <p>PM2-14:00 - 16:00</p>
+                                    <p>Iniciada</p>
+                                    <p>APROVISIONAMIENTO GESTION NPLAY</p>
+                                    <p>14:00</p>
+                                    <p>16:00</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+    
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Información PQR</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-two" >
+                                <div class="ite-header">
+                                    <label for="">Producto</label>
+                                    <label for="">Sintoma</label>
+                                    <label for="">Causal</label>
+                                    <label for="">Observaciones</label>
+                                    <label for="">Falla Joven</label>
+                                    <label for="">PQRs Relacionadas</label>
+                                </div>
+                                <div class="ite-inf">
+                                    <p>INTERNET</p>
+                                    <p>ONT NO ENCIENDE / FALLA</p>
+                                    <p>FALLA EN CPE</p>
+                                    <p>Se programa visita cliente sin servicio, ONT- Estado modem Rojo - fuera de línea</p>
+                                    <input type="checkbox" name="" id="" checked disabled>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+    
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>Promociones</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-table" >
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Nombre Promoción</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                    <tr>
+                                        <td>PROMOCION DESCUENTO 100% PRORRATEO + 50% MESES 1,2 FTTH</td>
+                                        <td>Mantener</td>
+                                    </tr>
+                                </table>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+    
+                    <div class="items-info">
+                        <div class="cabecera">
+                            <h5>SVAs</h5>
+                        </div>
+                        <div class="body-items-inf">
+                           <div class="content cont-table" >
+                            <div class="con-table">
+                                <table class="table-general">
+                                    <tr>
+                                        <th>Nombre SVA</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                    <tr>
+                                        <td>WIFI PLUS TIPO 1</td>
+                                        <td>$0</td>
+                                    </tr>
+                                </table>
+                            </div>
+                           </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <p class="cabecera">SVAs</p>
-                    <div class="con-table">
-                        <br>
-                        <table>
-                                <tr class="head-t">
-                                    <td>Nombre SVAs</td>
-                                    <td>Valor</td>
-                                </tr>
-                                <tr>
-                                    <td>CONTESTADOR VIRTUAL</td>
-                                    <td>$0</td>
-                                </tr>
-                        </table>
-                        <br>
-                    </div>
-                </div>
-                
-
             </div>
             <div class="footer-dash">
                 <a href="./dashboard.html">Volver</a>

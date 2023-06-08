@@ -17,62 +17,6 @@
 .header-dash h2 span{
     font-size: 19.5px;
 }
-.con-cards-portal{
-    display: grid;
-    row-gap: 30px;
-    grid-template-columns: 1fr;
-    margin-top: 10px;
-    padding: 0px 20px;
-    padding-top: 20px;
-    width: 100%;
-    justify-items: center;
-}
-.card{
-    border: 2px solid #f26821;
-    max-width: 400px;
-    display: grid;
-    grid-template-columns: 45% 55%;
-    column-gap: 10px;
-    border-radius: 25px;
-    position: relative;
-    padding: 0px 20px;
-    font-size: 13px;
-    width: 100%;
-}
-.cabecera{
-    position: absolute;
-    background: white;
-    top: -13px;
-    left: 20px;
-    padding: 0px 10px;
-}
-.card .left{
-    color: #f26821;
-    font-weight: bold;
-}
-.cabecera{
-   font-size: 17px; 
-   color: #f26821;
-   font-weight: bold;
-}
-.con-table{
-    grid-column: 1/3;
-}
-.con-table table{
-    width: 100%;
-}
-tr{
-    border: 1px solid #73879C;
-}
-.con-table table .head-t{
-    background: #20A4CB;
-    height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: white;
-    border: none;
-}
 .footer-dash{
     display: grid;
     margin-top: 50px;
@@ -108,7 +52,6 @@ tr{
     overflow-y: hidden;
 }
 .header-b{
-    height: 66px;
     background: #f26821;
     text-align: center;
 }
@@ -155,59 +98,7 @@ li span{
     transition: all 10 ms;
 }
 
-@media (min-width: 800px){
-    .con-cards-portal{
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
-    }
-    .card:nth-child(1){
-        grid-row: 1/4;
-        height: 400px;
-    }
-    .card:nth-child(2){
-        height: 120px;
-    }
-    .card:nth-child(3){
-        grid-column: 2/3;
-        height: 322px;
-    }
-    
-    .card:nth-child(5){
-        height: 170px;
-    }
-    .card:nth-child(6){
-        height: 110px;
-    }
-    
- 
-}
-@media(min-width: 1200px){
-    .card{
-        max-width: none;
-    }
-    .con-cards-portal{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .card:nth-child(4){
-        grid-row: 1/3;
-        grid-column: 3/4;
-        height: 110px;
-    }
-    .card:nth-child(5){
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .card:nth-child(6){
-        grid-column: 3/4;
-        grid-row: 3/4;
-        margin-top: -150px;
-    }
-    .card:nth-child(7){
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-}
+
 
 /* actividad select */
 .portal-comen{
@@ -225,7 +116,7 @@ li span{
 } 
 
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .footer-dash{
         display: block;
         margin: 15px auto;
@@ -235,5 +126,85 @@ li span{
         width: 100px;
         margin-bottom: 12px;
         padding: 5px;
+    }
+}
+.con-cards-portal{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns:100%;
+    column-gap: 25px;
+    justify-content: center;
+}
+.cont-two{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    column-gap: 10px;
+    overflow-x: scroll;
+}
+.cont-two .ite-header{
+    display: grid;
+}
+.cont-two .ite-header label{
+    color: #f26821;
+    font-weight: 650;
+}
+.cont-two .ite-inf{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+.cont-two .ite-inf p{
+    margin: 0px;
+}
+.cont-table{
+    width: 300px;
+}
+.cabecera{
+    grid-template-columns: 1fr;
+}
+th{
+    text-align: left !important;
+}
+.items-info{
+    width: 100%;
+    max-width: 550px;
+}
+.con-it-o{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+/* .cont-two .ite-inf .all-inf{
+    grid-column: 1/2;
+} */
+/* .cont-two p{
+    grid-column: 2/3;
+} */
+@media (min-width: 1000px){
+    .con-cards-portal{
+        grid-template-columns: repeat(auto-fit, 450px);
+    }
+    .items-info{
+        width: 100%;
+    }
+    .cont-table{
+        width: 405px;
+    }
+    .cont-table .table-general{
+        width: 100%;
+        min-width: auto !important;
+
+    }
+    /* .co-it-two{
+        grid-column: 1/3;
+        grid-template-columns: 450px 450px;
+        column-gap: 25px;
+    } */
+}
+@media (min-width: 1400px){
+    .co-it-two{
+        grid-column: auto;
+        grid-template-columns: 450px;
     }
 }
